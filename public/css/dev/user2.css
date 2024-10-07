@@ -1,0 +1,478 @@
+/* user css */
+
+
+#left-component {
+	width: 620px;
+}
+
+#left-component .pretty-split-pane-component-inner {
+	min-width:600px;
+	
+}
+
+#vertical-divider {
+	left: 620px;
+	
+}
+
+#right-component {
+	left:620px;	
+}
+
+#right-component  .pretty-split-pane-component-inner {
+	min-width:700px;
+}
+.input-box{
+	margin-bottom: 20px;
+}
+.menu-box {
+	margin-bottom: 10px;
+}
+
+.form-group {
+	background-color:#fff;
+	border:1px solid #d5d5d5;
+	border-bottom:0;
+}
+
+.form-group:last-child {
+	border-bottom:1px solid #d5d5d5
+}
+.form-group dt {
+	width: 110px;
+	height: 40px;
+	font-size:12px;
+	background-image: linear-gradient(to bottom,#fbfbfb,#F6F6F6);
+	background-color:#fbfbfb;
+    border-right: 1px solid #d5d5d5;
+	color:#363636;
+	text-align:center;
+	line-height:40px
+}
+
+.form-group dd {
+	float:left;
+	height: 40px;
+	line-height:35px;
+	padding: 0 7px;
+	background-color:#fff
+}
+
+.form-group dd label {
+	font-size:12px;
+	cursor:pointer
+}
+
+.form-group dd.ddw100 {
+	width: calc( 100% - 110px);
+}
+
+
+table {
+	table-layout:auto
+}
+
+/* .input-box {
+	height: 100%;
+} */
+
+.user .table-wrap.short {
+	background-color:#fff;
+	border:1px solid #d5d5d5;
+	height: 305px;
+	height: -webkit-calc(100% - 430px);
+	height: -moz-calc(100% - 430px);
+	height:calc( 100% - 430px);
+	/* overflow:auto */
+}
+.user .table-wrap.long {
+	background-color:#fff;
+	height: 640px;
+	height: -webkit-calc(100% - 115px);
+	height: -moz-calc(100% - 115px);
+	height: calc(100% - 115px);
+	border:1px solid #d5d5d5
+}
+
+.auth .table-wrap.short {
+	height: 468px;
+	height: -webkit-calc(100% - 275px);
+	height: -moz-calc(100% - 275px);
+	height:calc( 100% - 275px);
+}
+
+.auth .table-wrap.long {
+	background-color:#fff;
+	height: 617px;
+	height: -webkit-calc(100% - 117px);
+	height: -moz-calc(100% - 117px);
+	height: calc(100% - 117px);
+	border:1px solid #d5d5d5
+}
+
+.set-table th.active {
+	border: 1px solid #1D8DF3;
+	background-color:#E3F1FF;
+	background-image:none
+}
+.set-table td.active {
+	background-color:#E3F1FF
+}
+.set-table th.change {
+	border: none;
+	background-color:#E3F1FF;
+	border: 1px solid #1D8DF3;
+	border-bottom:2px solid #1D8DF3 !important;
+	background-image:none
+}
+.set-table td.change {
+	background-color:#E3F1FF;
+}
+.set-table td.chan {
+	background-color:#E3F1FF;
+	border: 1px solid #1D8DF3;
+}
+.set-table tr.bb{
+	border-bottom: none;
+}
+
+
+/* .authority thead {
+    width: calc( 100% - 1em )
+} */
+
+/* */
+
+/* 2020-06-22 */
+
+.w28{
+	width:28%;
+}
+.w14{
+	width:14%;
+}
+
+.w80 {
+	width: 80px !important
+}
+
+.w120 {
+	width: 120px !important
+}
+
+.w160 {
+	width: 160px !important
+}
+
+.w170 {
+	width: 170px !important
+}
+
+.user .h-scroll {
+	height: 100%;
+}
+
+.auth .h-scroll {
+	height: 100%;
+}
+
+.important::before{
+	content:'*';
+	color:#FF9BA1;
+	font-weight:bold;
+	vertical-align:top;
+	padding-right: 5px;
+}
+
+.pad{
+	padding-left: 30px;	
+}
+.pad10{
+	padding-left: 10px;		
+}
+.pad50{
+	padding-left: 50px;	
+}
+
+.left{
+	text-align: left;
+}
+.w100{width: 100% !important;}
+
+.auth .table-wrap.long{
+	overflow: auto;
+}
+.auth .long .n-scroll{
+	width: 1600px;
+}
+.auth .long .h-scroll{
+	width: 1600px;
+	height:calc( 100% - 27px );
+}
+/* 스크롤바 수정 */
+.auth .table-wrap.long::-webkit-scrollbar{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.auth .table-wrap.long::-webkit-scrollbar-thumb{
+	width:12px;
+
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.auth .table-wrap.long::-webkit-scrollbar-track{
+	width:12px;
+	background-color: #f2f2f2;
+}
+
+
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 22px !important;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 21px !important;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 17px;
+	left: 4px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #45ADF9;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #45ADF9;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(36px);
+	-ms-transform: translateX(36px);
+	transform: translateX(36px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 28px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+  .offtxt{
+	  color: #777;
+	  font-size: 13px;
+	  width: 100%;
+	  position: relative;
+	  right: 15px;
+	  top: 2px;
+	  text-align: right;
+	  display: inline-block;
+	  transition: .4s;
+  }
+  .ontxt{
+	  color: #fff;
+	  font-size: 13px;
+	  width: 100%;
+	  position: relative;
+	  top: 1px;
+	  left: 15px;
+	  text-align: left;
+	  display: none;
+	  height: 10px;
+	  transition: .4s;
+  }
+  input:checked ~ .offtxt{
+	  display: none;
+  }
+  
+  input:checked ~ .ontxt{
+	display: inline-block;
+}
+
+table{
+	table-layout: fixed !important;
+}
+
+
+/* 210927 사원관리 수정 성시은 */
+
+.user .form-group dl{
+	width: 100%;
+	border-bottom: 1px solid #d5d5d5;
+}
+.user .form-group dt{
+	width: 110px !important;
+}
+.user .form-group dd.half{
+	width: calc(50% - 110px) !important;
+}
+.user .form-group:last-child {
+    border-bottom: 0px;
+}
+.user .form-group dt,
+.user .form-group dd{
+	height: 29px;
+	line-height: 29px !important;
+}
+.user .form-group dt{
+	font-size: 11px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.user .form-group dt.important{
+	padding-left: 15px;
+}
+.user .form-group dd input,
+.user .form-group dd select{
+	height: 22px;
+}
+.user .form-group dd .calenderImg{
+	width: 22px;
+	height: 22px;
+}
+.user .table-wrap.short {
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    height: -webkit-calc(100% - 517px);
+    height: -moz-calc(100% - 517px);
+    height: calc( 100% - 517px);
+}
+.user .set-table tbody p.wrap{
+	text-align: center;
+	font-size: 12px;
+}
+
+.user .table-wrap.long{
+	overflow-x: auto;
+}
+.user .long .n-scroll,
+.user .long .h-scroll{
+	width: 1600px;
+}
+.user .long .h-scroll{
+	height: calc(100% - 27px ) !important;
+}
+.user .table-wrap.long::-webkit-scrollbar{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.user .table-wrap.long::-webkit-scrollbar-thumb{
+	width:12px;
+
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.user .table-wrap.long::-webkit-scrollbar-track{
+	width:12px;
+	background-color: #f2f2f2;
+}
+
+
+
+/* 체크박스 디자인 변경 21-10-13 */
+.auth input[type='checkbox'] + label {
+    background: url(/public/img/checkbox_p.png) left/12px no-repeat;
+}
+.auth input[type='checkbox']:checked + label {
+    background-image: url(/public/img/checkbox_on_p.png);
+}
+.user input[type='checkbox'] + label {
+    background: url(/public/img/checkbox_p.png) left/12px no-repeat;
+}
+.user input[type='checkbox']:checked + label {
+    background-image: url(/public/img/checkbox_on_p.png);
+}
+
+
+.log .h-scroll{
+	height: calc(100% - 200px);
+
+}
+
+
+/* 월별접속기록 관리 팝업 */
+
+
+.month_log_pop {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 1200px !important;
+
+}
+
+.month_log_pop .title {
+	padding:15px 0;
+}
+
+.month_log_pop .inner{
+	width:100%;
+	padding:20px 20px 48px ;
+	overflow:auto;
+}
+.month_log_pop .h-scroll{
+	height: 450px;
+	background-color: #efefef;
+}
+
+.month_log_pop .pagination{
+	text-align: center !important;
+}
+
+.month_log_pop .pagination>div>div{
+	float: none;
+}
+
+.month_log_pop .pagination ul{
+	float: none;
+	display: inline-block;
+}
+
+label.all_chk{
+	padding: 0 10px !important;
+	height: 25px !important;
+	line-height: 25px !important;
+	border: 1px solid #d5d5d5;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: #45ADF9 !important;
+	color: #fff;
+	background-image: none !important;
+	float: right;
+}
+
+label.all_chk:hover {
+	background-color:#0785E2 !important;
+}

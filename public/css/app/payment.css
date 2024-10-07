@@ -1,0 +1,277 @@
+.payment{
+    padding: 0 .75rem;
+    margin-bottom: 5rem;
+}
+.payment .pay_kind{
+    margin-top: .7rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.payment .pay_kind .half{
+    width: 50%;
+}
+.payment .pay_kind .half:nth-child(2n-1) div{
+    border-right: 0;
+}
+.payment .pay_kind .half:nth-child(n+3) div{
+    border-top: 0;
+}
+.payment .pay_kind label{
+    height: 1.3rem;
+    padding: .1rem 0 .1rem 1.6rem;
+}
+.payment .pay_kind div{
+    text-align: center;
+}
+.payment .pay_kind .left div{
+    border-right: 0;
+}
+.payment .pay_kind .tab{
+    height: 2.4rem;
+    width: 100%;
+    line-height: 2.4rem;
+    text-align: center;
+    display: inline-block;
+    border: .05rem solid #0176f9;
+}
+.payment .pay_kind .tab label{
+    font-size: .7rem;
+    font-weight: 500;
+}
+.payment .pay_kind .price{
+    width: 100%;
+    border: .05rem solid #0176f9;
+    border-top: 0;
+    padding: .3rem .3rem 1.55rem;
+}
+.payment .pay_kind .pro{
+    width: 100%;
+}
+.payment .pay_kind .price span.best{
+    font-size: .4rem;
+    color: #f51000;
+    border: .05rem solid #ffc1bc;
+    width: 2.1rem;
+    height: .7rem;
+    text-align: center;
+    line-height: .6rem;
+    float: right;
+}
+.payment .pay_kind .price span.sale{
+    font-size: .4rem;
+    color: #ff7700;
+    border-radius: .1rem;
+    border: .05rem solid #ffd8b7;
+    width: 2.1rem;
+    height: .7rem;
+    text-align: center;
+    line-height: .6rem;
+    float: right;
+}
+.payment .pay_kind .price p{
+    text-align: center;
+    width: 100%;
+    display: block;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+.payment .pay_kind .price p span.number{
+	font-family: 'Roboto';
+}
+.payment .pay_kind .sub{
+    border: .05rem solid #0176f9;
+    border-top: 0;
+    height: 6.65rem;
+    padding: .7rem .4rem 0;
+}
+.payment .pay_kind .sub p{
+    font-size: .6rem;
+    color: #0176f9;
+    height: 1.8rem;
+    word-break: break-all;
+}
+.payment .pay_kind .sub ul{
+    margin-top: .6rem;
+}
+.payment .pay_kind .sub ul li{
+    font-size: .6rem;
+    color: #111;
+    text-align:left;
+}
+
+
+.payment .btn_wrap{
+    width: 100%;
+    margin-top: .9rem;
+}
+.payment .btn_wrap button.blue{
+    width: 100%;
+    color: #fff;
+    background-color: #0176f9;
+    border-radius: .25rem;
+    height: 2.5rem;
+    font-size: .8rem;
+}
+.payment .sub_hint{
+    margin-top: .4rem;
+}
+.payment .sub_hint p{
+    font-size: .6rem;
+    color: #999;
+    margin-bottom: 2rem;
+    line-height: .9rem;
+}
+
+.payment ul.coupon{
+    margin-top: 1.4rem;
+    margin-bottom: 5rem;
+}
+.payment ul.coupon h5{
+    font-size: .7rem;
+    line-height: 1rem;
+    color: #4c21f2;
+}
+.payment ul.coupon li{
+    height: 1.9rem;
+    border-bottom: .05rem solid #4c21f2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: .3rem;
+}
+.payment ul.coupon li input{
+    width: calc(100% - 4.6rem);
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+.payment ul.coupon li input::placeholder{
+    font-size: .8rem;
+    color: #767676;
+}
+.payment ul.coupon li button.cp_btn{
+    width: 3.9rem;
+    height: 1.6rem;
+    font-size: .7rem;
+    color: #4c21f2;
+    border: .05rem solid #4c21f2;
+    border-radius: .25rem;
+    line-height: 1.5rem;
+    margin-left: .7rem;
+}
+
+.payment textarea{
+    overflow : hidden;
+    border : none;
+    width : 100%;
+    height : 100%;
+    background-color: transparent;
+}
+
+
+
+/* 회원가입 완료 */
+.join_comp{
+    width: 100%;
+    height: calc(100vh - 2.8rem);
+    display: table;
+}
+
+.comp_inner{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1.5rem;
+}
+
+.comp_inner .box{
+    width: 100%;
+    text-align: center;
+}
+.comp_inner .box .smile{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto .8rem;
+    padding: .5rem;
+}
+.comp_inner h5{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #111;
+    margin-bottom: .5rem;
+}
+.comp_inner p{
+    font-size: .7rem;
+    line-height: 1rem;
+    color: #767676;
+}
+.join_comp .btn_zone{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+.join_comp .btn_zone button.gray{
+    width: 100%;
+    height: 2.8rem;
+    font-size: .8rem;
+    color: #111;
+    background-color: #f1f1f5;
+    font-weight: 500;
+}
+.join_comp .btn_zone button.purple{
+    width: 100%;
+    height: 2.8rem;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #4c21f2;
+    font-weight: 500;
+}
+.userpay-pop{
+    width: calc(100% - 3.2rem);
+    background-color: #fff;
+    display: none;
+    border-radius: .7rem;
+    overflow: hidden;
+}
+.userpay-pop .title{
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.userpay-pop .inner{
+    padding: .75rem;
+}
+.userpay-pop .inner h5{
+    font-size: .8rem;
+    margin: 1rem 0 .8rem;
+}
+.userpay-pop ul li{
+    height: 2.9rem;
+    border: .05rem solid #ddd;
+    margin-bottom: .7rem;
+    line-height: 2.9rem;
+    font-size: .8rem;
+    padding: 0 1rem;
+    border-radius: .25rem;
+}
+.userpay-pop .btn_wrap{
+    width: 100%;
+}
+.userpay-pop .btn_wrap button.blue{
+    width: 100%;
+    color: #fff;
+    background-color: #0176f9;
+    height: 2.5rem;
+    font-size: .8rem;
+}
+.contain.h100{
+    height: 80vh;
+    overflow: hidden;
+    filter: blur(.5rem);
+}

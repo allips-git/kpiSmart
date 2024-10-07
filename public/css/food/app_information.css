@@ -1,0 +1,67 @@
+.header{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.header .title{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.content{
+    max-width: 500px;
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+.content ul{
+    padding: 0 1rem;
+}
+.content ul li{
+    margin-bottom: 20px;
+}
+.content ul li .li_title{
+    font-size: 12px;
+    color: #8e9db0;
+    margin-bottom: .3125rem;
+}
+.content ul li .input_wrap{
+    width: 100%;
+    border: .0625rem solid #e4e5e9;
+    border-radius: .25rem;
+}
+.content ul li .input_wrap input{
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+.content ul li .input_wrap textarea{
+    width: 100%;
+    height: 280px;
+    padding: 5px;
+}
+.content .btn_wrap{
+    width: 100%;
+    padding: 8px 16px 14px;
+    box-shadow: 0px 0px 3px 0px #00000029;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+.content .btn_wrap button.save{
+    width: 100%;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}

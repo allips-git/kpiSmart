@@ -1,0 +1,269 @@
+.blind_rail_pop{
+    width: 1175px;
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 9999;
+    margin-top: 20px;
+}
+.blind_rail_pop .name{
+    padding: 100px 0;
+    background-color: #2A3042;
+}
+.blind_rail_pop .name p{
+    color: #fff;
+    font-size: 90px;
+    line-height: 130px;
+    text-align: center;
+}
+.blind_rail_pop .name p span{
+    font-family: 'Roboto';
+
+}
+.blind_rail_pop .add{
+    padding: 52px 0;
+    background-color: #fff;
+}
+.blind_rail_pop .add p strong{
+    font-size: 50px;
+    font-weight: 700;
+}
+.blind_rail_pop .add p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 72px;
+
+}
+.blind_rail_pop .etc{
+    padding: 54px 0 73px;
+    border-top: 1px solid #707070;
+    background-color: #fff;
+}
+.blind_rail_pop .etc p.blue{
+    color: #0176F9;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 72px;
+}
+
+
+
+
+
+/* 원단 */
+.blind_fab_pop{
+    width: 1175px;
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 9999;
+    margin-top: 20px;
+}
+.blind_fab_pop .name{
+    padding: 66px 0 52px;
+    background-color: #2A3042;
+    color: #fff;
+}
+.blind_fab_pop .name p.kind{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 87px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.blind_fab_pop .name p.size{
+    font-size: 80px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 116px;
+}
+.blind_fab_pop .add{
+    padding: 52px 0;
+    background-color: #fff;
+}
+.blind_fab_pop .add p strong{
+    font-size: 50px;
+    font-weight: 700;
+}
+.blind_fab_pop .add p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 72px;
+
+}
+.blind_fab_pop .etc{
+    padding: 54px 0 73px;
+    border-top: 1px solid #707070;
+    background-color: #fff;
+}
+.blind_fab_pop .etc p.blue{
+    color: #0176F9;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 72px;
+}
+.blind_fab_pop .etc p.blue .red{
+    color: #dc0000;
+}
+
+
+
+
+/* 조립 */
+.blind_ass_pop{
+    width: 1175px;
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 9999;
+    margin-top: 30px;
+}
+.blind_ass_pop .top{
+    height: 343px;
+    background-color: #2A3042;
+    color: #fff;
+    display: flex;
+}
+.blind_ass_pop .top .handle{
+    background-color: #2A3042;
+    width: 50%;
+    padding-top: 99px;
+    font-size: 100px;
+    line-height: 145px;
+    text-align: center;
+}
+.blind_ass_pop .top .length{
+    background-color: #fafafa;
+    width: 50%;
+}
+.blind_ass_pop .top .length p:first-child{
+    margin-top: 85px;
+    color: #dc0000;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+.blind_ass_pop .top .length p:last-child{
+    color: #dc0000;
+    font-size: 80px;
+    line-height: 116px;
+    font-weight: 700;
+    text-align: center;
+}
+.blind_ass_pop .name p.size{
+    font-size: 80px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 116px;
+}
+.blind_ass_pop .add{
+    padding: 52px 0;
+    background-color: #fff;
+}
+.blind_ass_pop .add p strong{
+    font-size: 50px;
+    font-weight: 700;
+}
+.blind_ass_pop .add p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 72px;
+
+}
+.blind_ass_pop .etc{
+    padding: 54px 0 73px;
+    border-top: 1px solid #707070;
+    background-color: #fff;
+}
+.blind_ass_pop .etc p.blue{
+    color: #0176F9;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 72px;
+}
+.blind_ass_pop .etc p.blue .red{
+    color: #dc0000;
+}
+
+
+
+
+/* 검품 */
+.blind_etc_pop{
+    width: 1175px;
+    display: none;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 9999;
+    margin-top: 30px;
+}
+.blind_etc_pop .top{
+    height: 343px;
+    background-color: #2A3042;
+    color: #fff;
+    display: flex;
+}
+.blind_etc_pop .top .handle{
+    background-color: #2A3042;
+    width: 50%;
+    padding-top: 99px;
+    font-size: 100px;
+    line-height: 145px;
+    text-align: center;
+}
+.blind_etc_pop .top .length{
+    background-color: #fafafa;
+    width: 50%;
+}
+.blind_etc_pop .top .length p:first-child{
+    margin-top: 85px;
+    color: #dc0000;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+.blind_etc_pop .top .length p:last-child{
+    color: #dc0000;
+    font-size: 80px;
+    line-height: 116px;
+    font-weight: 700;
+    text-align: center;
+}
+.blind_etc_pop .name p.size{
+    font-size: 80px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 116px;
+}
+.blind_etc_pop .add{
+    padding: 52px 0;
+    background-color: #fff;
+}
+.blind_etc_pop .add p strong{
+    font-size: 50px;
+    font-weight: 700;
+}
+.blind_etc_pop .add p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 72px;
+
+}
+.blind_etc_pop .etc{
+    padding: 54px 0 73px;
+    border-top: 1px solid #707070;
+    background-color: #fff;
+}
+.blind_etc_pop .etc p.blue{
+    color: #0176F9;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 72px;
+}
+.blind_etc_pop .etc p.blue .red{
+    color: #dc0000;
+}

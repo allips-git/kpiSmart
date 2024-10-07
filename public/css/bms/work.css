@@ -1,0 +1,191 @@
+/* work_mn css */
+
+.list-title{
+	/* font-size:12px;
+	padding:0;
+	height:34px;
+	margin-bottom:0; */
+}
+.list-title .total-box{
+	float:left;
+	border:1px solid #0d3aa9;
+	font-size:12px;
+	color:#0d3aa9;
+	width:150px;
+	margin-top:10px;
+	padding:2px 15px;
+}
+
+.center .h-scroll{
+	height:560px;
+	height:calc( 100vh - 375px);
+	background-color:#fff;
+}
+
+.center table th.b-right {
+	border-right:1px solid #ccc;
+}
+
+.center table td.b-right {
+	border-right:1px solid #ccc;
+}
+
+.center table tbody tr td{
+    background-color: #fff;
+}
+
+.center table tbody:nth-child(2n) td{
+    background-color: #f3f3f3;
+}
+
+
+.table-zone thead tr th.bor{
+	border-right:1px solid #ccc;
+}
+
+.item-table tbody tr td .send{
+	color:blue;
+}
+
+.work_mn table tr th{
+	font-size: 18px;
+}
+.work_mn table tr td{
+	font-size: 18px;
+}
+.work_mn .list-title{
+	justify-content: space-between;
+}
+.work_mn .list-title .total-box {
+	font-size:13px;
+	width:150px;
+	height:auto;
+	margin-top:8px;
+	padding:3px 15px;
+}
+.work_mn .list-title button{
+	font-size: 14px;
+	padding: 0px 25px;
+	height: 38px;
+}
+
+.work_mn .tr_sum{
+    font-weight: normal;
+}
+
+ .work_mn .tr_sum td{
+    color: #222;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 5px 3px;	
+}
+
+.work_mn .search-box select,
+.work_mn .search-box input,
+.work_mn .search-box button{
+	height: 42px;
+	font-size: 14px;
+}
+.work_mn .search-box dd{
+	padding: 3px;
+	height: 50px;
+}
+.work_mn .search-box dt{
+	height: 50px;
+	padding-top: 0;
+	line-height: 50px;
+}
+.work_mn .calenderImg {
+    display: inline-block;
+    background-color: #e1e1e1;
+    width: 42px;
+    text-align: center;
+    height: 42px;
+    vertical-align: middle;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-image: url(/public/img/calender_img.png);
+    background-size: 18px 18px;
+    background-position: center;
+    cursor: pointer;
+}
+.work_mn .tail-box{
+	font-size: 16px;
+}
+
+.work_mn .h-scroll{
+	height:525px;
+	height:calc( 100vh - 410px);
+	background-color:#fff;
+}
+.work_mn .bunhal_list p.wh,
+.work_mn .bunhal_list p.wh_size{
+	border-top: 1px solid #ccc;
+	display: flex;
+}
+
+.work_mn .bunhal_list p.wh span,
+.work_mn .bunhal_list p.wh_size span{
+	display: inline-block;
+	width: 50%;
+}
+.work_mn .bunhal_list p.wh span:first-child,
+.work_mn .bunhal_list p.wh_size span:first-child{
+	border-right: 1px solid #ccc;
+}
+
+.center .box-wrap{
+	float: left;
+	width: 500px;
+}
+.center .box-wrap .box{
+	text-align: center;
+	display: inline-block;
+	width: 80px;
+	font-size: 12px;
+
+}
+
+.center .box-wrap .box p:first-child{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	height: 22px;
+	line-height: 20px;
+}
+
+.center .box-wrap .box_all p:first-child{
+	color: #005b92;
+}
+
+.center .box-wrap .box_all p.txt{
+	background-color: #005b92 !important;
+	color: #fff;
+}
+.center .box-wrap .box p.txt{
+	border: 1px solid #ddd;
+	background-color: #eee;
+	height: 22px;
+	line-height: 20px;
+}
+
+.center span.dg,
+.center span.ing,
+.center span.cancle{
+    border: 1px solid #339900;
+    color: #339900;
+    width: 50px;
+    padding: 5px 0;
+    display: inline-block;
+}
+.center span.ing{
+    color: #EC8E02;
+    border-color: #EC8E02;
+}
+.center span.cancle{
+    color: #cc3366;
+    border-color: #cc3366;
+}
+.center span.send{
+    color: #5e4eec;
+    border-color: #5e4eec;
+}

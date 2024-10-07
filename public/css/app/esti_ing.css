@@ -1,0 +1,764 @@
+form{width: 100%;}
+
+ .esti_ing{
+    max-width: 25rem;
+    margin: 0 auto;
+    /* background-color: #FAFAFA; */
+    position: relative;
+}
+/* 견적등록 */
+
+.add_esti {
+    min-height: calc(100vh - 2.1rem);
+    padding:0 .8rem 5rem;
+    position: relative;
+}
+.add_esti .top{
+    padding: 1.2rem 0 .8rem;
+    border-bottom: .05rem solid #DBDBDB;
+}
+.add_esti .top_inner01{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.add_esti .top h5{
+    font-size: .7rem;
+    font-weight: 700;
+    line-height: .8rem;
+    display: inline-block;
+}
+
+.add_esti .top_inner01 button.change{
+    padding: 0 0.6rem;
+    height: 1.3rem;
+    color: #fff;
+    background-color: #0176F9;
+    font-size: .6rem;
+    font-weight: 700;
+    border-radius: .1rem;
+    position: absolute;
+    right: .8rem;
+    top: .9rem;
+}
+.add_esti .top_inner02{
+    display: flex;
+    justify-content: space-between;
+}
+.add_esti .top_inner02 .p_name{
+    font-size: .65rem;
+    line-height: 0.75rem;
+    display: inline-block;
+    font-weight: 500;
+    color: #111;
+}
+.add_esti .top_inner02 .p_info{
+    display: flex;
+}
+/* .add_esti .top_inner02 .dan{
+    font-size: .6rem;
+    padding: 0 .6rem;
+    border-left: .05rem solid #F1F1F5;
+    color: #767676;
+} */
+.add_esti .top_inner02 .dan strong{
+    font-size: .6rem;
+    color: #dc0000;
+}
+.add_esti .top_inner02 span.price{
+    font-size: .7rem;
+    text-align: right;
+    font-weight: 500;
+    line-height: .82rem;
+    font-family: 'Roboto';
+}
+
+.add_esti .middle{
+    border-top: .4rem solid #F5F5F5;
+    padding: .9rem 0 0;
+    border-bottom: .05rem solid #DBDBDB;
+}
+.add_esti .middle .section01{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+.add_esti .middle .section01 h3{
+    width: 100%;
+    font-size: .65rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+    margin-bottom: .7rem;
+}
+.add_esti .middle .section01 span.impt{
+    color: #dc0000;
+    font-size: .7rem;
+    margin-left: .2rem;
+    display: inline-block;
+    height: .2rem;
+    line-height: .2rem;
+}
+
+.add_esti .middle .select_box.long{
+    background-position: 95% 50% !important;
+}
+.add_esti .middle .select_box{
+    width: 48%;
+    height: 2rem;
+    border-radius: .1rem;
+    border: .05rem solid #E5E5EC;
+    color: #767676;
+    background-image: url(/public/img/app/gray_arrow_down.png);
+    background-position: 90% 50%;
+    background-size: .55rem;
+    position: relative;
+    background-color: #fff;
+}
+.add_esti .middle .select_box2{
+    width: 100%;
+    margin-top: 0 !important;
+}
+.add_esti .middle .select_box p.input_title{
+    font-size: .5rem;
+    color: #999;
+    margin-bottom: .3rem;
+    position: absolute;
+    top: -1.1rem;
+    left: 0;
+}
+.add_esti .middle .place_box{
+    width: 48%;
+    height: 2rem;
+    border-radius: .1rem;
+    border: .05rem solid #E5E5EC;
+    color: #767676;
+    background-color: #fff;
+}
+.add_esti .middle .place_box input{
+    height: 100%;
+    border: 0;
+    font-size: .6rem;
+    line-height: 1.9rem;
+    padding: 0 .5rem;
+}
+.add_esti .middle .place_box input::placeholder{
+    font-size: .6rem;
+    color: #7D7C78;
+}
+.add_esti .middle .select_box select{
+    width:100%;
+    height: 1.9rem;
+    border: 0;
+    background-color: transparent;
+    font-size: .6rem;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none; 
+    appearance: none;
+    padding: 0 .4rem;
+    color: #7D7C78;
+}
+.add_esti .middle .wondan{position: relative;}
+.add_esti .middle .wondan select{
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: 'Roboto';
+    color: #111;
+}
+.add_esti .middle .wondan span{
+    font-size: .7rem;
+    font-weight: 700;
+    position: absolute;
+    right: 37%;
+    top: 23%;
+    color: #111;
+}
+.add_esti .middle .input_zone{
+    width: calc((100% - 32px) / 4);
+    margin-top: 1.1rem;
+    margin-right: 10px;
+}
+.add_esti .middle .input_zone:nth-child(4n){margin-right: 0;}
+.add_esti .middle .input_zone p.input_title{
+    font-size: .5rem;
+    color: #C1C1C1;
+    margin-bottom: .3rem;
+    line-height: .55rem;
+}
+.add_esti .middle .input_zone .input_box{
+    width: 100%;
+    height: 2rem;
+    border-radius: .1rem;
+    border: .05rem solid #E5E5EC;
+    background-color: #fff;
+}
+.add_esti .middle .input_zone .input_box input{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.add_esti .middle .input_zone .input_box.pos{
+    background-image: url(/public/img/app/gray_arrow_down.png);
+    background-position: 92% 55%;
+    background-size: .55rem;
+    background-repeat: no-repeat;
+}
+.add_esti .middle .input_zone .input_box.pos select{
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none; 
+    appearance: none;
+    text-align: left !important;
+    font-size: .7rem;
+    height: 2rem;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding-left: .6rem;
+    font-family: 'Noto Sans KR';
+}
+.add_esti .middle .bunhal,
+.add_esti .middle .no_bn{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.add_esti .middle .input_zone .pos input{
+    font-family: 'Noto Sans KR';
+}
+.add_esti .middle .input_box.hb_red{
+    background-color: transparent;
+    position: relative;
+}
+.add_esti .middle .input_box.hb_red input{
+    color: #0176F9;
+    padding-right: 2rem;
+    font-size: .8rem;
+    font-weight: 700;
+    text-align: right;
+}
+.add_esti .middle .input_box.hb_red span.hb_title{
+    font-size: .6rem;
+    font-weight: 700;
+    position: absolute;
+    top: .6rem;
+    right: .6rem;
+    color: #111;
+}
+.add_esti .middle .bunhal button.bun_btn{
+    width: 100%;
+    height:2rem;
+    background-color: #0176F9;
+    margin-top: 0.82rem;
+    font-size: .7rem;
+    color: #fff;
+    border-radius: .1rem;
+}
+.add_esti .middle .bunhal .bunhal_num{
+    margin-bottom: .4rem;
+    margin-top: 0;
+}
+.add_esti .middle .bunhal .bunhal_title{
+    font-size: .5rem;
+    color: #999999;
+    margin-bottom: .3rem;
+    width: 100%;
+    margin-top: 1.1rem;
+}
+
+
+.add_esti .middle .section02 .option_wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.add_esti .middle .section02 h3{
+    width: 100%;
+    font-size: .6rem;
+    font-weight: 500;
+    text-align: right;
+    line-height: 0.7rem;
+    margin-bottom: .8rem;
+    color: #7D7C78;
+    background-image: url(/public/img/gray_arrow_down.png);
+    padding-right: .85rem;
+    background-position: right;
+    background-size: .55rem;
+}
+
+.add_esti .middle .section02 .option_box{
+    width: 48%;
+    height: 2rem;
+    border-radius: .1rem;
+    border: .05rem solid #E5E5EC;
+    padding: 0 .55rem;
+    font-size: .6rem;
+    color: #7D7C78;;
+    line-height: 1.9rem;
+    position: relative;
+    font-weight: 500;
+    background-image: url(/public/img/app/gray_arrow_down.png);
+    background-position: 95% 50%;
+    background-size: .6rem;
+}
+.add_esti .middle .section02 .bgo_box{
+    width: 100%;
+    height: 2rem;
+    border-radius: .1rem;
+    border: .05rem solid #E5E5EC;
+    margin-top: .6rem;
+    margin-bottom: .8rem;
+}
+.add_esti .middle .section02 .bgo_box input{
+    width: 100%;
+    height: 2rem;
+    font-size: .6rem;
+    font-weight: 500;
+    border: 0;
+    background-color: transparent;
+    padding: 0 .55rem;
+}
+.add_esti .middle .section02 .bgo_box input::placeholder{
+    font-size: .7rem;
+    color: #999999;
+}
+
+
+
+.add_esti .bottom{
+    border-top: .4rem solid #F5F5F5;
+}
+.add_esti .bottom .bottom_inner{
+    margin-top: 1.3rem;
+    border: 1px solid #e5e5ec;
+    border-radius: 0.2rem;
+    padding: 0 0.8rem 0.85rem;
+}
+.add_esti .bottom dl.hb{
+    margin-bottom: .9rem;
+    padding: 0.9rem 0;
+    line-height: 0.9rem;
+    border-bottom: 1px dashed #F0F0F6;
+}
+.add_esti .bottom dl.hb dt{
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: .9rem;
+}
+.add_esti .bottom dl.hb dd{
+    font-size: .7rem;
+    line-height: .9rem;
+    font-weight: 700;
+    color: #0176F9;
+}
+.add_esti .bottom dl.hb dd span{
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.add_esti .bottom dl.opti{
+    margin-bottom: 0.7rem;
+}
+.add_esti .bottom dl.opti dt{
+    font-size: .65rem;
+    line-height: 0.75rem;
+    color: #7D7C78;
+}
+.add_esti .bottom dl.opti dd{
+    font-size: .5rem;
+    font-weight: 500;
+}
+.add_esti .bottom dl.opti dd span{
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.add_esti .bottom dl.total{
+    margin-top: .9rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #F0F0F6;
+}
+.add_esti .bottom dl.total dt{
+    font-size: .8rem;
+    line-height: 0.9rem;
+    font-weight: 700;
+}
+.add_esti .bottom dl.total dd{
+    font-size: .6rem;
+    font-weight: 500;
+    color: #0176F9;
+}
+.add_esti .bottom dl.total dd span{
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+/* 수량 카운터 css */
+.add_esti .input_zone .spin{
+    text-align: center;
+    overflow: hidden;
+}
+.add_esti .input_zone .spin input[type="number"]{
+    height: 1.95rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 0;
+    padding: 0 !important;
+    font-size: .7rem !important;
+    font-family: 'Roboto' !important;
+    font-weight: bold !important;
+}
+.add_esti .input_zone input[type="number"]::-webkit-outer-spin-button,
+.add_esti .input_zone input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+.add_esti .input_zone .spin span.spinner > .sub{
+    padding-top: .1rem;
+}
+.add_esti .input_zone .spin span.spinner > .sub,
+.add_esti .input_zone .spin span.spinner > .add {
+    display: block;
+    width: 30%;
+    height: 1.95rem;
+    font-weight: 700;
+    color: #111;
+    border: 0;
+    cursor: pointer;
+    transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    text-align: center;
+
+}
+
+.add_esti .input_zone .spin span.spinner > .add {
+    right:.8rem;
+    float:right;
+    font-size: .8rem;
+    line-height: 1.95rem;
+    border-radius: 0 .15rem .15rem 0;
+    border-left: .05rem solid #E5E5EC;
+}
+.add_esti .input_zone .spin span.spinner > .sub {
+    left:-1rem;
+    float:left;
+    height:2rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem !important;
+    border-radius: .15rem 0 0 .15rem;
+    border-right: .05rem solid #E5E5EC;
+    overflow: hidden;
+}
+
+.add_esti .input_zone .spin span.spinner > .sub:hover,
+.add_esti .input_zone .spin span.spinner > .add:hover {
+    background: #fff !important;
+    color: #333;
+}
+/* 수량카운터끝 */
+
+
+/* 커튼 폼 */
+.curtain{display: flex;}
+.curtain .proc_btn{
+    height: 2rem;
+    font-size: .6rem;
+    line-height: 1.9rem;
+    padding: 0 0.55rem;
+}
+.curtain .two_tone{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.curtain .input_box{
+    position: relative;
+}
+.curtain .input_zone .poc{
+    padding-right: 1.7rem !important;
+    
+}
+.curtain .input_zone input.poc02{
+    padding-right: 1.3rem !important;
+    font-size: .8rem;
+    color: #0176F9;
+    font-weight: 700;
+    
+}
+.T-right {text-align: right !important;}
+.curtain .input_zone .dan{
+    font-size: .6rem;
+    font-weight: 700;
+    color: #111;
+    position: absolute;
+    right: .5rem;
+    top: .6rem;
+}
+.curtain .two_tone .input_zone:nth-child(2n-1){
+    width: 30%;
+}
+.curtain .two_tone .input_zone:nth-child(2n){
+    width: 20%;
+}
+.curtain .two_tone .mar{
+    margin-top: .85rem;
+}
+.T-left{text-align: left !important;}
+p.black{color: #111 !important; font-weight: 500;}
+.blue{color: #0176F9;}
+.ea .input_zone{margin-top: 0 !important; width: 48% !important;}
+
+.curtain .tone01 .input_box{background-color: #E5E5EC !important;}
+.two_tone .input_zone .input_box input.T-left{
+    font-size: .6rem !important;
+    color: #111;
+    font-weight: 400 !important;
+}
+
+
+.add_esti .btn_wrap{
+    width: 100%;
+    padding: 0.4rem 0.8rem 0.7rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.16);
+}
+.add_esti .next_btn{
+    width: 100%;
+    height: 2.3rem;
+    background-color: #0176F9;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: 0.15rem;
+}
+
+
+/*팝업칭*/
+
+.place_pop,
+.option_pop{
+    width: 14.8rem;
+    max-width: 20rem;
+    height: 14.5rem;
+    background-color: #fff;
+    display: none;
+    border-radius: 0.7rem;
+    padding: 2rem 1rem 2.5rem;
+    position: relative;
+}
+.place_pop .inner,
+.option_pop .inner{
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;
+    text-align: center;
+}
+.place_pop .inner ul li,
+.option_pop .inner ul li{
+    display: block;
+    position: relative;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+}
+
+
+
+
+
+/* 제품선택 팝업창 */
+.product_pop{
+    width: 100%;
+    display: none;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    /* padding-bottom: 3rem; */
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.product_pop .header{
+    padding: 0;
+    max-width: 25rem;
+}
+.product_pop ul li .no_item{
+    font-size: .7rem !important;
+    text-align: center;
+    width: 100% !important;
+    color: #767676;
+}
+.product_pop .header{
+    border-radius: 0 !important;
+}
+.product_pop .pop_title_name{
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.product_pop .search_zone{
+    width: 100%;
+    margin-top: 2.1rem;
+    padding: 0 .6rem .6rem;
+    background-color:#292D77;
+    display: flex;
+    justify-content: space-between;
+}
+.product_pop .search_zone .biz_select{
+    width: 6.1rem;
+    height: 2rem;
+    margin-right: .6rem;
+    background-color: #fff;
+    border-radius: .1rem;
+}
+.product_pop .search_zone .search_bar{
+    width: calc(100% - 6.7rem);
+    height: 2rem;
+    background-color: #fff;
+    border-radius: .1rem;
+}
+.product_pop .search_zone .biz_select select,
+.product_pop .search_zone .search_bar input{
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+}
+.product_pop .search_zone .search_bar input{
+    padding-left: 1.6rem;
+    background-image: url(/public/img/app/sc_icon.png);
+    background-size: .7rem;
+    background-position: .6rem center;
+    background-repeat: no-repeat;
+}
+.product_pop .search_zone .search_bar input::placeholder{
+    font-size: .6rem;
+    color: #767676;
+}
+.product_pop .tab_zone{
+    padding: 0.6rem 0.8rem;
+    display: flex;
+    justify-content: right;
+    border-bottom: .05rem solid #F0F0F6;
+}
+
+.product_pop .tab_zone div{
+    font-size: .6rem;
+    padding: 0 .5rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    border-radius: .1rem;
+    background-color: #0176F9;
+    color: #fff;
+    cursor: pointer;
+    margin-left: .5rem;
+    font-weight: 700;
+}
+
+.product_pop .list_zone{
+    height: calc(100% - 10.5rem);
+    overflow: auto;
+}
+.product_pop .list_zone ul .product_li{
+    border-bottom: .05rem solid #F0F0F6;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.product_pop .list_zone ul .product_li > input[type='radio'] + label{
+    font-size: .7rem;
+    background-position: 0;
+    background-image: url(/public/img/app/chk_b.png);
+    background-size: 1.1rem !important;
+    margin-left: .8rem;
+    height: 2.6rem;
+    line-height: 2.7rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 1.8rem;
+    font-weight: 500;
+}
+.product_pop .list_zone ul .product_li > input[type='radio']:checked + label{
+    background-image: url(/public/img/app/chked_b.png);
+}
+.product_pop .list_zone ul .product_li p{
+    display: inline-block;
+    font-size: .6rem;
+    margin-right: .8rem;
+    line-height: 2.6rem;
+    color: #c1c1c1;
+}
+.product_pop .list_zone ul .product_li p span{
+    font-family: 'Roboto';
+    font-size: .7rem;
+    letter-spacing: 0;
+    margin-left: .2rem;
+    font-weight: 400;
+}
+.product_pop .list_zone ul .product_li p strong{
+    font-family: 'Noto Sans KR';
+    font-size: .6rem;
+    letter-spacing: 0;
+}
+.product_pop .list_zone ul.sub_list{
+    width: 100%;
+    background-color: #FAFAFA;
+    display: none;
+}
+.product_pop .list_zone ul.sub_list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .8rem;
+    height: 2.6rem;
+    border-top: .05rem solid #F6F6F6;
+}
+.product_pop .list_zone ul.sub_list li .color{
+    font-size: .7rem;
+    line-height: 2.6rem;
+    color: #111;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+}
+.product_pop .list_zone ul.sub_list li > input[type='radio'] + label{
+    font-size: .7rem;
+    background-position: 0;
+    background-image: url(/public/img/app/chk_b.png);
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 100%;
+    text-align: center !important;
+}
+.product_pop .list_zone ul.sub_list li > input[type='radio']:checked + label{
+    background-image: url(/public/img/app/chked_b.png);
+}
+.product_pop ul li.line_b{
+    border: .05rem solid #0176F9;
+}
+.product_pop .btn_wrap{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.product_pop button.ok_btn{
+    width: 100%;
+    max-width: 25rem;
+    height: 2.8rem;
+    background-color: #0176F9;
+    color: #fff;
+    font-size: .9rem;
+}

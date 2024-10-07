@@ -1,0 +1,218 @@
+.time {
+    padding: 0 0.6rem;
+}
+.time h4{
+    margin-top: 1.15rem;
+    line-height: 1rem;
+    font-size: .7rem;
+    font-weight: 700;
+    padding-bottom: .35rem;
+    border-bottom: .05rem solid #F0F0F6;
+}
+.time > p{
+    margin: 1rem 0 1.5rem;
+    font-size: .6rem;
+    color: #C2C2C2;
+}
+.time dl{
+    margin-bottom: 1.9rem;
+}
+.time dl dt{
+    font-size: .7rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #767676;
+}
+.time dl dd{
+    position: relative;
+}
+.time dl dd input{
+    border: 0;
+    border-bottom: 0.05rem solid #F0F0F6;
+    width: 4.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Roboto';
+    text-align: right;
+    padding-right: 1rem;
+}
+.time dl dd span.dan{
+    position: absolute;
+    bottom: .35rem;
+    right: 0;
+    font-size: .7rem;
+}
+.time .btn_wrap{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .35rem .5rem;
+    background-color: #fff;
+    box-shadow: 0 -.05rem .15rem #00000029;
+}
+.time .btn_wrap button{
+    background-color: #0176F9;
+    height: 2.3rem;
+    width: 100%;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: .3rem;
+}
+
+
+
+
+.coupon {
+    margin-top: 1.5rem;
+}
+.coupon ul li{
+    width: 100%;
+    display: flex;
+    padding: 0.6rem;
+}
+.coupon ul li .coupon_name{
+    font-size: 0.8rem;
+    font-weight: 900;
+    line-height: 1.2rem;
+    
+}
+.coupon ul li .per{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #292D77;
+    margin-left: 0.5rem;
+    line-height: 1.2rem;
+}
+.coupon .btn_wrap{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .35rem .5rem;
+    background-color: #fff;
+    box-shadow: 0 -.05rem .15rem #00000029;
+}
+.coupon .btn_wrap button{
+    background-color: #0176F9;
+    height: 2.3rem;
+    width: 100%;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: .3rem;
+}
+
+
+
+
+
+
+
+.coupon_li_pop{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+}
+
+.coupon_li_pop .title_header{
+    width: 100%;
+    height: 2rem;
+    background-color: #292D77;
+    position: relative;
+}
+.coupon_li_pop .title_header .title{
+    text-align: center;
+    color: #fff;
+    line-height: 2rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+.coupon_li_pop .title_header .back_arrow{
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top:0.4rem;
+    left: 0.6rem;
+}
+
+.coupon_li_pop  .title_header .back_arrow img#back{
+    width: 0.55rem;
+    margin: 0.15rem 0 0;
+    display: block;
+}
+.coupon_li_pop .inner{
+    padding-top: 1.3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.coupon_li_pop input[type="radio"] + label{
+    background-image: none;
+    padding: 0 0 0.3rem;
+    margin: 0 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+    line-height: 1.2rem;
+}
+.coupon_checked{
+    border-bottom: 0.1rem solid #292D77;
+}
+.coupon_li_pop .inner .tab_wrap{
+    width: 100%;
+    padding: 1.5rem 0.6rem;
+}
+.coupon_li_pop .inner .tab_wrap input{
+    width: 100%;
+    height: 2.7rem;
+    border: 0.05rem solid #f0f0f6;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    text-align: right;
+    padding: 0 0.6rem;
+}
+.coupon_li_pop .inner .tab_wrap input::placeholder{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #dbdbdb;
+}
+.coupon_li_pop .inner .input_wrap{
+    position: relative;
+}
+.coupon_li_pop .inner .tab_wrap input.price{
+    padding-right: 1.6rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+.coupon_li_pop .inner .input_wrap .dan{
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 900;
+    top: 0.9rem;
+    right: 0.6rem;
+}
+.coupon_li_pop .btn_wrap{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: .35rem .5rem;
+    background-color: #fff;
+    box-shadow: 0 -.05rem .15rem #00000029;
+}
+.coupon_li_pop .btn_wrap button{
+    background-color: #0176F9;
+    height: 2.3rem;
+    width: 100%;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: .3rem;
+}

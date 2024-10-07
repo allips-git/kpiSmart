@@ -1,0 +1,204 @@
+.content h4 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#left-component {
+	width: 25%;
+}
+
+#left-component .pretty-split-pane-component-inner {
+	min-width:330px;
+}
+
+#vertical-divider {
+	left: 25%;
+}
+
+#right-component {
+	left: 25%;
+}
+
+#right-component  .pretty-split-pane-component-inner {
+	min-width:500px	
+}
+
+.h-scroll {
+	height: 595px;
+	height:-webkit-calc(100% - 115px);
+	height:-moz-calc(100% - 115px);
+	height:calc(100% - 115px)
+}
+
+
+
+.input-zone {
+	height:600px;
+	height:calc(100% - 90px);
+	height:-webkit-calc(100% - 90px);
+	height:-moz-calc(100% - 90px);
+}
+
+.input-zone .form-group{
+	margin-bottom:30px;
+}
+
+.form-group02 {
+	height:480px;
+	height:-webkit-calc(100% - 110px);
+	height:-moz-calc(100% - 110px);
+	height:calc(100% - 110px);
+	background-color:#fff;
+}
+.form-group02 dd.gubun{
+	padding-top:10px;
+}
+.btn-box{
+	margin-top:10px;
+	text-align:center;
+}
+
+
+/* 메뉴추가css */
+
+.pro_li {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 699px !Important;
+	height: 499px;
+
+}
+
+.pro_li .title {
+	padding:15px 0;
+}
+
+.pro_li h4{
+	margin-bottom:7px;
+}
+
+.pro_li .left-box{
+	width:45%;
+	padding:15px;
+	height:400px;
+}
+
+.pro_li .right-box{
+	width:55%;
+	padding:15px 15px 15px 0;
+	height:400px;
+}
+
+.pro_li .left-box dt{
+	width:25%;
+	font-size:14px;
+}
+
+.pro_li .left-box dd{
+	width:75%;
+}
+
+.pro_li .left-box input{
+	margin-right:5px;
+}
+
+.pro_li h4::before{
+	content:'';
+	display:inline-block;
+	width:5px;
+	height:12px;
+	margin-right:5px;
+	background-color:black;
+}
+
+.pro_li .list{
+	height:360px;
+	overflow:auto;
+}
+
+/* 영업사원관리 css */
+
+.sales_p #left-component {
+	width: 300px;
+}
+
+.sales_p #left-component .pretty-split-pane-component-inner {
+	min-width:280px;
+	
+}
+
+.sales_p #vertical-divider {
+	left: 300px;
+	
+}
+
+.sales_p #right-component {
+	left: 300px;	
+}
+
+.sales_p #right-component  .pretty-split-pane-component-inner {
+	min-width:850px;
+}
+
+.sales_p .dl-height{
+	background-color:#fff;
+	height:578px;
+	height:-webkit-calc(100% - 1px);
+	height:-moz-calc(100% - 1px);
+	height:calc(100% - 1Px);
+}
+
+.sales_p .input-zone {
+	width: 100%;
+	height:580px;
+	height:-webkit-calc(100% - 80px);
+	height:-moz-calc(100% - 80px);
+	height:calc(100% - 80px);
+}
+
+.sales_p .input-zone .dl-height dl dt{
+	padding-left: 25px !important;
+}
+.sales_p .input-zone .dl-height dl dt.important{
+	padding-left: 10px !important;
+}
+
+.important::before{
+	content:'*';
+	color:#FF9BA1;
+	font-weight:bold;
+	vertical-align:top;
+	padding-right: 0px;
+}
+
+#dv_in, #dv_up{
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+/* 테이블 thead top고정 */
+
+.table-sor table {
+	width:100%;
+	border-top:0px;
+}
+
+.table-sor table thead tr th{
+	border-top:1px solid #ccc;
+}
+
+.table-sor {
+	height:605px;
+	height: -webkit-calc(100% - 115px);
+	height: -moz-calc(100% - 115px);
+	height: calc(100% - 115px);
+	overflow: auto;
+	background-color: #fff;
+}
+
+.fixedHeader{
+	position: sticky;
+	top:0;
+}
+

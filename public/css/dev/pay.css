@@ -1,0 +1,574 @@
+/* acc css */
+
+
+
+.pay .input-zone .before {
+	position:absolute;
+	left: 10px;
+	right: 10px;
+	top: 0;
+	height: 100px;
+	line-height:100px;
+	text-align:center;
+	font-size:13px;
+	border:1px solid #d5d5d5;
+	background-color:#efefef
+}
+
+.input-zone dd.radio {
+	padding-top: 10px;
+}
+
+
+.input-zone .sub-title {
+	font-size:14px;
+	padding: 10px;
+	background-color:#fff
+}
+
+.input-zone .sub-title::before {
+	content:'';
+	display:inline-block;
+	width: 3px;
+	height: 10px;
+	vertical-align:middle;
+	background-color:#333;
+	margin: -3px 5px 0 0;
+}
+
+.input-zone .phrases {
+    font-size: 10px;
+    color: #adadad;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+.input-zone .phrases strong {
+	color:#FF9BA1
+}
+
+
+.pay-table .sales {
+	color:blue
+}
+
+.pay-table .collect {
+	color:red
+}
+
+
+.w100p{
+	width: 100px !important
+}
+.w120p{
+	width: 120px !important
+}
+
+/* 2020-06-18 - 새로운 레이아웃 추가 */
+.pay .split-pane{
+	height: calc(100% - 130px) !important;
+}
+.pay #left-component {
+	width: 420px
+}
+
+.pay #left-component .pretty-split-pane-component-inner {
+	min-width:400px;
+}
+
+.pay #vertical-divider {
+	left:420px;
+}
+
+.pay #right-component {
+	left: 420px;
+	
+}
+
+
+.pretty-split-pane-component-inner {
+	padding: 0;
+	background-color:transparent;
+	border:none
+}
+.pay .input-zone {
+	width: 100%;
+	height:600px;
+	height:-webkit-calc(100% - 40px);
+	height:-moz-calc(100% - 40px);
+	height:calc(100% - 40px)
+}
+.pay .dl-height {
+	height:590px;
+	height: -webkit-calc(100% - 54px);
+	height: -moz-calc(100% - 54px);
+	height: calc(100% - 54px);
+}
+.pay .table-zone{
+	height: -webkit-calc(100% - 55px);
+	height: -moz-calc(100% - 55px);
+	height:calc(100% - 55px);
+}
+.pay .h-scroll{
+	width: 1900px;
+	height: calc(100% - 25px);
+}
+.pay .table_out{
+	overflow-x: auto;
+	height: 540px;
+	height: -webkit-calc(100% - 65px);
+	height: -moz-calc(100% - 65px);
+	height: calc(100% - 65px);
+}
+.pay .n-scroll{
+	width: 1900px;
+}
+
+
+/* 스크롤바 수정 */
+.pay .table_out::-webkit-scrollbar{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.pay .table_out::-webkit-scrollbar-thumb{
+	width:12px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.pay .table_out::-webkit-scrollbar-track{
+	width:12px;
+	background-color: #f2f2f2;
+}
+
+.input-zone {
+	height:600px;
+	height: -webkit-calc(100% - 40px);
+	height: -moz-calc(100% - 40px);
+	height: calc(100% - 40px);
+}
+
+
+.input-zone .after {
+	height: 100%;
+}
+
+.table-zone {
+	height: -webkit-calc(100% - 40px);
+	height: -moz-calc(100% - 40px);
+	height:calc(100% - 40px);
+}
+
+.h-scroll {
+	height: 560px;
+	height: -webkit-calc(100% - 110px);
+	height: -moz-calc(100% - 110px);
+	height: calc(100% - 110px)
+}
+
+.input-zone dt{
+	vertical-align: middle;
+	padding:12px 7px;
+}
+
+.input-zone dd{
+	padding:7px 7px;
+}
+
+#dv_in{
+	text-align:center;
+}
+#dv_up{
+	width:100%;
+	padding:0 33%;
+	text-align:center;
+}
+
+
+/* ---------- tax ---------- */
+
+
+.tax .h-scroll {
+	height:555px;
+	height:-webkit-calc(100% - 130px);
+	height:-moz-calc(100% - 130px);
+	height:calc(100% - 130px)
+}
+
+
+.tax .dl-height {
+	background-color:#fff;
+	height:580px;
+	height:-webkit-calc(100% - 20px);
+	height:-moz-calc(100% - 20px);
+	height:calc(100% - 20px)
+}
+
+
+.tax #left-component {
+	width: 25%;
+}
+
+.tax #left-component .pretty-split-pane-component-inner {
+	min-width:300px;
+}
+
+.tax #vertical-divider {
+	left:25%;
+}
+
+.tax #right-component {
+	left: 25%;
+	
+}
+
+.tax #right-component  .pretty-split-pane-component-inner {
+	min-width:1150px;
+}
+
+
+.input-zone {
+	width: 100%;
+	height:615px;
+	height:-webkit-calc(100% - 70px);
+	height:-moz-calc(100% - 70px);
+	height:calc(100% - 70px)
+}
+.input-zone form {
+	height: 100%;
+}
+
+
+.input-zone dd input[type='number'],
+.input-zone dd input[type='text'],
+.input-zone dd select {
+	display:block;
+	height: 25px;
+	width: 100%;
+}
+
+.input-zone dd span {
+	font-size:11px;
+	height: 25px;
+	line-height:25px;
+	text-align:center
+}
+
+.input-zone dd.ws input,
+.input-zone dd.ws span,
+.input-zone dd.ws button {
+	float:left;
+	margin-right: 5px;
+}
+
+.input-zone dd .datepicker{
+	float:left;
+}
+.input-zone dl dd{
+	line-height:25px;
+}
+
+.disabled-cover {
+	position:absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(255,255,255,.7);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.tax .table-zone {
+	height: -webkit-calc(100% - 20px);
+	height: -moz-calc(100% - 20px);
+	height:calc(100% - 20px)
+}
+.tax #dv_in,
+.tax #dv_up button{
+	margin-top:10px;
+}
+
+/* ---------- prod_process ---------- */
+.prod .h-scroll {
+	height:555px;
+	height:-webkit-calc(100% - 130px);
+	height:-moz-calc(100% - 130px);
+	height:calc(100% - 130px)
+}
+
+
+.prod .dl-height {
+	background-color:#fff;
+	height:580px;
+	height:-webkit-calc(100% - 20px);
+	height:-moz-calc(100% - 20px);
+	height:calc(100% - 20px)
+}
+
+
+.prod #left-component {
+	width: 25%;
+}
+
+.prod #left-component .pretty-split-pane-component-inner {
+	min-width:300px;
+}
+
+.prod #vertical-divider {
+	left:25%;
+}
+
+.prod #right-component {
+	left: 25%;
+	
+}
+
+.prod #right-component  .pretty-split-pane-component-inner {
+	min-width:1150px;
+}
+
+.prod .table-zone {
+	height: -webkit-calc(100% - 20px);
+	height: -moz-calc(100% - 20px);
+	height:calc(100% - 20px)
+}
+.prod #dv_in,
+.prod #dv_up button{
+	margin-top:10px;
+}
+
+/* popup */
+
+/* .pay-popup .top-menu {
+	position:static;
+	padding-top: 7px;
+} */
+
+.pay-popup {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 800px !important;
+	height: 499px !important;
+}
+
+.pay-popup-s {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 650px !important;
+	height: 449px !important;
+}
+
+.pay-popup .content {
+	padding-top: 60px;
+}
+
+.pay-popup .top-menu label {
+	font-size:14px;
+	margin-right: 5px;
+}
+
+.pay-popup .top-section strong {
+	font-size:20px
+}
+
+.pay-popup .top-section span {
+	font-size:12px;
+	position: absolute;
+	top: 5px;
+}
+
+.pay-popup .top-section span.page {
+    left: 0;
+}
+
+.pay-popup .top-section span.date {
+    right: 0;
+}
+
+.pay-popup .bottom-section {
+	font-size:12px;
+	text-align:left;
+	margin-bottom: 10px;
+}
+
+.pay .pay-table tbody td.green span{
+	font-size:12px;
+	color:#0E8E0B;
+	border: 1px solid #11AA0D;
+	padding:1px 3px;
+}
+
+.pay .pay-table tbody td.red span{
+	font-size:12px;
+	border: 1px solid red;
+	padding:1px 3px;
+}
+
+.pay .pay-table tbody td.blue span{
+	font-size:12px;
+	border: 1px solid blue;
+	padding:1px 3px;
+	color:blue;
+}
+
+/* 금일수금내역 팝업 */
+
+
+.day_li {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 1000px !important;
+
+}
+
+.day_li .title {
+	padding:15px 0;
+}
+
+.day_li .inner{
+	width:100%;
+	padding:20px 20px 48px ;
+	overflow:auto;
+}
+.day_li .h-scroll{
+	height:497px;
+	background-color: #eee;
+}
+
+
+
+.day_li .pagination{
+	text-align: center !important;
+}
+
+.day_li .pagination>div>div{
+	float: none;
+}
+
+.day_li .pagination ul{
+	float: none;
+	display: inline-block;
+}
+
+.pay .input-zone dt{
+	width: 90px;
+	padding: 5px 10px;
+	height: 30px;
+}
+.pay .input-zone dt.nomportant{
+	padding-left: 13px;
+}
+.pay .input-zone dt.important{
+	padding-left: 10px;
+}
+.pay .input-zone dd{
+	width: calc(100% - 90px);
+	padding: 0px 5px;
+	height: 30px;
+	line-height: 28px;
+}
+.pay .input-zone dd.half{
+	width: calc(50% - 90px);
+}
+.pay .input-zone dd input[type="text"],
+.pay .input-zone dd input[type="number"],
+.pay .input-zone dd select{
+	height: 21px;
+	display: inline-block;
+	float: none;
+}
+
+.pay .input-zone .calenderImg {
+    width: 21px !important;
+    height: 21px !important
+}
+
+.pay .search-box{
+    border-top: 1px solid #b5b5b5;
+    border-bottom: 1px solid #b5b5b5 !important;
+    height: 66px;
+}
+.pay .search-box dd select{
+    padding-left: 3px;
+}
+.inner-search{
+    width: 40%;
+    float: left;
+}
+.pay .search-box dt{
+    padding: 0;
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 0;
+    border-top: 0;
+
+}
+.pay .search-box dd{
+    border-top: 0;
+    border-bottom: 0;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+.pay .search_btn{
+    width: 60%;
+    border-left: 1px solid #ddd;
+    float: left;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 30px;
+    background-color: #fff;
+}
+
+.pay .search_btn button{
+	height: 32px !important;
+}
+.pay .search-box dl:first-child dd{
+	line-height: 34px !important;
+}
+.pay .search-box dl:first-child input[type="radio"]+label{
+    border: 1px solid #d5d5d5;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 4px;
+    line-height: 24px;
+    height: 24px;
+    background-image: none;
+    text-align: center;
+
+}
+.pay .search-box dl:first-child input[type="radio"]:checked + label{
+    background-color: #eee;
+}
+
+.pay .paging-div{
+	padding: 10px 0 0 0;
+}
+.pay .dl-box div{
+	width: calc(100% - 90px);
+}
+.input-zone .float dt,
+.input-zone .float dd {
+	float:left;
+	border-bottom: 0;
+}
+.input-zone .float dd.first {
+	width: 115px;
+}
+
+.input-zone .float dd.second {
+	width: calc(100% - 295px);
+	font-size: 11px !important;
+}
+.col_ty{
+	background-color: #fff !important;
+	border-bottom: 1px solid #d5d5d5 !important;
+}
+.no_bank{
+	color: #ff0000;
+	display: inline-block;
+	width: calc(100% - 220px);
+	font-size: 12px;
+}

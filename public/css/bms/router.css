@@ -1,0 +1,326 @@
+.router #left-component {
+	width: 380px;
+	
+}
+
+.router #left-component .pretty-split-pane-component-inner {
+	min-width:360px;
+	
+}
+
+.router #vertical-divider {
+	left:380px;
+	
+}
+
+.router #right-component {
+	left: 380px;
+}
+
+.router #right-component  .pretty-split-pane-component-inner {
+	min-width:1075px;
+    border: 1px solid red;
+	overflow-x:auto
+}
+
+.router .input-zone{
+    height: calc(100% - 82px);
+    background-color: #fff;
+}
+
+.router .input-zone dt{
+    width: 90px;
+}
+
+.router .input-zone dd{
+    width: calc(100% - 90px);
+}
+.router .input-zone dd input[type='checkbox']{
+    background-color: #45ADF9;
+}
+
+.router .input-zone dd.radiochk{
+    padding-top: 10px;
+}
+.router .input-zone dl.bgo{
+    height: 120px;
+}
+
+.router .input-zone dl.bgo dt{
+    line-height: 85px;
+    height: 130px;
+}
+.router .input-zone dl.bgo dd{
+    height: 130px;
+}
+.router .input-zone dl.bgo textarea{
+    height: 116px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px;
+}
+.router .input-zone dd.half{
+	width: calc(50% - 90px);
+}
+.router .input-zone .ddchk{
+    padding-top: 10px;
+}
+.router .input-zone .btn-wrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.router .first-table{
+    width: 100%;
+    overflow-x: auto;
+}
+.router .first-table .n-scroll{
+    min-width: 1800px !important;
+}
+
+.router .first-table .h-scroll{
+    min-width: 1800px !important;
+    height: calc(100vh - 687px)
+}
+
+.router .first-table .h-scroll thead tr th{
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+.router .first-table .tail-box{
+    min-width: 1800px !important;
+}
+
+
+
+.router .second-table{
+    width: 100%;
+    overflow-x: auto;
+}
+.router .second-table .n-scroll{
+    min-width: 1800px !important;
+}
+
+.router .second-table .h-scroll{
+    min-width: 1800px !important;
+    height: 257px;
+}
+.router .second-table .h-scroll thead tr th{
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+.router .second-table .tail-box{
+    min-width: 1800px !important;
+}
+
+
+
+
+/* 스크롤바 수정 */
+.first-table::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.first-table::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.first-table::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.second-table::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.second-table::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.second-table::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 22px !important;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 21px !important;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 17px;
+	left: 4px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #45ADF9;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #45ADF9;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(36px);
+	-ms-transform: translateX(36px);
+	transform: translateX(36px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 28px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+  .offtxt{
+	  color: #777;
+	  font-size: 13px;
+	  width: 100%;
+	  position: relative;
+	  right: 15px;
+	  top: 2px;
+	  text-align: right;
+	  display: inline-block;
+	  transition: .4s;
+      cursor: pointer;
+  }
+  .ontxt{
+	  color: #fff;
+	  font-size: 13px;
+	  width: 100%;
+	  position: relative;
+	  top: 1px;
+	  left: 15px;
+	  text-align: left;
+	  display: none;
+	  height: 10px;
+	  transition: .4s;
+      cursor: pointer;
+  }
+  input:checked ~ .offtxt{
+	  display: none;
+  }
+  
+  input:checked ~ .ontxt{
+	display: inline-block;
+}
+
+.router .tail-box{
+	text-align: left;
+}
+
+.router .nomportant{
+	padding-left:20px;
+}
+
+.router .disable{
+	color:#CCCCCC;
+}
+.router .sp_item{
+	width:100%;
+	text-align:center;
+	padding:9px 0;
+	display:block;
+	background-color:#eee;
+	font-size: 12px;
+	font-weight:bold;
+	color:red;
+}
+.router button.red:hover{
+	background-color: #c72636;
+}
+
+
+
+/* 절차추가 팝업 */
+
+.router_in_pop {
+	margin: 0 !important;
+	display:none;
+	width:370px !important;
+}
+.router_in_pop dt{
+	width: 100px !important;
+}
+.router_in_pop dd{
+	width: calc(100% - 100px) !important;
+}
+.router_in_pop .bgo dt{
+    height: 124px;
+    line-height: 124px;
+}
+.router_in_pop .bgo dd{
+    height: 124px;
+    padding: 0;
+}
+.router_in_pop .bgo dd textarea{
+    height: 120px;
+    margin: 0;
+    padding: 5px;
+}
+.router_in_pop .searchbox{
+    margin-bottom: 10px;
+}
+.router_in_pop .title .b-close {
+    top: 8px !important;
+}
+.router_in_pop .phrases{
+    padding: 0;
+}
+.router_in_pop input[type="checkbox"] + label{
+	padding-left: 17px;
+}
+.router_in_pop .check_dd{
+	padding-top: 3px;
+}
+.router_in_pop .check_dd select{
+	margin-top: -3px !important;
+}
+.router_in_pop dd.no_list{
+	background-color: #eee;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+}

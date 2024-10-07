@@ -1,0 +1,21 @@
+.biz-li-pop {
+	margin: 0 !important;
+	display:none;
+	width:1000px !important;
+	height: 590px;
+}
+.biz-li-pop .table-wrap{
+	height: 401px;
+	background-color: #f3f3f3;
+}
+.biz-li-pop .searchbox{
+	margin-bottom: 10px;
+}
+.biz-li-pop .title .b-close {
+	top: 8px !important;
+}
+.biz-li-pop .pagination {
+	position:relative !important;
+	width: 90%;
+	width: calc( 100% - 20px );
+}

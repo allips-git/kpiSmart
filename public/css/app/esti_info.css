@@ -1,0 +1,843 @@
+.esti_info{
+    /* padding-top: 0 !important; */
+    min-height: 100vh;
+    position: relative;
+    padding: 0 0.8rem 5rem;
+}
+.esti_info .list_zone{
+    position: relative;
+    border-bottom: .05rem solid #DBDBDB;
+    margin-top:4rem;
+}
+
+.esti_info .top_btns{
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 .05rem .3rem #0000001F;
+    padding: 2.1rem .9rem .4rem;
+    display: flex;
+    justify-content: right;
+    border-bottom: .05rem solid #E5E5EC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 7;
+}
+.esti_info .add_size{
+    padding: 0 0.5rem;
+    height: 1.5rem;
+    background-color: #AEB5BB;
+    color: #fff;
+    font-size: .6rem;
+    border-radius: .1rem;
+    margin-top: .4rem;
+    font-weight: 700 !important;
+    margin-right: .5rem;
+}
+.esti_info .add_prod{
+    padding: 0 0.5rem;
+    height: 1.5rem;
+    background-color: #0176F9;
+    color: #fff;
+    font-size: .6rem;
+    border-radius: .1rem;
+    margin-top: .4rem;
+    font-weight: 700 !important;
+}
+.esti_info .list_zone .section{
+    /* padding: 0 .8rem; */
+    margin-bottom: 1.3rem;
+}
+.esti_info .list_zone h3{
+    font-size: .7rem;
+    font-weight: 500;
+    height: 1.7rem;
+    line-height: 1.8rem;
+    padding-left: .8rem;
+    background-color: #F5F5F5;
+}
+.esti_info .list_zone .section ul{
+    border: .05rem solid #E5E5EC;
+    background-color: #fff;
+    border-radius: .2rem;
+    box-shadow: 0 .05rem .3rem #0000000F;
+    overflow: hidden;
+}
+.esti_info .list_zone .section ul li {
+    width: 100%;
+    padding: 1.3rem 0 .9rem;
+    position: relative;
+    border-top: .05rem solid #E5E5EC;
+}
+.esti_info .section ul li .top{
+    margin-bottom: .6rem;
+    padding: 0 .8rem;
+}
+.esti_info .section ul li .top .biz_name{
+    font-size: .6rem;
+    line-height: .7rem;
+    width: calc(100% - 7rem);
+    color: #999;
+}
+.esti_info .section ul li.size .top .biz_name.red{
+    color: #dc0000;
+}
+.esti_info .section ul li.size .middle{
+    height: 2rem;
+}
+.esti_info .section ul li .top .btns{
+    height: 1.1rem;
+    display: flex;
+    line-height: 1.1rem;
+    position: absolute;
+    right: .65rem;
+    top: .7rem;
+}
+.esti_info .section .top .btns button{
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: .55rem;
+    font-weight: 400;
+    border: .05rem solid #E5E5EC;
+    border-radius: .1rem;
+}
+.esti_info .section .top .btns button.delete{
+    width: 2.6rem;
+    color: #DC0000;
+}
+.esti_info .section .top .btns button.modi{
+    width: 2.6rem;
+    color: #FF7700;
+    margin-left:.6rem;
+}
+.esti_info .section .middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .9rem;
+    line-height: .82rem !important;
+    height: .8rem !important;
+    padding: 0 .8rem;
+}
+.esti_info .section .middle p.prod_name{
+    font-size: .65rem;
+    width: calc(100% - 4.5rem);
+    line-height: .95rem;
+    height: .95rem;
+}
+.esti_info .section .middle p.prod_name span{
+    color: #0176F9;
+    font-size: .65rem;
+    line-height: .75rem;
+}
+.esti_info .section .middle p.prod_price{
+    font-size: .7rem;
+    text-align: right;
+    height: .8rem;
+    line-height: .82rem;
+    font-weight: 500;
+}
+.esti_info .section .middle p.prod_price span{
+    font-size: .7rem;
+    font-weight: 500;
+    font-family: 'Roboto';
+    letter-spacing: 0 !important;
+    height: .8rem;
+    line-height: .82rem;
+}
+.esti_info .section .bottom{
+    display: flex;
+    justify-content: center;
+}
+.esti_info .section .bottom .box{
+    width: 18.5%;
+    text-align: center;
+    line-height: .55rem;
+}
+.esti_info .section .bottom .box span{
+    font-size: .5rem;
+    color: #999999;
+    line-height: .6rem;
+}
+.esti_info .section .bottom .box p{
+    font-size: .65rem;
+    font-weight: 500;
+    font-family: 'Roboto';
+    letter-spacing: 0 !important;
+    line-height: .75rem !important;
+    margin-top: .25rem;
+}
+.esti_info .section .bottom .box .hb{
+    font-size: .55rem;
+}
+.esti_info .section .option {
+    margin-top: .5rem;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 .8rem
+}
+.esti_info .section .option p{
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0 .4rem;
+    background-color: #d1d3d4;
+    font-size: .5rem;
+    color: #fff;
+    border-radius: .1rem;
+    margin-right: .4rem;
+    margin-top: .3rem;
+}
+.esti_info .section dl.g_color{
+    margin-top: .8rem;
+    color: #c1c1c1;
+}
+.esti_info .section dl.g_color dt,
+.esti_info .section dl.g_color dd{
+    font-size: .6rem;
+    line-height: .7rem;
+}
+.esti_info .price_zone{
+    border-top: .4rem solid #F5F5F5;
+    /* padding: 0 .8rem; */
+}
+.esti_info .price_zone .inner{
+    margin-top: 1.2rem;
+    border: 0.05rem solid #E5E5EC;
+    border-radius: .2rem;
+    padding: 0 .8rem;
+}
+.esti_info .price_zone h3{
+    font-size: .7rem;
+    line-height: .82rem;
+    padding: .9rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.esti_info .price_zone h3 span{
+    font-size: .6rem;
+    line-height: .7rem;
+    color: #c1c1c1;
+    padding-top: .05rem;
+}
+.esti_info .price_zone h3 span img{
+    width: .5rem;
+    margin-top: -.1rem;
+    margin-left: .2rem;
+    opacity: .6;
+}
+.esti_info .price_zone .price_top{
+    width: 100%;
+
+}
+.esti_info .price_zone .price_section01{
+    display: none;
+}
+.esti_info .price_zone dl.top_dl{
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    margin: 0.5rem 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.esti_info .price_zone dl.top_dl::after{display: none;}
+.esti_info .price_zone dl.top_dl dt{
+    font-size: .65rem;
+    line-height: .8rem;
+    font-weight: 500;
+}
+.esti_info .price_zone dl.top_dl dd{
+    font-size: .65rem;
+    font-weight: 500;
+    line-height: .8rem;
+}
+.esti_info .price_zone .price_section01 dl{
+    margin-bottom: .4rem;
+    height: 1.6rem;
+}
+.esti_info .price_zone dt{
+    height: 1.6rem;
+    line-height: 1.6rem;
+    font-size: .65rem;
+    color: #7D7C78;
+}
+.esti_info .price_zone .price_section01 dd{
+    display: flex;
+    justify-content: right;
+    width: calc(100% - 3.6rem);
+}
+.esti_info .price_zone .price_section01 dd .input_box{
+    height: 1.6rem;
+    width: 48%;
+    max-width: 6rem;
+    border: .05rem solid #E5E5EC;
+    border-radius: .2rem;
+    position: relative;
+    background-color: #fff;
+}
+.esti_info .price_zone .price_section01 dd .input_box input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-weight: 500;
+    font-family: 'Roboto';
+    padding-right: 1.1rem;
+    background-color: transparent;
+    text-align: right;
+    letter-spacing: 0 !important;
+    color: #dc0000;
+}
+.esti_info .price_zone .price_section01 dd .input_box input.blue{
+    color: #0176F9;
+}
+.esti_info .price_zone .price_section01 dd .input_box span.dan{
+    position: absolute;
+    right: .4rem;
+    top:.4rem;
+    font-size: .6rem;
+    color: #0176F9;
+}
+.esti_info .price_zone .price_section01 dd .input_box span.dan.red{
+    color: #dc0000;
+}
+.esti_info .price_zone .price_section01 dd .input_box input::placeholder{
+    font-size: .7rem;
+    color: #999;
+}
+.esti_info .price_zone .price_section01 dl:last-child{
+    margin-bottom: .5rem;
+}
+.T-left{
+    text-align: left !important;
+}
+
+.esti_info .price_zone .price_section02{
+    padding: .9rem 0 0;
+    background-color: #fff;
+    border-radius: .2rem;
+    margin-top: .9rem;
+    border-top: 0.05rem dashed #f0f0f6;
+}
+.esti_info .price_zone .price_section02 dl{
+    margin-bottom: .6rem;
+    height: .8rem;
+    line-height: .82rem;
+}
+.esti_info .price_zone .price_section02 dl dt{
+    font-size: .65rem;
+    height: .8rem;
+    line-height: .82rem;
+    color: #7d7c78;
+    position: relative;
+}
+.esti_info .price_zone .price_section02 dl dd{
+    font-size: .5rem;
+    line-height: .6rem;
+}
+.esti_info .price_zone .price_section02 dl dd span{
+    font-size: .7rem;
+    line-height: .82rem;
+    font-family: 'Roboto';
+    letter-spacing: 0 !important;
+    font-weight: 700;
+    margin-right: .1rem;
+}
+.esti_info .price_zone .price_section02 dl dd.discount{
+    color: #DC0000;
+}
+.esti_info .price_zone .price_section02 dl dd.discount span{
+    font-weight: 700;
+}
+.esti_info .price_zone .price_section02 dl:last-child{
+    margin-bottom: .82rem;
+}
+
+
+
+
+.esti_info .price_zone .price_section03{
+    padding: .77rem 0 1rem;
+    border-top: .05rem dashed #F0F0F6;
+}
+.esti_info .price_zone .price_section03 dl.top_dl{
+    margin-bottom: 1.9rem;
+    margin: 0;
+}
+.esti_info .price_zone .price_section03 dl.top_dl dt{
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: .95rem;
+    color: #000;
+}
+.esti_info .price_zone .price_section03 dl.top_dl dd{
+    font-size: .6rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+    color: #0176F9;
+}
+.esti_info .price_zone .price_section03 dl.top_dl dd span{
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+    margin-right: .1rem;
+    font-family: 'Roboto';
+}
+
+.esti_info .btn_wrap{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: .35rem .5rem;
+    box-shadow: 0 -.05rem .15rem #00000029;
+    background-color: #fff;
+}
+.esti_info .btn_wrap button{
+    height: 2.3rem;
+    font-size: .7rem;
+    border-radius: .15rem;
+    font-weight: 700;
+    display: inline-block;
+    width: calc(50% - .2rem)
+}
+.esti_info .btn_wrap button.gray{
+    background-color: #ebebeb !important;
+}
+.esti_info .btn_wrap button.blue{
+    background-color: #0176F9;
+    color: #fff;
+}
+
+
+
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 2rem;
+	height: .9rem !important;
+    margin-top: .1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: .2rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: .2rem !important;
+    margin-right: .25rem;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: .8rem;
+	width: .8rem;
+	left: 0;
+	bottom: calc(50% - .4rem);
+	background-color: #0176F9;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #9fccff;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 .05rem #0176f9;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(1.1rem);
+	-ms-transform: translateX(1.1rem);
+	transform: translateX(1.1rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 1.4rem;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+.offtxt{
+	color: #777;
+	font-size: .65rem;
+	width: 100%;
+	position: relative;
+	right: .75rem;
+	text-align: right;
+	display: inline-block;
+	transition: .4s;
+}
+.ontxt{
+	color: #fff;
+	font-size: .65rem;
+	width: 100%;
+	position: relative;
+	top: -.05rem;
+	left: .5rem;
+	text-align: left;
+	display: none;
+	height: .5rem;
+	transition: .4s;
+}
+input:checked ~ .offtxt{
+	display: none;
+}
+
+input:checked ~ .ontxt{
+	display: inline-block;
+}
+
+body.fixed{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.date_pop{
+    width: 100%;
+    display: none;
+    max-width: 25rem;
+    z-index: 10;
+}
+.date_pop .inner{
+    width: 100%;
+    position: absolute;
+    height: 23.5rem;
+    max-height: 23.5rem;
+    top: calc(100vh - 23.5rem) !important;
+    background-color: #fff;
+    overflow: auto;
+
+}
+.date_pop h5{
+    font-size: .8rem;
+    line-height: 1rem;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.date_pop .b-close{
+    position: absolute;
+    top: .9rem;
+    right: .8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #7D7C78;
+    font-family: 'Noto Sans KR';
+}
+.date_pop .first{
+    padding: 1rem .8rem 1.5rem;
+}
+.date_pop .first .date_box{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+}
+.date_pop .first .date_box p{
+    display: inline-block;
+    width: 5rem !important;
+    height: 2rem;
+    font-size: .65rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #7D7C78;
+}
+.date_pop .first .date_box p.impt::after{
+    content: '*';
+    color: #DC0000;
+    margin-left: .2rem;
+    display: inline-block;
+}
+.date_pop .first .date_box .gray{
+    background-color: #e5e5ec;
+}
+.date_pop .first .date_box .pick{
+    background-image: url(/public/img/app/tab02_1.png) !important;
+    background-size: 0.8rem;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+.date_pop .first .date_box .input_box{
+    width: calc(100% - 5rem);
+    height: 2rem;
+    border: .05rem solid #E5E5EC;
+    border-radius: .2rem;
+    padding: 0 .6rem;
+    font-size: .6rem;
+    letter-spacing: 0 !important;
+    line-height: 1.9rem;
+    background-color: #fff;
+}
+
+.date_pop .first .date_box .input_box.arw_box{
+    background-image: url(/public/img/gray_arrow_down.png);
+    background-size: 0.6rem;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.date_pop .first .date_box .input_box select{
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    font-size: .6rem;
+    padding: 0 !important;
+}
+.date_pop #deposit_memo{
+    width: 100%;
+    font-size: .6rem;
+    height: 100%;
+    padding-right: 0;
+}
+
+.date_pop dl.pay{
+    margin-bottom: .6rem;
+    line-height: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.date_pop dl.pay dt{
+    font-size: .7rem;
+    width: 5rem;
+    line-height: 2rem;
+    height: 2rem;
+    color: #7D7C78;
+}
+.date_pop dl.pay dd{
+    width: calc(100% - 5rem);
+    height: 2rem;
+    display: flex;
+    line-height: 2rem;
+    justify-content: space-between;
+}
+.date_pop .pay dd .input_box{
+    width: 100%;
+    height: 2rem;
+    border: .05rem solid #E5E5EC;
+    border-radius: .2rem;
+    position: relative;
+    background-color: #fff;
+}
+.date_pop dd .input_box input,
+.date_pop dd .input_box select{
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-size: .6rem;
+    background-color: transparent;
+    padding-right: 1rem;
+    float: left;
+}
+.date_pop dl::after{
+    display: none;
+}
+
+
+.date_pop .pay dd .input_box span.dan{
+    position: absolute;
+    right: .4rem;
+    top: 0.1rem;
+    height: 2rem;
+    font-size: .6rem;
+    color: #0176F9;
+    line-height: 1.9rem;
+}
+.date_pop .btn_wrap{
+    padding: 0.4rem 0.8rem 0.7rem;
+    width: 100%;
+    max-width: 25rem;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.16);
+}
+.date_pop .btn_wrap button{
+    height: 2.3rem;
+    font-size: .7rem;
+    font-weight: 700;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0.15rem;
+}
+.date_pop .btn_wrap button.gray{
+    background-color: #F1F1F5;
+}
+.date_pop .btn_wrap button.blue{
+    background-color: #0176F9;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+.discount_pop{
+    width: 14.8rem;
+    max-width: 25rem;
+    display: none;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+.discount_pop .inner{
+    padding: 0 .6rem;
+}
+.discount_pop h4{
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    margin-top: 1.8rem;
+    text-align: center;
+    margin-bottom: .6rem;
+}
+.discount_pop .inner >div{
+    margin-bottom: .65rem;
+    display: flex;
+}
+.discount_pop .inner div input + label{
+    width: 50%;
+    min-width: 3.4rem !important;
+    height: 1.8rem;
+    border: .05rem solid #E5E5EC;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    font-size: .7rem;
+    color: #111;
+    border-right: 0;
+    display: inline-block;
+}
+.discount_pop .inner div input:checked + label{
+    background-color: #0176F9;
+    color: #fff;
+}
+.discount_pop .inner .price_box{
+    width: 50%;
+    min-width: 6.9rem;
+    border: .05rem solid #E5E5EC;
+    height: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.discount_pop .inner .price_box input{
+    width: calc(100% - 1.5rem);
+    height: 100%;
+    border: 0;
+    text-align: right;
+}
+.discount_pop .inner .price_box span{
+    font-size: .6rem;
+    height: 1.8rem;
+    line-height: 1.7rem;
+    margin-right: .6rem;
+}
+.discount_pop .inner .text_box{
+    width: 100%;
+    height: 1.8rem;
+    border: .05rem solid #E5E5EC;
+}
+.discount_pop .inner .text_box input{
+    width: 100%;
+    height: 100%;
+    padding: 0 .55rem;
+    border: 0;
+}
+.discount_pop .inner .text_box input::placeholder{
+    font-size: .7rem;
+    color: #999;
+}
+.discount_pop .btn_wrap{
+    margin-top: 1.9rem;
+    display: flex;
+}
+.discount_pop .btn_wrap button{
+    width: 50%;
+    height: 2.4rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.discount_pop .btn_wrap button.blue{
+    background-color: #0176F9;
+    color: #fff;
+}
+
+
+
+
+/* 시간선택 팝업창 */
+.time_li_pop,
+.minutes_li_pop{
+    width: 18.5rem;
+    max-width: 20rem;
+    height: 14.5rem;
+    background-color: #fff;
+    display: none;
+    border-radius: 0.7rem;
+    padding: 2rem 1rem 2.5rem;
+    position: relative;
+}
+.time_li_pop .inner,
+.minutes_li_pop .inner{
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;
+    text-align: center;
+}
+.time_li_pop .inner ul li,
+.minutes_li_pop .inner ul li{
+    display: block;
+    position: relative;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+}

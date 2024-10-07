@@ -1,0 +1,429 @@
+
+/* pc css */
+@media all and (min-width:700px) and (max-width:2560px){
+    /* .header{border: 1px solid red;} */
+    .nopc{display: none !important;}
+    .contain{
+        padding-top: 3.1rem !important;
+        padding-left: 12.5rem;
+    }
+    .ord .search_zone{
+        margin: 2.6rem 0 0;
+        padding: 0 2.6rem;
+        display: flex ;
+        justify-content: left;
+        flex-direction: row-reverse;
+    }
+    .ord .search_zone .left{
+        width: 6.2rem;
+        height: 1.8rem;
+        border: 1px solid #e6e6e6;
+        background-color: #fafafa ;
+        border-radius: 0.2rem ;
+        margin-left: 1rem;
+    }
+    .ord .search_zone .right{
+        width: 12rem ;
+        height: 1.8rem;
+        border: 1px solid #e6e6e6;
+        background-color: #fafafa ;
+        border-radius: 0.2rem ;
+    }
+    .ord .search_zone input,
+    .ord .search_zone select{
+        width: 100%;
+        height: 100%;
+        color: #7D7C78;
+        font-size: 0.6rem;
+    }
+    .ord .search_zone input{
+        background-image: url(/public/img/app/search_icon.png);
+        background-size: 14px;
+        background-position:12px 48%;
+        background-repeat: no-repeat;
+        padding-left: 1.8rem;
+    }
+    .ord .search_zone input::placeholder{
+        font-size: 0.6rem;
+        color: #7D7C78;
+    }
+
+    .client_list .slide_zone{
+        display: none;
+    }
+
+    .client_list .add_client{
+        padding: 0 1rem;
+        height: 1.8rem;
+        line-height: 1.9rem;
+        border-radius: 0.2rem;
+        text-align: center;
+        background-color: #0176f9;
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        position: absolute;
+        top: 5.6rem;
+        right: 2.5rem;
+    }
+    .ord .list_zone{
+        width: 100%;
+        height: calc(100vh - 11.4rem);
+        border-bottom: 2px solid #DFDFDF;
+        margin-top: 1rem;
+        overflow: auto;
+    }
+    .ord .list_zone .list_head {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #bcbcc0;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+    }
+    .ord .list_zone .list_head li{
+        height: 2.5rem;
+        line-height: 2.5rem;
+        font-size: 0.7rem;
+        padding: 0 0.8rem;
+        list-style: none;
+    }
+    .ord .list_zone .pdr50{padding-right: 50px !important;}
+
+    .ord .list_zone ul.list_ul{
+        height: 100px;
+    }
+    .ord .list_zone ul li{
+        display: flex;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .ord .list_zone ul li .icon{
+        text-align: center;
+        width: 10%;
+        line-height: 2rem;
+    }
+    .ord .list_zone ul li .icon span{
+        display: inline-block;
+        padding:0 0.8rem ;
+        height: 1.3rem;
+        vertical-align: middle;
+        line-height: 1.4rem;
+        background-color: #0176f9;
+        color: #fff;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+
+    }
+    .ord .list_zone ul li .phone_num{
+        padding:0 0.8rem ;
+        font-size: 0.7rem;
+        color: #6C757D;
+    }
+    .ord .list_zone ul li .user {
+        display: flex;
+        width: 50%;
+        font-size: 0.7rem;
+        color: #6C757D;
+    }
+    .ord .list_zone ul li .user h5{
+        width: 20%;
+        padding: 0 0.8rem;
+        font-size: 0.7rem;
+        color: #6C757D;
+    }
+    .ord .list_zone ul li .user .add{
+        width: 80%;
+        color: #6C757D;
+        display: flex;
+    }
+    .ord .list_zone ul li .user .add span{
+        width: 50%;
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 0 0.8rem;
+    }
+    .ord .list_zone ul li .etc {
+        display: flex;
+        width: 30%;
+        color: #6C757D;
+    }
+    .ord .list_zone ul li .etc p{
+        width: 33.33%;
+        font-size: 0.7rem;
+        color: #6C757D;
+        padding: 0 0.8rem;
+    }
+    .ord .list_zone ul li .etc span{
+        font-size: 0.7rem;
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+/* moblie css */
+@media all and (min-width:0px) and (max-width:699px){
+.nomobile{display: none;}
+.client_list{
+    position: relative;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.client_list .search_zone{
+    background-color: #292D77;
+    padding: 0 0.6rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: fixed;
+    top: 2.1rem;
+    left: 0;
+    right: 0;
+    max-width: 25rem;
+    margin: 0 auto;
+    z-index: 9;
+}
+.client_list .search_zone .left{
+    width: 6.2rem;
+    margin-right: 0.6rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+}
+.client_list .search_zone .right{
+    width: calc(100% - 6.8rem);
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+}
+.client_list .search_zone select{
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+    color: #767676;
+    font-size: 0.6rem;
+}
+.client_list .search_zone input{
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+}
+.client_list .search_zone input{
+    background-image: url(/public/img/app/sc_icon.png);
+    background-position: 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 0.7rem;
+}
+.client_list .search_zone input::placeholder{
+    padding-left: 1.2rem;
+    font-size: 0.6rem;
+    color: #767676;
+}
+.client_list .search_zone input:focus{
+    background-image: none;
+}
+
+.client_list .list_head{
+    display: none;
+}
+.client_list .slide_zone{
+    width: 100%;
+    position: fixed;
+    top: 4.7rem;
+    overflow: hidden;
+    box-shadow: 0 .05rem .1rem #00000014;
+    background-color: #fff;
+    z-index: 99;
+}
+.client_list .slide_zone #menu_top{
+    padding: .6rem 0.8rem ;
+    width: 100%;
+    overflow-x: hidden;
+    overflow: auto;
+    -webkit-overflow-scrolling: auto;
+    -webkit-scrollbar: none;
+    -webkit-text-size-adjust: none;
+    -webkit-box-sizing: content-box;
+    -ms-overflow-style: none;
+    position: relative;
+    margin: 0 0 0;
+    -ms-touch-action: pan-x;
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+#menu_top .swiper-container2 {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    height: auto;
+}
+.swiper-container2 {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-wrapper2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.swiper-wrapper2 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+}
+#menu_top .swiper-wrapper2 li {
+    font-size: .55rem;
+    color: #C1C1C1;
+    width: auto;
+    padding: .25rem .5rem;
+    margin-right: .7rem;
+    border: .05rem solid #F2F2F7;
+    border-radius: 2rem;
+}
+#menu_top .swiper-wrapper2 li.active{
+    color: #0176f9;
+    border-color: #0176f9;
+    position: relative;
+}
+
+#menu_top .swiper-wrapper2 li:focus{
+    border: .05rem solid red;
+    color: red;
+    font-size: .6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+
+
+
+
+.client_list .list_zone{
+    padding: 5rem 0.6rem 0;
+}
+.client_list .list_zone ul{margin-top: 0.46rem;}
+.client_list .list_zone ul li{
+    padding: 0.4rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    /* border-bottom: 0.05rem solid #f1f0f5; */
+}
+.client_list .list_zone ul li .icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 2.4rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 0.55rem;
+    font-weight:700;
+}
+.client_list .list_zone ul li .icon span{
+    font-size: 0.55rem;
+}
+.client_list ul li .icon.sigong{
+    background-color: #233CF9;
+}
+.client_list ul li .icon.est{
+    background-color: #409AFF;
+}
+.client_list ul li .icon.as, .icon.cancle{
+    background-color: #FF718B;
+}
+.client_list ul li .icon.balju{
+    background-color: #0061FF;
+}
+.client_list ul li .icon.pay{
+    background-color: #292D77;
+}
+.client_list ul li .icon.com{
+    background-color: #EBEBEB;
+}
+.client_list ul li .icon.unreg{
+    background-color: #C2E4FF;
+}
+.client_list ul li .icon.contract{
+    background-color: #233CF9;
+}
+
+.client_list .list_zone li .user{
+    width: calc(100% - 8.4rem);
+    margin: 0 0.8rem;
+    padding-top: 0.4rem;
+    line-height: 1rem;
+}
+.client_list .list_zone li .user h5{
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: .82rem;
+}
+.client_list .list_zone li .user p span{
+    font-size: 0.5rem;
+    margin-top: 0.3rem;
+    line-height: 0.553rem;
+    color: #C1C1C1;
+}
+.client_list .list_zone li .etc{
+    width: 4.3rem;
+    text-align: right;
+    padding-top: 0.3rem;
+    font-weight: 500;
+}
+.client_list .list_zone li .etc p.date{
+    font-size: 0.55rem;
+    color: #C1C1C1;
+    font-weight: 400;
+}
+.client_list .list_zone li .etc p.price{
+    margin-top: .3rem;
+}
+.client_list .list_zone li .etc p.price span.nopc{
+    font-size: 0.65rem;
+}
+.client_list .list_zone li .etc p.price span{
+    font-size: 0.65rem;
+}
+.client_list .add_client{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 3.5rem;
+    text-align: center;
+    background-color: #292D77;
+    opacity: .8;
+    color: #fff;
+    font-size: 0.7rem;
+    position: fixed;
+    bottom: 7vh;
+    right: 1.5rem;
+}
+.client_list .no_client{
+    text-align: center;
+    font-size: 0.7rem;
+    color: #767676;
+    margin-top: 2.5rem;
+}
+
+}

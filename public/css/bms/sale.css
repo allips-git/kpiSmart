@@ -1,0 +1,1107 @@
+.container > .content{
+    height: auto;
+    background-color: #f5f5f8;
+}
+.sale{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding:1.5rem 1.875rem !important;
+    height: auto;
+    letter-spacing: -0.044rem;
+}
+
+.sale .section01,
+.sale .section02{
+    width: calc(50% - 0.438rem);
+    margin-bottom: 1.25rem;
+    height: 8.125rem;
+    min-width: 31.25rem;
+}
+
+.sale .section01{
+    background-color: #fff;
+    padding: 1rem 1.75rem;
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+
+}
+.sale .section01 .top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .75rem;
+    border-bottom: .125rem solid #EFF2F7;
+}
+.sale .section01 h3{
+    font-size: 1rem;
+    color: #111;
+    font-weight: 500;
+}
+.sale .section01 .search_btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale .section01 .search_btns button{
+    padding: 0 .75rem;
+    height: 2.25rem;
+    line-height: 2.188rem;
+    background-color: #999;
+    border-radius: .25rem;
+    font-size: .75rem;
+    color: #fff;
+    margin-left: 1.25rem;
+}
+.sale .section01 .search_btns button:hover{
+    background-color: #777;
+}
+.sale .section01 .search_btns button.blue:hover{
+    background-color: #026ee9;
+}
+
+.sale .section01 .bottom{
+    padding-top: .75rem;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.sale .section01 .input_line{
+    position: relative;
+    width: 31% !important;
+    background-color: #f5f5f8 !important;
+    border-radius: .25rem .25rem 0 0;
+}
+.sale .section01 .select_line{
+    width: 9.625rem !important;
+}
+
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.sale .section01 select,
+.sale .section01 input{
+    height: 2.125rem;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    color: #111;
+    width: 100%;
+    border-radius: .25rem .25rem 0 0;
+}
+.sale .section01 .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sale .section01 .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.sale .section01 input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+.sale .section02 .box_wrap{
+    display: flex; 
+    justify-content: space-between;
+}
+.sale .section02 .box{
+    width: 25%;
+    height: 8.125rem;
+    margin-right: 0.625rem;
+    background-color: #fff;
+    text-align: center;
+    display: table;
+	cursor: pointer;
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+}
+.sale .section02 .box04{
+    margin-right: 0;
+}
+.sale .section02 .box_txt{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sale .section02 .box p.count{
+    font-size: 1.375rem;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #0176f9;
+}
+
+.sale .section02 .box p.sub_title{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top:-0.125rem;
+}
+
+
+
+
+
+
+
+
+
+.sale .section03{
+    border-radius: .25rem;
+    background-color: #fff;
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    height: calc(100vh - 17.75rem);
+    /* padding: 0.875rem 1.375rem; */
+    position: relative;
+
+}
+.sale .section03 h3{
+    padding: 1.063rem 1.875rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-bottom: .938rem;
+}
+
+.order table{
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    border-style: none;
+    padding: 0;
+}
+.sale  .list_wrap{
+    height:100%;
+}
+.sale .h-scroll{
+    height: calc(100% - 7.5rem);
+    overflow: auto;
+}
+.sale table th{
+    background-image: none;
+    background-color: #fafafa;
+    color: #111;
+    font-size: 1rem;
+    height: 3.375rem;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    border: 1px solid #e5e5ec;
+    border-right: 0;
+    box-shadow: none;
+}
+
+.sale table td{
+    background-color: #fff !important;
+    height: 2.25rem;
+    color: #111;
+    font-size: .875rem;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border:0.063rem solid #E5E5EC;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+    cursor: pointer;
+}
+.sale table td.blue{
+    color: #0176f9;
+}
+.sale table td span.red{
+    color: #dc0000;
+    font-weight: 400;
+}
+
+.sale .section03 button.new_btn{
+    width: 12.5rem;
+    height: 3rem;
+    background-color: #0176f9;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    line-height: 2.5rem;
+}
+.sale .section03 button.new_btn:hover{
+    background-color: #026ee9;
+}
+
+.sale .section03 button.new_btn span{
+    font-size: 1.5rem;
+    vertical-align: top;
+    padding-top: 0;
+    display: inline-block;
+    margin-left: 0.313rem;
+}
+
+
+
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 2.5rem;
+	height: 1.125rem !important;
+    margin-top: .25rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: .313rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: .25rem !important;
+    margin-right: .313rem;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 1rem;
+	width: 1rem;
+	left: 0;
+	bottom: calc(50% - 0.5rem);
+	background-color: #f1f1f5;
+	-webkit-transition: .4s;
+	transition: .4s;
+    box-shadow: 0 0.125rem .188rem rgba(0,0,0,0.3);
+}
+
+input:checked + .slider {
+	background-color: #9fccff;
+}
+
+input:checked + .slider::before {
+	background-color: #0176F9;
+}
+input:focus + .slider {
+	box-shadow: 0 0 .063rem #0176f9;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(1.375rem);
+	-ms-transform: translateX(1.375rem);
+	transform: translateX(1.375rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 1.75rem;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+input:checked ~ .offtxt{
+	display: none;
+}
+
+input:checked ~ .ontxt{
+	display: inline-block;
+}
+.sale .section01 form{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* 거래처 등록  */
+.sale_pop{
+    display: none;
+    width: 76.25rem;
+    background-color: #fff;
+}
+.sale_pop form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale_pop .inner{
+    background-color: #fff;
+    position: relative;
+}
+.sale_pop .left,
+.sale_pop .middle,
+.sale_pop .right{
+    width: 30%;
+}
+.sale_pop .middle{
+    margin: 0 3.75rem;
+}
+.sale_pop .inner h3{
+    font-size: 1rem;
+    color: #111;
+    font-weight: 500;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+.sale_pop .inner h3.n_flex{
+    display: inline-block !important;
+}
+.sale_pop .inner h3 div{
+    font-size: 0.875rem;
+    line-height: 1.5rem !important;
+    font-weight: 400;
+    margin-top: -0.25rem;
+}
+.sale_pop .switch{
+    margin-left: 1.5rem;
+}
+.sale_pop .switch .slider{
+	top: .625rem;
+}
+.sale_pop .inner dl{
+    margin-bottom: .625rem;
+}
+.sale_pop .inner dl dt{
+    width: 8.625rem;
+    font-size: 0.875rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+}
+.sale_pop .inner dl dd{
+    width: calc(100% - 8.625rem);
+}
+
+.sale_pop .inner dl dt.impt::after{
+    content: '*';
+    display: inline-block;
+    color: #dc0000;
+    font-size: 0.875rem;
+    margin-left: .5rem;
+}
+
+
+
+
+
+
+.sale_pop dl dd input{
+    width: 100%;
+    height: 2.25rem;
+    background-color: #f8f8fa;
+    border: 0;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0;
+    box-shadow: 0;
+    font-size: 0.813rem;
+}
+.sale_pop dl dd select{
+    width: 100%;
+    height: 2.25rem;
+    background-color: #f8f8fa;
+    border: 0;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: #111;
+    font-size: 0.813rem;
+}
+
+.sale_pop dl dd input::placeholder{
+    font-size: 0.75rem;
+    color: #dbdbdb;
+}
+.sale_pop dl dd .input_line{
+    position: relative;
+    width: 100%;
+}
+.sale_pop dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sale_pop dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+.sale_pop dl dd span.unit{
+    position: absolute;
+    right: .625rem;
+    top: .625rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* 주소란 input칸 */
+.sale_pop dl.addr,
+.sale_pop dl.deliv{
+    display: flex;
+}
+.sale_pop dl.addr .input_line,
+.sale_pop dl.deliv .input_line{
+    width: calc(100% - 4.75rem);
+}
+.sale_pop dl.addr button,
+.sale_pop dl.deliv button{
+    width: 4.125rem;
+    height: 2.25rem;
+    background-color: #999;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    margin-left: .625rem;
+}
+
+
+.sale_pop dl.bgo dd textarea{
+    height: 4.5rem;
+    width: 100%;
+    font-size: 0.813rem;
+    padding: 0.25rem;
+}
+.sale_pop dl.bgo dd textarea:focus{
+    box-shadow: none !important;
+}
+.sale_pop dl.bgo dd .input_line{
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    background-color: #f8f8fa;
+}
+
+
+.sale_pop .photo_wrap{
+    margin-top: 1.875rem;
+    padding-top: 1rem;
+    border-top: 0.125rem solid #dbdbdb;
+}
+.sale_pop dl.bgo,
+.sale_pop .photo_wrap dl{
+    margin-bottom: 0;
+}
+
+.sale_pop .photo_wrap dt{
+    height: 1.25rem !important;
+    line-height: 1.25rem !important;
+}
+.sale_pop .photo_wrap dd{
+    display: flex;
+    justify-content: space-between;
+}
+.sale_pop .photo_wrap .photo{
+    width: 47%;
+    height: 5.375rem;
+    border: 0.063rem solid #CED4DA;
+    background-color: #f8f8fa;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+}
+.sale_pop .photo_wrap .photo p{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #707070;
+    text-align: center;
+    line-height: 5.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.sale_pop .photo_wrap .photo div.del{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #111;
+    display: none;
+    background-color: rgba(255,255,255,.7);
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    text-align: center;
+}
+.sale_pop .photo_wrap .photo div.del img{
+    width: 0.625rem;
+    height: auto;
+    text-align: center;
+    margin:0.313rem;
+}
+.sale_pop .photo_wrap .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.sale_pop .photo_wrap .photo:hover div.del{
+    display: block;
+}
+.sale_pop .right{
+    position: relative;
+}
+.sale_pop button.delete{
+    font-size: 0.875rem;
+    color: #fff;
+    width: 5.375rem;
+    height: 2.125rem;
+    border-radius: 0.25rem;
+    background-color: #dc0000;
+    position: absolute;
+    right: 1.625rem;
+    top: 0.75rem;
+    z-index: 999;
+}
+.sale_pop .right .bottom{
+    margin-top: 1.25rem;
+    padding-top: 1.875rem;
+    border-top: 0.125rem solid #DBDBDB;
+}
+.sale_pop .right .bottom h3{
+    margin-bottom: 1.5rem;
+}
+.sale_pop .right button.save_btn{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #0176f9;
+    border-radius: 0.25rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/* 배송지 관리 팝업창 */
+
+.addr_pop{
+    display: none;
+    width: 71rem;
+    background-color: #F5F5F8;
+}
+.addr_pop .inner{
+    padding: 1.125rem 1.5rem;
+    display: flex;
+}
+.addr_pop .inner form{
+    display: flex;
+}
+.addr_pop .inner h3{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+}
+.addr_pop .left{
+    width: 21.25rem;
+    background-color: #fff;
+    padding: 1.25rem 1.375rem 0;
+    height: 28.125rem;
+    position: relative;
+    border-radius: 0.25rem;
+}
+.addr_pop .left .input_zone{
+    margin-top: 1.125rem;
+}
+
+.addr_pop .left dl{
+    margin-bottom: 0.75rem;
+}
+.addr_pop .left dt{
+    width: 5.5rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    font-size: 0.875rem;
+}
+.addr_pop .left dd{
+    width: calc(100% - 5.5rem);
+}
+
+.addr_pop .left .input_line{
+    position: relative;
+    width:100% !important;
+    background-color: #f5f5f8 !important;
+    border-radius: .25rem .25rem 0 0;
+}
+
+.addr_pop .left select,
+.addr_pop .left input{
+    height: 2.125rem;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    color: #111;
+    width: 100%;
+    border-radius: 0;
+}
+.addr_pop .left .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.addr_pop .left .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.addr_pop .left button.blue{
+    width: 100%;
+    height: 3.5rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.25rem;
+}
+
+.addr_pop .right{
+    width: 45.25rem;
+    background-color: #fff;
+    margin-left: 1.5rem;
+    padding: 1.25rem 1.375rem 0;
+    height: 28.125rem;
+    border-radius: 0.25rem;
+}
+.addr_pop .right .list_zone{
+    margin-top: 1.375rem;
+    height: calc(100% - 3.75rem);
+    overflow: auto;
+}
+.addr_pop .right .list_zone{
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+.addr_pop .right .list_zone::-webkit-scrollbar{
+    display: none;
+}
+
+.addr_pop .right table td{
+    background-color: #fff !important;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.875rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+    padding: 0 0.625rem;
+}
+.addr_pop .right table td.edit,
+.addr_pop .right table td.delete{
+    color: #999;
+    font-size: 0.75rem;
+}
+.addr_pop .right table td input + label{
+    width: 1.25rem;
+    height: 1.25rem;
+    padding:0;
+    background-image: url(/public/img/app/chk_b.png);
+    background-size: 1.25rem;
+}
+.addr_pop .right table td input:checked + label{
+    background-image: url(/public/img/app/chked_b.png);
+    background-size: 1.25rem;
+}
+
+
+
+
+
+/* 매입거래처 화면 */
+.buying .section01{
+    width: 29.375rem !important;
+    min-width: 0;
+}
+.buying .section02{
+    width: calc(100% - 30.125rem) !important;
+    min-width: 0;
+}
+.buying .section01 button.blue{
+    background-color: #0176f9;
+}
+.buying .section01 .input_line{
+    width: 14.625rem !important;
+}
+.buying .section01 .select_line{
+    width: 9.625rem !important;
+}
+.buying .section03 table td button{
+    width: 6.25rem;
+    height: 1.625rem;
+    background-color: #999;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+.buying .section03 table td button:hover{
+    background-color: #777;
+}
+
+
+
+/* 매입거래처 팝업 */
+.buying_pop{
+    display: none;
+    width: 50.375rem;
+    background-color: #fff;
+    margin-top: 3.125rem !important;
+}
+.buying_pop .inner{
+    padding: 1.875rem 1.625rem 1.25rem;
+    background-color: #fff;
+    position: relative;
+}
+.buying_pop .inner form{
+    display: flex;
+    justify-content: space-between;
+}
+.buying_pop .left,
+.buying_pop .right{
+    width: calc(50% - 1.875rem)
+}
+.buying_pop .right{
+    position: relative;
+}
+.buying_pop .inner h3{
+    font-size: 1rem;
+    color: #111;
+    font-weight: 500;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+.buying_pop .inner h3.n_flex{
+    display: inline-block !important;
+}
+.buying_pop .inner h3 div{
+    font-size: 0.875rem;
+    line-height: 1.5rem !important;
+    font-weight: 400;
+    margin-top: -0.25rem;
+}
+.buying_pop .switch{
+    margin-left: 1.5rem;
+}
+.buying_pop .switch .slider{
+	top: .625rem;
+}
+
+.buying_pop .inner dl{
+    margin-bottom: 0.625rem;
+}
+.buying_pop .inner dt{
+    width: 8.625rem;
+    font-size: 0.875rem;
+    height: 2.25rem;
+    line-height: 2.25rem;
+}
+.buying_pop .inner dd{
+    width: calc(100% - 8.625rem);
+}
+
+.buying_pop .inner dl dt.impt::after{
+    content: '*';
+    display: inline-block;
+    color: #dc0000;
+    font-size: 0.875rem;
+    margin-left: .5rem;
+}
+
+.buying_pop dl dd input{
+    width: 100%;
+    height: 2.25rem;
+    background-color: #f8f8fa;
+    border: 0;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0;
+    box-shadow: 0;
+    font-size: 0.813rem;
+}
+.buying_pop dl dd select{
+    width: 100%;
+    height: 2.25rem;
+    background-color: #f8f8fa;
+    border: 0;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: #111;
+    font-size: 0.813rem;
+}
+
+.buying_pop dl dd input::placeholder{
+    font-size: 0.75rem;
+    color: #dbdbdb;
+}
+.buying_pop dl dd .input_line{
+    position: relative;
+    width: 100%;
+}
+.buying_pop dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.buying_pop dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+.buying_pop dl dd span.unit{
+    position: absolute;
+    right: .625rem;
+    top: .625rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* 주소란 input칸 */
+.buying_pop dl.addr,
+.buying_pop dl.deliv{
+    display: flex;
+}
+.buying_pop dl.addr .input_line,
+.buying_pop dl.deliv .input_line{
+    width: calc(100% - 4.75rem);
+}
+.buying_pop dl.addr button,
+.buying_pop dl.deliv button{
+    width: 4.125rem;
+    height: 2.25rem;
+    background-color: #999;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    margin-left: .625rem;
+}
+
+
+.buying_pop dl.bgo dd textarea{
+    height: 5.625rem;
+    width: 100%;
+    font-size: 0.813rem;
+    padding: 0.25rem;
+}
+.buying_pop dl.bgo dd textarea:focus{
+    box-shadow: none !important;
+}
+.buying_pop dl.bgo dd .input_line{
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    background-color: #f8f8fa;
+}
+
+.buying_pop .radio_dl dd{
+    display: flex;
+    justify-content: space-between;
+}
+.buying_pop dd input[type='radio'] + label{
+    width: auto;
+    background-image:url(/public/img/app/chk_b.png) ;
+    background-size: 1.25rem;
+    background-position: left;
+    height: 2.25rem;
+    padding-left: 2rem;
+    font-size: 0.875rem;
+    line-height: 2.25rem;
+
+}
+.buying_pop dd input[type='radio']:checked + label{
+    background-image: url(/public/img/app//chked_b.png);
+}
+
+
+.buying_pop .photo_wrap{
+    padding-top: 0.625rem;
+}
+.buying_pop dl.bgo,
+.buying_pop .photo_wrap dl{
+    margin-bottom: 0;
+}
+
+.buying_pop .photo_wrap dt{
+    height: 1.25rem !important;
+    line-height: 1.25rem !important;
+}
+.buying_pop .photo_wrap dd{
+    display: flex;
+    justify-content: space-between;
+}
+.buying_pop .photo_wrap .photo{
+    width: 47%;
+    height: 5.375rem;
+    border: 0.063rem solid #CED4DA;
+    background-color: #f8f8fa;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+
+}
+.buying_pop .photo_wrap .photo p{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #707070;
+    text-align: center;
+    line-height: 5.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.buying_pop .photo_wrap .photo div.del{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #111;
+    display: none;
+    background-color: rgba(255,255,255,.7);
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    text-align: center;
+}
+.buying_pop .photo_wrap .photo div.del img{
+    width: 0.625rem;
+    height: auto;
+    text-align: center;
+    margin:0.313rem;
+}
+.buying_pop .photo_wrap .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.buying_pop .photo_wrap .photo:hover div.del{
+    display: block;
+}
+
+.buying_pop .bottom{
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 0.125rem solid #dbdbdb;
+}
+.buying_pop .right button.save_btn{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #0176f9;
+    border-radius: 0.25rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.buying_pop button.biz_delete{
+    width: 5.375rem;
+    height: 2rem;
+    background-color: #dc0000;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    position: absolute;
+    top: 0.875rem;
+    right: 1.5rem;
+}

@@ -1,0 +1,39 @@
+/* 조회화면 css */
+
+.h-scroll{
+	height: 630px;
+	height: calc(100% - 170px);
+	height: -webkit-calc(100% - 170px);
+	height: -moz-calc(100% - 170px);
+	height: calc(100% - 170px);
+	background-color:#fff;
+}
+
+.h-scroll tr td:last-child{
+	padding-right: 23px;
+}
+
+.sp-gubun_1{
+	border-color:#FDA21A;
+	color:#EC8E02;
+	display: inline-block;
+	padding: 2px 5px;	
+	border: 1px solid #FDA21A;	
+}
+
+.sp-gubun_2{
+	border-color:#655EFB;
+	color:#4036FA;	
+	display: inline-block;	
+	padding: 2px 5px;		
+	border: 1px solid #655EFB;	
+}
+
+.sp-gubun_3{
+	border-color:#11AA0D;
+	color:#0E8E0B;	
+	display: inline-block;	
+	padding: 2px 5px;		
+	border: 1px solid #11AA0D;	
+}
+

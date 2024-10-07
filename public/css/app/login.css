@@ -1,0 +1,722 @@
+/* header */
+.header{
+    height: 2.8rem;
+    padding: 0 .8rem;
+    line-height: 2.8rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+.header .back_arrow{
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 0.8rem;
+}
+.header .back_arrow img{
+    width: .55rem;
+    margin: 0.25rem auto;
+    display: block;
+}
+.header .title{
+    text-align: center;
+    width: 100%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    display: block;
+}
+.header a{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    color: #111;
+    font-size: 1rem;
+    padding: 0 1.4rem;
+}
+.container{
+    padding-top: 2.8rem !important;
+}
+.login{
+    padding: 0 1.6rem;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.login .logo{
+    margin-top: 1.75rem;
+    text-align: center;
+    font-weight: 500;
+}
+.login .logo p{
+    font-size: 1.3rem;
+}
+.login .logo_title{
+    font-size: 1.6rem !important;
+    font-weight: 900;
+    color: #4c21f2;
+}
+.login .logo img{
+    width: 7rem;
+}
+.login .input_zone{
+    margin-top: 1.4rem;
+}
+.login .id_zone,
+.login .pw_zone{
+    width: 100%;
+    height: 2.8rem;
+    border-bottom: .05rem solid #e5e5ec;
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 2.8rem;
+}
+.login .input_zone input[type='text'], input[type='password']{
+    border: 0;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #767676;
+    height: 2.8rem;
+    width: calc(100% - 1.4rem);
+}
+.login .input_zone input::placeholder{
+    font-size: 0.8rem;
+    color: #767676;
+}
+.login .pw_zone {
+    margin: 0.6rem 0 0.8rem;
+}
+.id_zone span.id_delete{
+    width:1.4rem;
+    height:1.4rem;
+    display: inline-block;
+    padding: 0.2rem 0;
+    margin: 0.7rem 0 0.7rem;
+    text-align: right;
+}
+.id_zone span.id_delete img{
+    width: 1rem;
+    display: block;
+    margin-left: 0.4rem;
+}
+.login .pw_zone span.show{
+    width:1.4rem;
+    height:1.4rem;
+    display: inline-block;
+    padding: 0.2rem 0;
+    margin: 0.7rem 0 0.7rem;
+    line-height: 0.9rem;
+}
+.id_zone span.show img{
+    width: 1.2rem;
+}
+
+.chk_zone{
+    height: 1.2rem;
+}
+input[type='checkbox']{display: none;}
+input[type='checkbox'] + label{
+    background-image: url(/public/img/app/chk_circle.png);
+    background-size: 1.2rem;
+    padding-left: 1.6rem;
+    font-size: 0.7rem;
+    color: #111;
+    height: 1.2rem;
+    display: inline-block;
+}
+input[type='checkbox']:checked + label{
+    background-image: url(/public/img/app/chked_circle.png);
+}
+
+.btn_zone{
+    margin-top:1.2rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+.btn_zone button.login_btn{
+    width: 100%;
+    background-color: #4c21f2;
+    color: #fff;
+    height: 2.8rem;
+    font-size: 0.8rem;
+}
+.btn_zone button.join,
+.btn_zone button.find{
+    margin-top: 0.6rem;
+    height: 2rem;
+    border: .05rem solid #e5e5ec;
+    font-size: 0.7rem;
+    color: #767676;
+    width: calc(50% - 0.2rem);
+}
+.btn_zone button.join{
+    margin-right: 0.4rem;
+}
+
+
+
+
+/* 이용약관 */
+.terms ul{margin-top: 2.2rem;}
+.terms ul li{
+    border-bottom: .05rem solid #e5e5ec;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #111;
+    padding-bottom: 0.7rem;
+}
+.terms ul li:first-child{
+    font-weight: 500;
+    margin-top: 0;
+}
+.terms ul li span.small{
+    font-size: 0.6rem;
+}
+.terms ul li span.req{
+    font-size: 0.6rem;
+    color: #0176F9;
+}
+.terms ul li span.select{
+    font-size: 0.6rem;
+}
+.terms ul li span.arrow{
+    width: 1rem;
+    text-align: right;
+    float: right;
+}
+.terms ul li img{
+    width: 0.45rem;
+}
+.terms .btn_zone{
+    margin-top: 3.1rem;
+}
+.blur{
+    filter: blur(.5rem);
+}
+
+
+
+/* 약관동의 팝업 */
+.terms_pop{
+    width: 100%;
+    display: none;
+    margin-top: 2.8rem !important;
+    bottom: 0;
+}
+.terms_pop .content{
+    background-color: #fff;
+    height: calc(100vh - 2.8rem);
+    width: 100%;
+    border-radius: 1.2rem 1.2rem 0 0;
+    display: block;
+    padding: .4rem 0;
+    position: relative;
+}
+.terms_pop .b_close{
+    width: 2.4rem;
+    height: 0.2rem;
+    border-radius: .1rem;
+    background-color: #d1d1d1;
+    margin: 0 auto 0.4rem;
+    display: block;
+}
+.terms_pop h2{
+    height: 2.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111;
+}
+.terms_pop .text_zone{
+    height: calc(100% - 6.5rem);
+    padding: 0 0.8rem;
+    overflow-y: auto;
+}
+.terms_pop .content h5{
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    line-height: 1.35rem;
+    padding: 0 0.8rem;
+}
+.terms_pop .text_zone p{
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: #505050;
+    word-break: break-all;
+}
+.terms_pop .text_zone strong{
+    font-size: 0.8rem;
+    color: #111;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+.terms_pop .btn_zone {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.terms_pop .btn_zone button.gray{
+    width: 50%;
+    background-color: #F1F1F5;
+    color: #111;
+    height: 2.8rem;
+    font-size: 0.8rem;
+}
+.terms_pop .btn_zone button.login_btn{
+    width: 50%;
+    background-color: #4c21f2;
+    color: #fff;
+    height: 2.8rem;
+    font-size: 0.8rem;
+}
+
+
+/* 사업주 회원가입 */
+.join{
+    margin-bottom: 4rem;
+}
+.join .input_zone{
+    padding: 0 1.6rem;
+    margin-top: 1.8rem;
+}
+.join ul li {
+    display: flex;
+    height: 2.8rem;
+    padding: 0.9rem 0 0.3rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+}
+.join ul li strong.important{
+    position: absolute;
+    color: #dc0000;
+    font-size: 0.7rem;
+    font-weight: 500;
+    left: -0.35rem;
+    top: 0.5rem;
+}
+.join ul li.biz{
+    margin-bottom: 0.8rem;
+}
+.join ul li input{
+    border: 0;
+    height: 1.5rem;
+    padding: 0;
+    width: calc(100% - 1.4rem);
+}
+.join ul li input::placeholder{
+    font-size: 0.8rem;
+    color: #767676;
+}
+.join ul li .input_line{
+    width: 100%;
+    border-bottom: 0.05rem solid #e5e5ec;
+    display: flex;
+    position: relative;
+    padding: 0 0.25rem;
+}
+.join ul li .input_line.short{
+    width: calc(100% - 4.6rem);
+    border-bottom: 0.05rem solid #e5e5ec;
+}
+.join ul li button.dd_chk{
+    width: 3.9rem;
+    height: 1.6rem;
+    font-size: 0.7rem;
+    color: #4c21f2;
+    border: 0.05rem solid #4c21f2;
+    border-radius: 0.25rem;
+    line-height: 1.5rem;
+    margin-left: 0.7rem;
+}
+.join ul li div span.id_delete{
+    width:1.4rem;
+    height:1.4rem;
+    display: inline-block;
+    text-align: right;
+}
+.join ul li div span.id_delete img{
+    width: 1rem;
+}
+.join ul li div span.show{
+    width:1.4rem;
+    height:1.4rem;
+    display: inline-block;
+    padding: 0.2rem 0;
+    line-height: 0.9rem;
+}
+
+.join ul li div span.show img{
+    width: 1.2rem;
+}
+.join input{
+    background-color: transparent;
+}
+.join .no_biznumber input[type='checkbox'] + label{
+    padding-top: 0.5rem !important;
+    height: 2.2rem;
+    float: left;
+    background-position: 0 center;
+}
+.join .sub_text{
+    float: right;
+    width: calc(100% - 1.8rem);
+}
+.join .no_biznumber h5{
+    font-size: 0.8rem;
+    color: #111;
+    line-height: 1.2rem;
+}
+.join .no_biznumber p{
+    font-size: 0.7rem;
+    color: #767676;
+    line-height: 1rem;
+}
+.join .biz_kind{
+    margin-top: 1.5rem;
+    height: 5rem;
+}
+.join .biz_kind button.select{
+    width: 100%;
+    height: 2.8rem;
+    color: #767676;
+    font-size: 0.8rem;
+    text-align: left;
+    border: 0.05rem solid #4c21f2;
+    padding: 0 1rem;
+    background-image: url(/public/img/app/arrow_right.png);
+    background-size: 0.45rem;
+    background-position: calc(100% - 1rem) center;
+    background-repeat: no-repeat;
+}
+.join .biz_kind button.select span{
+    color: #4c21f2;
+    font-size: 0.7rem;
+}
+.join .biz_kind span.biz_selected{
+    display: inline-block;
+    padding: 0.3rem 0.4rem;
+    color: #111;
+    font-size: 0.6rem;
+    border: 0.05rem solid #4c21f2;
+    margin-top: 0.2rem 0.2rem 0.4rem 0;
+}
+.join .biz_kind span.biz_selected i{
+    color: #4c21f2;
+    margin-left: 0.25rem;
+}
+
+.join ul li.intro .input_line{
+    width: 100%;
+    border-bottom: 0.05rem solid #4c21f2;
+}
+.join .btn_zone{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.join ul li span.li_title{
+    font-size: 0.6rem;
+    color: #111;
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    display: none;
+}
+.join ul li span.li_title.active{
+    display: block;
+}
+.join ul li span.hint{
+    position: absolute;
+    font-size: 0.6rem;
+    color: #dc0000;
+    bottom: -1rem;
+    left: 0;
+    line-height: 0.9rem;
+    display: none;
+}
+
+
+.select_biz{
+    width: calc(100% - 3.2rem);
+    max-width: 20rem;
+    height: 14.5rem;
+    background-color: #fff;
+    display: none;
+    border-radius: 0.7rem;
+    padding: 2rem 1rem 2.5rem;
+    position: relative;
+}
+.select_biz .select_zone{
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;
+    text-align: center;
+}
+.select_biz .select_zone ul li{
+    display: block;
+    position: relative;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+}
+.select_biz .select_zone input[type='checkbox'] + label{
+    padding-left: 0;
+    width: 7.5rem;
+    padding-right: 1.5rem;
+    height: 1.4rem;
+    background-position: right;
+    line-height: 1.4rem;
+    padding-right: -0.5;
+    font-size: 0.8rem;
+}
+.select_biz .pop_btn{
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0;
+    right: 0;
+    font-size: 0.7rem;
+}
+
+.select_biz .pop_btn .select_btn{
+    color: #0176F9;
+}
+.select_biz .pop_btn .cancle_btn{
+    color: #DC0000;
+}
+/* 스크롤바 디자인변경 */
+
+.select_zone::-webkit-scrollbar {
+    width: 0.4rem;
+    border-radius: 0.4rem;
+}
+.select_zone::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.2);
+    border-radius: 0.4rem;
+}
+.select_zone::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 0.4rem;
+}
+
+.disable .input_line{
+    background-color: #efefef;
+    border-radius: 0.2rem;
+}
+
+/* 아이디찾기 */
+.search_id{
+    padding: 0 1.6rem;
+}
+.search_id h5{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+.tabbox h5{
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+.tabbox .input_zone{
+    margin: 1.6rem 0;
+    width: 100%;
+}
+.tabbox .input_zone .input_line{
+    width: 100%;
+    height: 2.8rem;
+    border-bottom: 0.05rem solid #e5e5ec;
+    margin-bottom: 0.6rem;
+}
+.tabbox .input_zone .input_line:last-child{
+    margin-bottom: 0;
+}
+.tabbox .input_zone input{
+    width: 100%;
+    height: 2.7rem;
+    background-color: none;
+    border: none;
+}
+.tabbox .input_zone input::placeholder{
+    font-size: 0.8rem;
+    color: #767676;
+}
+.tabbox .ok_btn{
+    width: 100%;
+    height: 2.8rem;
+    background-color: #4C21F2;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* 아이디찾기 결과 */
+.id_result{
+    padding: 0 1.6rem;
+}
+.id_result h5{
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+.id_result .id_list{
+    margin-top: 1.6rem;
+    padding: 1.2rem;
+    background-color: #f7f7fb;
+}
+.id_result .id_list p{
+    font-size: 0.8rem;
+    text-align: center;
+    color: #767676;
+    line-height: 1rem;
+    font-family: 'Roboto';
+    margin-bottom: .5rem;
+}
+.id_result .id_list p:first-child{
+    color: #111;
+    font-weight: bold;
+}
+.id_result .id_list p:last-child{
+    margin-bottom: 0;
+}
+.id_result .ok_btn{
+    width: 100%;
+    height: 2.8rem;
+    background-color: #4C21F2;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 1.6rem;
+}
+.id_result .find_pw{
+    font-size: .7rem;
+    height: 2rem;
+    margin-top: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.id_result .find_pw span{
+    width: .6rem;
+    display: inline-block;
+}
+.id_result .find_pw span img{
+    width: 0.25rem;
+    display: block;
+    margin: 0 auto;
+}
+.id_result span.hint{
+    font-size: .6rem;
+    color: #767676;
+    line-height: 1rem;
+    margin-top: .6rem;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.pw_result .id_list p{
+    font-size: .8rem;
+    color: #111;
+    font-weight: 400 !important;
+}
+
+
+/* 비밀번호변경 */
+.change_pw{
+    padding: 0 1.6rem;
+}
+.change_pw h5{
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.change_pw .input_zone{
+    margin: 1.6rem 0 0 0;
+}
+.change_pw .input_zone .input_line{
+    width: 100%;
+    height: 2.8rem;
+    border-bottom: 0.05rem solid #e5e5ec;
+}
+.change_pw .input_zone input{
+    width: 100%;
+    height: 2.7rem;
+    background-color: none;
+    border: none;
+}
+.change_pw .input_zone input::placeholder{
+    font-size: .8rem;
+    color: #767676;
+}
+.change_pw .ok_btn{
+    width: 100%;
+    height: 2.8rem;
+    background-color: #4C21F2;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 1.6rem;
+}
+.change_pw .red_hint{
+    font-size: .6rem;
+    color: #DC0000;
+    display: none;
+}
+.change_pw .sub_txt{
+    margin-top: 1.2rem;
+}
+.change_pw .sub_txt li{
+    font-size: .6rem;
+    line-height: .9rem;
+    color: #505050;
+    margin-bottom: .3rem;
+    list-style: none;
+}
+.change_pw .sub_txt li::before{
+    content: '·';
+    display: inline-block;
+    margin-right: .2rem;
+}
+.change_pw .sub_txt li:last-child{
+    margin-bottom: 0;
+}
+
+/* 아이디비번찾기 */
+.search_page {
+    margin: 2.5rem auto;
+}
+.search_page a{
+    display: inline-block;
+    width: 100%;
+    border: .05rem solid #ddd;
+    padding: 1rem .7rem;
+    margin-bottom: 1rem;
+    font-size: .7rem;
+    font-weight: 500;
+    background-image: url(/public/img/app/right_arrow.png);
+    background-size: .4rem;
+    background-position: 96% center;
+}
+.search_page a p{
+    font-size: .55rem;
+    color: #767676;
+    margin-top: .2rem;
+}

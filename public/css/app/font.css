@@ -1,0 +1,92 @@
+/*  한글 폰트 */
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src:local(※),
+		url('/public/font/NotoSansKR-Light.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src:local(※),
+		url('/public/font/NotoSansKR-Regular.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src:local(※),
+		url('/public/font/NotoSansKR-Medium.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src:local(※),
+		url('/public/font/NotoSansKR-Bold.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src:local(※),
+	url('/public/font/NotoSansKR-Black.woff2') format('woff2');
+}
+
+
+
+/*  영문 폰트 */
+@font-face{
+	font-family: 'Roboto';
+	font-style: normal;
+    font-weight: 400;
+	src:local(※),
+		url('/public/font/Roboto-Regular.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Roboto';
+	font-style: normal;
+    font-weight: 500;
+	src:local(※),
+		url('/public/font/Roboto-Medium.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src:local(※),
+		url('/public/font/Roboto-Bold.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	src:local(※),
+		url('/public/font/Roboto-Black.woff2') format('woff2');
+}
+
+
+/*  메인화면 폰트 */
+/* @font-face{
+	font-family: 'Gmarket Sans';
+	font-style: normal;
+    font-weight: 400;
+	src:local(※),
+		url('/public/font/GmarketSansTTFLight.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Gmarket Sans';
+	font-style: normal;
+    font-weight: 500;
+	src:local(※),
+		url('/public/font/GmarketSansTTFMedium.woff2') format('woff2');
+}
+@font-face{
+	font-family: 'Gmarket Sans';
+	font-style: normal;
+	font-weight: 700;
+	src:local(※),
+		url('/public/font/GmarketSansTTFBold.woff2') format('woff2');
+} */

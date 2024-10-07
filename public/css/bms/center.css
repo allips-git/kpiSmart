@@ -1,0 +1,340 @@
+/* 중앙현황 css */
+
+.center .h-scroll{
+	height:525px; 
+	height: -webkit-calc(100vh - 410px);
+	height: -moz-calc(100vh - 410px);
+	height:calc( 100vh - 410px);
+
+	background-color:#fff;
+}
+
+.center table th.b-right {
+	border-right:1px solid #ccc;
+}
+
+.center table td.b-right {
+	border-right:1px solid #ccc;
+}
+
+.center table tbody tr td{
+    background-color: #fff;
+}
+
+.center table tbody tr:nth-child(4n-1) td{
+    background-color: #fff;
+}
+
+.cter_st .nowan{
+	display: inline-block;
+	border:1px solid rgb(209, 153, 108);
+	background-color: rgb(255, 242, 228);
+	color:rgb(107, 50, 11);
+	font-size: 11px;
+	padding: 2px 14px;
+	margin-top: 5px;
+}
+
+
+/* 작업현황 css */
+.center02 .h-scroll{
+	height:610px;
+	height: -webkit-calc(100vh - 325px);
+	height: -moz-calc(100vh - 325px);
+	height:calc( 100vh - 325px);
+	background-color:#fff;
+}
+
+.center02 table tbody tr td{
+    background-color: #fff;
+}
+
+.center02 table tbody tr:nth-child(2n-1) td{
+    background-color: #f3f3f3;
+}
+
+.list-title{
+	justify-content: space-between;
+}
+.list-title .total-box{
+	float:left;
+	border:1px solid #0d3aa9;
+	font-size:12px;
+	color:#0d3aa9;
+	width:150px;
+	height:20px;
+	margin-top:10px;
+	padding:0px 15px;
+}
+
+.tr_sum{
+    font-weight: bold;
+    height: 40px;	
+}
+
+.tr_sum td{
+	background-color: #FFF;
+    color: #555;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 5px 3px;	
+}
+
+.summery {
+	border:none;
+	table-layout:auto
+}
+
+.summery tr {
+	border:none
+}
+
+.summery .order_detail .covering {
+	padding:0;
+	border:1px solid transparent;
+}
+
+.summery .order_detail .hovering {
+	border-top:0;
+	table-layout:auto
+}
+
+.summery .order_detail .hovering td:last-child {
+	border-right:0px
+}
+
+.summery .order_detail td {
+	background-color:#fff !important
+}
+
+.summery .order_detail > tr:nth-child(2n) .hovering td {
+	background-color:#f3f3f3 !important
+}
+
+.summery .order_detail > tr .covering:hover {
+	border:1px solid #1D8DF3;
+}
+
+.summery .order_detail > tr .hovering:hover td {
+	
+	background-color:#E3F1FF !important;
+}
+
+.sp-gubun_1{
+	border-color:red;
+	color:red;
+	display: inline-block;
+	padding: 2px 5px;	
+	border: 1px solid red;	
+}
+
+.sp-gubun_2{
+	border-color:blue;
+	color:blue;
+	display: inline-block;
+	padding: 2px 5px;		
+	border: 1px solid blue;
+}
+
+.sp-gubun_3{
+	border-color:#BDBDBD;
+	color:#BDBDBD;	
+	display: inline-block;	
+	padding: 2px 5px;		
+	border: 1px solid #BDBDBD;	
+}
+
+.sp-gubun_4{
+	border-color:green;
+	color:green;	
+	display: inline-block;	
+	padding: 2px 5px;		
+	border: 1px solid green;
+}
+.cc-btn{
+	border:1px solid rgb(209, 153, 108);
+	color:rgb(146, 68, 17);
+	background-color: rgb(255, 242, 228)
+}
+.center02 .nowan{
+	display: inline-block;
+	border:1px solid rgb(209, 153, 108);
+	background-color: rgb(255, 242, 228);
+	color:rgb(107, 50, 11);
+	font-size: 11px;
+	padding: 2px 14px;
+	margin-top: 5px;
+}
+
+.center table .blue{
+	font-weight: bold;
+}
+.send{
+	color: rgb(85, 153, 231);
+}
+.sendb{
+	color: rgb(85, 153, 231);
+	font-weight: bold;
+}
+.red{
+	font-weight: normal;
+}
+.redb{
+	color: red;
+	font-weight: bold;
+}
+
+table.hovering tr:hover {
+	border-color: #1D8DF3 !important;
+	
+}
+
+table.hovering tr:hover td {
+	background-color:#E3F1FF !important;
+}
+
+
+.center .box-wrap{
+	float: left;
+	width: 500px;
+}
+.center .box-wrap .box{
+	text-align: center;
+	display: inline-block;
+	width: 80px;
+	font-size: 12px;
+
+}
+
+.center .box-wrap .box p:first-child{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	height: 22px;
+	line-height: 20px;
+}
+
+.center .box-wrap .box_all p:first-child{
+	color: #005b92;
+}
+
+.center .box-wrap .box_all p.txt{
+	background-color: #005b92 !important;
+	color: #fff;
+}
+.center .box-wrap .box p.txt{
+	border: 1px solid #ddd;
+	background-color: #eee;
+	height: 22px;
+	line-height: 20px;
+}
+
+.center .ord-info{
+	position: relative;
+}
+
+.center span.bunhal {
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 11px;
+}
+.center span.bunhal_list{
+    background-color: #fff;
+    width:250px;
+    border: 1px solid #eee;
+    position: absolute;
+    font-size: 11px;
+    color: #222;
+    font-weight: normal;
+    z-index: 999;
+    padding: 5px;
+    display: none;
+    text-align: center;
+}
+.center span.bunhal:hover ~ span.bunhal_list{
+	display: block;
+}
+.center span.bunhal_list span{
+    display: block;
+}
+.center table td p.nobun{
+    color: #bdbdbd;
+    font-size: 11px;
+}
+.center table .number .counter{
+    height: 23px;
+    line-height: 22px;
+    border-bottom: 1px solid #ddd;
+}
+.center table tr td.number{
+    padding: 0;
+}
+.center table tr td.number p:last-child{
+    border-left: 1px solid #ddd;
+}
+.center table tr td.number p{
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+
+.center span.factory,
+.center span.center,
+.center span.mewachang{
+    border: 1px solid #0d62ba;
+    display: inline-block;
+    color: #0d62ba;
+    width: 50px;
+}
+.center span.center{
+    color: #339900;
+    border-color: #339900;
+}
+.center span.mewachang{
+    color: #cc3366;
+    border-color: #cc3366;
+}
+.center span.dg,
+.center span.ing,
+.center span.cancle,
+.center span.send,
+.center span.sucsess{
+    border: 1px solid #339900;
+    color: #339900;
+    width: 50px;
+    padding: 5px 0;
+    display: inline-block;
+}
+.center span.ing{
+    color: #EC8E02;
+    border-color: #EC8E02;
+}
+.center span.cancle{
+    color: #cc3366;
+    border-color: #cc3366;
+}
+.center span.send{
+    color: #5e4eec;
+    border-color: #5e4eec;
+}
+.center span.sucsess{
+    color: #0d62ba;
+    border-color: #0d62ba;
+}
+.center table .ord_detail tr td.name{padding: 0;}
+.center table .ord_detail tr td.name p:first-child{
+    border-bottom: 1px solid #ddd;
+}
+.center table .ord_detail tr td.name p{
+    line-height: 60px;
+    padding: 0 5px;
+    display: block;
+}
+.send_pop .table_wrap{
+	display: none !important;
+}
+.send_pop .table_wrap01 .x-scroll{
+	height: 400px !important;
+}

@@ -1,0 +1,632 @@
+
+.footer .tab_btn a.tab01 p{
+    color: #292D77;
+}
+.header .alram,
+.header .menu{
+    display: inline-block !important;
+}
+.header .menu{
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top:0.4rem;
+    right: .6rem !important;
+}
+.header .menu img#ham{
+    width: 1.1rem;
+    margin:.2rem auto 0;
+    display: block;
+}
+.header .alram{
+    width: 1.5rem;
+    height: 1.4rem;
+    text-align: center;
+    position: absolute;
+    top: 0.4rem;
+    right: 2.25rem;
+    line-height: 100%;
+}
+.header .title {
+    text-align: left;
+}
+.header .title a{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 0 !important;
+
+}
+.header .alram img#alram{
+    width: 0.8rem;
+}
+.main{
+    position: relative;
+    /* max-width: 25rem; */
+    margin: 0 auto 5.5rem;
+}
+.main .visual{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 .8rem;
+}
+
+.main .visual img{
+    border-radius: .2rem;
+}
+
+.main h3.user_name {
+    display: flex;
+    justify-content: space-between;
+    font-size: .6rem;
+    font-weight: 500;
+    padding: .55rem .8rem .5rem;
+    line-height: 1rem;
+	font-family: 'Roboto';
+}
+
+.main h3.user_name p{
+    height: 1rem;
+    padding: 0 .35rem;
+    line-height: 1rem;
+    font-size: .55rem;
+    display: inline-block;
+    background-color: #78BBFF;
+    color: #fff;
+    border-radius: .1rem;
+    font-weight: 700;
+    
+}
+.main h3.user_name p span{
+    font-size: .55rem;
+    font-weight: 500;
+}
+.main h3.user_name p span strong{
+    font-size: .6rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.main .section02{
+    width: 100%;
+    padding: 0.5rem .8rem 7.8rem;
+    background-color: #F6F6F6;
+}
+
+.main .section02 .section02_top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.main .section02 .box{
+    background-color: #fff;
+    border-radius: .2rem;
+    box-shadow: 0 .1rem .1rem rgba(0,0,0,.04);
+    text-align: center;
+}
+.main .section02 .box p{
+    font-size: .5rem;
+    color: #c4c4c4;
+    line-height: .55rem;
+    font-weight: 500;
+}
+.main .section02 .box h2{
+    margin-top: 5.25rem;
+    margin-bottom: .35rem;
+    line-height: .7rem;
+    font-size: .7rem;
+    font-weight: 700;
+}
+.main .section02 .box01,
+.main .section02 .box02{
+    width: calc(50% - .25rem);
+    height: 8.25rem;
+}
+.main .section02 .box03,
+.main .section02 .box04{
+    width: calc(50% - .25rem);
+    margin-top: 0.5rem;
+    height: 7.75rem;
+}
+.main .section02 .box03 h2,
+.main .section02 .box04 h2{
+    margin-top: 5rem;
+}
+
+.main .section02 .box01{
+    background-image: url(/public/img/app/icon01.png);
+    background-position: 47% 1.6rem;
+    background-size: 3rem;
+}
+.main .section02 .box02{
+    background-image: url(/public/img/app/icon02.png);
+    background-position: 41.5% 1.6rem;
+    background-size: 3.6rem;
+}
+.main .section02 .box03{
+    background-image: url(/public/img/app/icon05.png);
+    background-position: 47% 1.6rem;
+    background-size: 3rem;
+}
+.main .section02 .box04{
+    background-image: url(/public/img/app/icon04.png);
+    background-position: 47% 1.6rem;
+    background-size: 3rem;
+}
+
+.main .section02 .box06{
+    width: 100%;
+    height: 3.5rem;
+    margin-top: .5rem;
+    display: flex;
+    padding: .65rem 0 0;
+}
+.main .section02 .box06 .state{
+    width: 20%;
+    position: relative;
+}
+.main .section02 .box06 .state h1{
+    font-size: .9rem;
+    font-weight: bold;
+    color: #0040dd;
+    line-height: 1.35rem;
+    margin-bottom: .2rem;
+}
+.main .section02 .box06 .state p{
+    font-size: .55rem;
+    font-family: 'Roboto';
+    color: #7D7C78;
+    font-weight: 500;
+}
+.main .section02 .box06 .state::after{
+    content: '';
+    position: absolute;
+    top: .4rem;
+    right: 0;
+    width: .05rem;
+    height: 1.5rem;
+    background-color: #f6f6f6;
+}
+
+
+
+
+
+
+.main .section03{
+    background-color: #F6F6F6;
+    position: relative;
+    margin-bottom: 10rem;
+}
+.main .section03 .inner{
+    width: 100%;
+    position: absolute;
+    padding: 0 0 0 .8rem;
+    top: -6rem;
+    left: 0;
+    right: 0;
+}
+.main .section03 h1{
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 0.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.main .section03 .message_wrap{
+    width: 100vw;
+    overflow-x: auto;
+    display: flex;
+}
+.main .message_wrap .msg{
+    width: 6.5rem;
+    height: 9.5rem;
+    border: 0.05rem solid #e4e5e9;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    padding: 0.7rem 0.5rem 0.5rem;
+    margin-right: 0.5rem;
+    flex-shrink:0;
+}
+
+.main .message_wrap .msg h3{
+    font-size: 0.6rem;
+    font-weight: 700;
+    margin-bottom: 0.45rem;
+}
+.main .message_wrap .msg .txt{
+    font-size: 0.5rem;
+    height: 7.2rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+.main .message_wrap .msg .txt span.blue{
+    font-size: 0.5rem;
+    color: #409aff;
+}
+.main .message_wrap .msg .msg_plus_wrap{
+    width: 100%;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+.main .message_wrap .msg .plus{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e4e5e9;
+}
+
+
+/* .main .section03 img{
+    border-radius: .2rem;
+} */
+
+/* 
+.main h3.user_name{
+    margin-top:1.7rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #111;
+    line-height: 0.8rem;
+    margin-bottom: 0.6rem;
+    font-family: 'Gmarket Sans';
+    padding: 0 0.6rem;
+}
+.content01{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 0.6rem;
+}
+.main .content01 .user_tab,
+.main .content01 .order_tab{
+    width: calc(50% - 0.25rem);
+    background-color: #0176F9;
+    color: #fff;
+    height: 7.5rem;
+    border-radius: .2rem;
+    box-shadow: 0 .15rem .3rem #00000029;
+    padding:  0.9rem 0.6rem;
+}
+.main .content01 .talk_tab,
+.main .content01 .factory_tab{
+    width: calc(50% - 0.25rem);
+    background-color: #0176F9;
+    color: #fff;
+    height: 4.9rem;
+    border-radius: .2rem;
+    margin-top: 0.4rem;
+    box-shadow: 0 .15rem .3rem #00000029;
+    padding: 0.9rem 0.6rem;
+}
+.main .content01 h2{
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height:.9rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    font-family: 'Gmarket Sans';
+}
+.main .content01 h2 .number{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-left: 0.45rem;
+}
+.main .content01 .user_tab p,
+.main .content01 .order_tab p{
+    font-size: 0.55rem;
+    font-weight: 500;
+    margin-top: 0.4rem;
+    color: #f7f7fb;
+    line-height: 0.9rem;
+    font-family: 'Gmarket Sans';
+}
+
+.main .content01 .talk_tab p,
+.main .content01 .factory_tab p{
+    font-size: 0.55rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    color: #f7f7fb;
+    line-height: 0.9rem;
+    font-family: 'Gmarket Sans';
+}
+
+.main .content01 .user_tab h2 span{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+.main .content01 .talk_tab h2{
+    font-size: 0.8rem;
+    position: relative;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+    line-height:.9rem;
+}
+.main .content01 .talk_tab h2 span.on{
+    font-size: 0.6rem;
+    margin-left: .2rem;
+}
+
+.main .content02{
+    background-color: #fff;
+    height: 5rem;
+    border-radius: .2rem;
+    box-shadow: 0 0 .4rem #0000000F;
+    margin: 0.6rem 0.6rem;
+    z-index: 9;
+    border: .05rem solid #e5e5ec;
+}
+.main .content02 h3{
+    font-size: 0.8rem;
+    font-family: 'Gmarket Sans';
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.55rem;
+    padding: 0.6rem 0.8rem 0;
+}
+.main .content02 h3 strong{
+    font-family: 'Gmarket Sans';
+    font-weight: 500;
+    color: #0101EC;
+    margin-left: .2rem;
+}
+.main .content02 h3 span{
+    font-size: 0.6rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    line-height:  0.7rem;
+}
+.main .content02 ul{
+    display: flex;
+    justify-content: space-between;
+    padding:0 0.2rem;
+}
+.main .content02 ul li{
+    width: 20%;
+    text-align: center;
+    height: 2.2rem;
+}
+.main .content02 ul span::after{
+    content: '';
+    display: inline-block;
+    width: .05rem;
+    height: 1.8rem;
+    margin-top:0.2rem;
+    background-color: #F1F1F5;
+}
+.main .content02 ul li .count{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #0176f9;
+    line-height: 1.3rem;
+    margin-bottom: .1rem;
+}
+.main .content02 ul li p{
+    font-size: 0.55rem;
+    color: #111;
+    line-height: 0.65rem;
+    font-weight: 500;
+    font-family: 'Gmarket Sans';
+}
+
+
+
+
+.main .content04{
+    position: fixed;
+    bottom:2.65rem;
+    top: auto;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: all .5s;
+    background-color: transparent;
+}
+.main .content04 .today{
+    width: calc(100% - 1.2rem);
+    max-width: 24rem;
+    margin: 0 auto;
+    border-radius: .5rem .5rem 0 0;
+    box-shadow: 0 0 .2rem #0000000F;
+    padding: 0.225rem 0.9rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff;
+    border: 0.05rem solid #E5E5EC;
+}
+.main .content04 .today_title{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #111;
+    line-height: 1rem;
+    padding-top: .2rem;
+}
+.main .content04 .dd_arrow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 3.5rem;
+    margin: 0 auto;
+    height: 1.8rem;
+    line-height:1.8rem;
+    text-align: center;
+    transition: all .5s;
+}
+.main .content04 .dd_arrow img{
+    width: 0.9rem;
+}
+.main .content04 .count_title{
+    font-size: 0.6rem;
+    color: #111;
+    font-weight: 500;
+}
+.main .content04 .count_title span{
+    font-family: 'Roboto';
+    font-weight: bold;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    margin-right: 0.1rem;
+    color: #dc0000;
+}
+.main .content04 .pp {
+    max-width: 25rem;
+    width: calc(100% - .5rem);
+    margin: 0 auto;
+    height: 0.5rem;
+    border-radius: .4rem .4rem 0 0;
+    background-color: #233CF9;
+    display: block;
+}
+.main .content04.active .today_content{
+    display: block;
+}
+.main .content04 .today_content{
+    max-height: 75vh;
+    padding: 0 0.8rem;
+    background-color: #fff;
+    display: none;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.bg.active{
+    width: 100%;
+    height: calc(100vh - 2.65rem);
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+}
+.blur{
+    filter: blur(.5rem);
+}
+.dd_arrow.active img{
+    transform: rotate(180deg);
+    transition: all .3s;
+}
+
+/* 일정리스트 */
+/* 
+.today_content ul{
+    max-height: 75vh;
+    overflow-y: auto;
+}
+.today_content ul li{
+    padding: 0.5rem 0.7rem;
+    border-bottom: .05rem solid #f1f0f5;
+}
+.today_content ul li:last-child{
+    border-bottom: 0;
+}
+.today_content ul li .state{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    color: #fff;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: .6rem;
+    float: left;
+    box-shadow: .1rem .15rem .4rem rgba(0,0,0,0.1);
+}
+.today_content ul li .infor{
+    margin:0.3rem  0.9rem ;
+    float: left;
+    width: calc(100% - 7rem);
+}
+.today_content ul li .infor h5{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #111;
+    line-height:0.9rem;
+    margin-bottom: 0.1rem;
+}
+.today_content ul li .infor .phone{
+    font-family: 'Roboto';
+    font-weight: normal;
+    color: #0176f9;
+    line-height: 0.8rem;
+    font-size: 0.6rem
+}
+.today_content ul li .etc{
+    float: right;
+    text-align: right;
+    margin-top: 0.3rem;
+}
+.today_content ul li .date{
+    font-size: 0.6rem;
+    color: #767676;
+    font-family: 'Roboto';
+    line-height: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.today_content ul li .detail{
+    color:#0176f9;
+    font-size: 0.6rem;
+    line-height:0.9rem;
+}
+
+.today_content ul li .constr{
+    background-color: #4c21f2;
+}
+.today_content ul li .est{
+    background-color: #0176f9;
+}
+.today_content ul li .as{
+    background-color: #dc0000;
+}
+
+
+.main .content03{
+    width: 100%;
+    height: 6.7rem;
+    margin-bottom:  0.7rem;
+    position: relative;
+    overflow: hidden;
+}
+.main .content03 img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: .2rem;
+}
+
+.main .content03 #eclipse5{
+    max-width:283vw;
+    width:283vw !important;
+    position: absolute;
+    left: -91.5vw;
+    top: 0;
+    right: 0;
+}
+
+.eclipse-controls{display: none;}
+
+.eclipse-slides{
+    height: 6.7rem;
+    max-height: 150px;
+    padding: 0 .15rem;
+    border-radius: .2rem;
+    overflow: hidden;
+} */

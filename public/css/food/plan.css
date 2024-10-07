@@ -1,0 +1,772 @@
+/* plan_list */
+.content{
+    background-color: #f5f5f8;
+    padding: 1.5rem 1.875rem;
+}
+.plan_list .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.plan_list .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.plan_list .search_zone dl{
+	height: 2.188rem;
+}
+.plan_list .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.plan_list .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+    line-height: 2.188rem;
+    float: left;
+}
+
+.plan_list .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.stock .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.stock .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.stock .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+.plan_list .section dd select,
+.plan_list .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.plan_list .section dd input{
+    padding: 0 0.5rem;
+}
+
+.plan_list .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+.plan_list .section dl dd.half01{
+    width: calc(50% - 15rem);
+}
+
+.plan_list .section dl dd.half02{
+    width: 50%;
+}
+.plan_list .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.plan_list .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.plan_list .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+
+.plan_list input.gray{
+	background-color: #e1e1e5 !important;
+}
+
+.plan_list .calenderImg{
+	width: 2.188rem !important;
+	height: 2.188rem !important;
+	background-color: #f5f5f8;
+}
+
+
+
+.plan_list .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.plan_list .bottom .list_zone{
+	width:  100%;
+	position: relative;
+}
+
+.plan_list .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.plan_list .bottom .list_zone .btns{
+    position: absolute;
+    top: .74rem;
+    right: 1.25rem;
+
+}
+.plan_list .bottom .list_zone .btns button{
+    height: 2.188rem !important;
+    width: 8.75rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 0.813rem;
+}
+.plan_list .bottom .list_zone table{
+    border: 0;
+}
+.plan_list .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    /* border-bottom: 0.063rem solid #E5E5EC; */
+    box-shadow: none;
+}
+.plan_list .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.plan_list .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.plan_list .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.plan_list .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+.plan_list .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.plan_list .bottom .list_zone .h-scroll{
+    height: calc(100% - 7.375rem);
+}
+
+table td.tb_click{
+	color: #0176f9 !important;
+	text-decoration: underline;
+}
+.plan_list .view_count{
+    position: absolute;
+    right: 1.125rem;
+    bottom: 0.875rem;
+}
+.plan_list .view_count select{
+    width: 8.125rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: .063rem solid #CED4DA;
+}
+
+.total {
+    position: fixed;
+    bottom: 0;
+    left: 15.625rem;
+    right: 0;
+    background-color: #fff;
+    height: 2.375rem;
+    z-index: 999;
+    
+}
+.total ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0 1.875rem;
+}
+.total ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.375rem;
+    margin-left: 2rem;
+}
+.total ul li strong {
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left:  1.875rem;
+}
+.total ul li span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 0.313rem;
+}
+.total ul li.blue{
+    color: #0176f9;
+}
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.plan_list .bottom table td span.blue{
+    color: #0176f9;
+}
+.plan_list .bottom table td span.red{
+    color: #dc0000;
+    font-weight: 400;
+}
+.plan_list .bottom table button{
+    height: 1.625rem;
+    line-height: 1.563rem;
+    padding: 0 0.875rem;
+}
+.plan_list .bottom button.w{
+    background-color: #fff !important;
+    color: #111 !important;
+}
+
+
+
+
+
+
+
+
+
+/* plan_reg */
+.plan_reg .search_zone{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+.plan_reg .search_zone h4{
+    margin-bottom: 0.625rem;
+}
+.plan_reg .search_zone dl{
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+.plan_reg .search_zone dl dt{
+    width: 6.25rem;
+    line-height: 1.875rem;
+    height: 1.875rem;
+}
+.plan_reg .search_zone dl dd{
+    width: calc(100% - 6.25rem);
+    height: 1.875rem;
+}
+.plan_reg .search_zone dl dd input,
+.plan_reg .search_zone dl dd select{
+    height: 1.813rem;
+    font-size: 0.813rem;
+}
+.plan_reg .search_zone dd .calenderImg{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+.plan_reg .search_zone button{
+    height: 1.75rem !important;
+    font-size: 0.813rem;
+    padding:0 1.2rem !important;
+}
+.w165{width: 16.6% !important;}
+
+
+.plan_reg .bottom {
+    width: 100%;
+    height: calc(100vh - 25.4rem);
+    margin-top: 1.25rem;
+}
+.plan_reg .bottom .tabbox{
+    display: none;
+    width: 100%;
+    height: calc(100vh - 28.5rem);
+}
+
+.plan_reg .bottom .list_zone{
+    display: flex;
+    flex-flow: row wrap;
+}
+.plan_reg .bottom .list_zone > input[type="radio"] + label{
+    background-image: none;
+    padding:0 1.25rem;
+    font-size: 16px;
+    line-height: 160%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid#e5e5ec;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    color: #c2c2c4;
+    background-color: #f4f4f7;
+}
+.plan_reg .bottom .list_zone > input[type="radio"]:checked + label{
+    color: #0176f9;
+    background-color: #fff;
+}
+.plan_reg .bottom #tab01:checked ~ .tabbox01{display: block;}
+.plan_reg .bottom #tab02:checked ~ .tabbox02{display: block;}
+.plan_reg .bottom .tab01{border-right: 0 !important;}
+
+.plan_reg .bottom .h-scroll{
+    height: calc(100% - 2.7rem) !important;
+    background-color: #fff;
+    
+}
+
+.plan_reg .bottom table td input.gray{
+    background-color: #e1e1e5;
+}
+.plan_reg .bottom table td select.gray{
+    background-color: #e1e1e5;
+}
+.plan_reg .bottom table td input,
+.plan_reg .bottom table td select{
+    border: 0 solid #F8F8FA;
+    height: 1.75rem;
+    transition: none;
+    max-width: none;
+}
+.plan_reg .bottom table td select{
+    background-color: #f5f5f8;
+}
+.plan_reg .bottom table td button{
+    height: 1.75rem;
+}
+.plan_reg .bottom table td input.T-left{
+    text-align: left !important;
+}
+.plan_reg .bottom table td input:hover,
+.plan_reg .bottom table td input:focus{
+    background-color: #f5f5f8 !important;
+}
+.plan_reg .bottom table td input.gray:hover,
+.plan_reg .bottom table td input.gray:focus{
+    background-color: #e1e1e5 !important;
+    border: 0;
+}
+.plan_reg .bottom table td .calenderImg{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+
+/* 수량 카운터 css */
+.plan_reg .spin{
+    text-align: center;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.plan_reg table tr .spindd{
+    padding: 0 !important;
+}
+.plan_reg .spin input[type="number"]{
+    height: 1.75rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 0;
+    padding: 0 !important;
+    font-size: 0.813rem !important;
+    background-color: #f5f5f8;
+}
+.plan_reg input[type="number"]::-webkit-outer-spin-button,
+.plan_reg input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+.plan_reg .input_zone .spin span.spinner > .sub{
+    padding-top: .1rem;
+}
+.plan_reg .spin span.spinner > .sub,
+.plan_reg .spin span.spinner > .add {
+    display: block;
+    width: 30%;
+    height: 1.75rem;
+    font-weight: 700;
+    color: #111;
+    border: 0;
+    cursor: pointer;
+    transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.plan_reg .spin span.spinner > .add {
+    right:.8rem;
+    float:right;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    border: 0.063rem solid #E5E5EC;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+.plan_reg .spin span.spinner > .sub {
+    left:-1rem;
+    float:left;
+    height:1.75rem;
+    line-height: 1.25rem;
+    font-size: 1.5rem !important;
+    border: 0.063rem solid #E5E5EC;
+    overflow: hidden;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.plan_reg .spin span.spinner > .sub:hover,
+.plan_reg .spin span.spinner > .add:hover {
+    background: #fff !important;
+    color: #333;
+}
+/* 수량카운터끝 */
+.w27{width: 27% !important;}
+.plan_reg .bottom table td button.del{
+    color: #dc0000;
+    background-color: #fff;
+}
+.plan_reg .bottom table td button.del:hover{
+    background-color: #efefef;
+}
+.plan_reg dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.5rem;
+}
+
+.plan_reg .btn_wrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+.plan_reg .btn_wrap button{
+    background-color: #0176f9;
+    box-shadow: 0 0 0.5rem rgba(0, 0,0,.2);
+    color: #fff;
+    border: 0;
+    width: 8.75rem;
+    height: 2.188rem;
+    font-size: 0.875rem;
+}
+.plan_reg .btn_wrap button.gray{
+    color: #111;
+    margin-right: 0.625rem;
+}
+.plan_reg p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.625rem;
+    text-align: left;
+    position: absolute;
+    bottom: 1.125rem;
+    right:20%;
+}
+.plan_reg p.imptp span{
+    color: #dc0000;
+}
+.w195{width: 19.5% !important;}
+.plan_reg .select2 {
+    width: 100% !important;
+}
+.plan_reg .search_zone .select2-container .select2-selection--single {
+    height: 1.813rem !important;
+    background-color: #f5f5f8 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0 !important;
+}
+.plan_reg .search_zone .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.781rem !important;
+}
+
+.plan_reg table .select2-container .select2-selection--single {
+    height: 1.813rem !important;
+    background-color: #f5f5f8 !important;
+    border: 0 !important;
+}
+.plan_reg table .search_zone .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.781rem !important;
+}
+
+
+/* plan_reg_pop */
+.plan_reg_pop,
+.plan_mod_pop{
+    width: 500px;
+    display: none;
+}
+.plan_reg_pop .inner,
+.plan_mod_pop .inner{
+    background-color: #fff !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 40px !important;
+}
+.plan_reg_pop dl,
+.plan_mod_pop dl{
+    width: 100%;
+    margin-bottom: 12px;
+    height: 34px;
+}
+.plan_reg_pop dt,
+.plan_mod_pop dt{
+    float: left;
+    width: 110px;
+    font-size: 14px;
+    line-height: 34px;
+    height: 34px;
+}
+.plan_reg_pop dd,
+.plan_mod_pop dd{
+    width: calc(100% - 110px);
+    float: left;
+}
+.plan_reg_pop dd input[type='radio'] + label,
+.plan_mod_pop dd input[type='radio'] + label{
+    background-image: url(/public/img/app/chk_b.png);
+    height: 20px;
+    background-size: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 28px;
+    margin-right: 20px;
+}
+.plan_reg_pop dl.select_day,
+.plan_reg_pop dl.select_day dt,
+.plan_reg_pop dl.select_day dd,
+.plan_mod_pop dl.select_day,
+.plan_mod_pop dl.select_day dt,
+.plan_mod_pop dl.select_day dd{
+    height: 50px;
+    line-height:50px;
+}
+.plan_reg_pop dd input[type='radio']:checked + label,
+.plan_mod_pop dd input[type='radio']:checked + label{
+    background-image: url(/public/img/app/chked_b.png);
+}
+
+.plan_reg_pop dd input[type='checkbox'] + label,
+.plan_mod_pop dd input[type='checkbox'] + label{
+    background-image: url(/public/img/empty_chk.png);
+    background-size: 20px;
+    width: 20px;
+    height: 70px;
+    background-position: 100% center;
+    padding-left: 0;
+    padding-top: 6px;
+    text-align: center;
+    margin-right: 16px;
+    font-size: 14px;
+}
+.plan_reg_pop dl.select_day dd span,
+.plan_mod_pop dl.select_day dd span{
+    float: right;
+    margin-top:12px;
+    font-size: 13px;
+    border: 1px solid #e5e5ec;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+.plan_reg_pop dl.select_day dd span strong,
+.plan_mod_pop dl.select_day dd span strong{
+    color: #0176f9;
+}
+
+
+
+.plan_reg_pop dd input[type='checkbox']:checked + label,
+.plan_mod_pop dd input[type='checkbox']:checked + label{
+    background-image: url(/public/img/blue_chk.png);
+}
+
+.plan_reg_pop dd .input_line,
+.plan_mod_pop dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.plan_reg_pop dd .input_line::after,
+.plan_mod_pop dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.plan_reg_pop dd .input_line.active::after,
+.plan_mod_pop dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.plan_reg_pop dd input::placeholder,
+.plan_mod_pop dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+
+.plan_reg_pop dd select,
+.plan_reg_pop dd input,
+.plan_mod_pop dd select,
+.plan_mod_pop dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.plan_reg_pop .bgo,
+.plan_mod_pop .bgo{
+    height: 100px;
+}
+.plan_reg_pop .bgo dt,
+.plan_mod_pop .bgo dt{
+    line-height: 100px;
+}
+.plan_reg_pop .bgo .input_line,
+.plan_mod_pop .bgo .input_line{
+    height: 100px;
+}
+.plan_reg_pop dd textarea,
+.plan_mod_pop dd textarea{
+    width: 100%;
+    height: 100px;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.plan_reg_pop dd input,
+.plan_mod_pop dd input{
+    padding: 0 0.5rem;
+}
+.plan_reg_pop .btn_wrap,
+.plan_mod_pop .btn_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.plan_reg_pop .btn_wrap button,
+.plan_mod_pop .btn_wrap button{
+    width: 100%;
+    font-size: 14px;
+    height: 46px;
+    border: 0;
+}
+.plan_reg_pop .btn_wrap button.gray,
+.plan_mod_pop .btn_wrap button.gray{
+    color: #111;
+    background-color: #f1f1f5;
+    border-radius:0 0 0 4px;
+}
+.plan_reg_pop .btn_wrap button.blue,
+.plan_mod_pop .btn_wrap button.blue{
+    background-color: #0176f9;
+    color: #fff;
+    border-radius:0 0 4px 0;
+}
+
+dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.5rem;
+}
+p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.625rem;
+    text-align: right;
+    position: absolute;
+    bottom: 64px;
+    right:20px;
+}
+p.imptp span{
+    color: #dc0000;
+}
+
+
+
+
+
+
+
+.w165{width: 16.6% !important;}
+.w37{width: 37%;}
+.w38{width: 38%;}
+.w26{width: 26%;}
+.w24{width: 24%;}
+.w74{width: 74%;}
+.w76{width: 76%;}
+.w27{width: 27% !important;}
+.w22{width: 22% !important;}
+.T-right{text-align: right !important;}

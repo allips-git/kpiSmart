@@ -1,0 +1,84 @@
+.keyword_mng_pop{
+    width: 27.5rem;
+    display: none;
+}
+.keyword_mng_pop .inner{
+    padding: 1.875rem 1.25rem;
+    background-color: #fff;
+    height: 34.125rem;
+    overflow: auto;
+}
+.keyword_mng_pop .input_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+.keyword_mng_pop .input_box img{
+    position: absolute;
+    width: 1.375rem;
+    height: 1.375rem;
+    right: 4.625rem;
+    top: 0.438rem;
+    cursor: pointer;
+}
+.keyword_mng_pop .input_box input,
+.keyword_mng_pop .input_box select{
+    width: 20.875rem;
+    height: 2.25rem;
+    border: 0.063rem solid #dbdbdb;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    padding-left: 0.875rem;
+}
+.keyword_mng_pop .input_box input{
+    color: #AAA9AE;
+}
+.keyword_mng_pop .input_box input::placeholder{
+    font-size: 0.875rem;
+    padding-left: 0;
+}
+.keyword_mng_pop .input_box button{
+    width: 3.438rem;
+    height: 2.25rem;
+    color: #fff;
+    background-color: #999 !important;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 400 !important;
+    margin-left: 0.75rem;
+}
+.keyword_mng_pop .input_box button.blue{
+    background-color: #0176F9 !important;
+}
+
+
+.keyword_mng_pop .input_box.disab input{
+    border: 0.063rem solid #DBDBDB;
+    background-color: #FAFAFA;
+    color: #AAA9AE;
+}
+
+
+
+.keyword_mng_pop .btn_wrap{
+    width: 100%;
+    padding: 0.438rem 0.625rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 0.375rem #00000029;
+}
+.keyword_mng_pop .btn_wrap button{
+    width: 100%;
+    height: 2.75rem;
+    background-color: #999 !important;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    font-weight: 400 !important;
+}
+.keyword_mng_pop .btn_wrap button.blue{
+    background-color: #0176F9 !important;
+}

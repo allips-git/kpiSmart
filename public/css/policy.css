@@ -1,0 +1,31 @@
+.policy_wrap{
+    background-color: #fff;
+    padding: 15px;
+    height: calc(100% - 95px);
+    border-radius: 10px;
+}
+
+.inner_txt{
+    height: 100%;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.inner_txt::-webkit-scrollbar{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.inner_txt::-webkit-scrollbar-thumb{
+	width:12px;
+	background-color: #fff;
+	border:1px solid #ddd;
+}
+.inner_txt::-webkit-scrollbar-track{
+	width:12px;
+	background-color: #ddd;
+}
+.whouse .btn_wrap{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}

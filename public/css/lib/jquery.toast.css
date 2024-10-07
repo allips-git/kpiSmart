@@ -1,0 +1,70 @@
+.toast {
+	width: 200px !important;
+    position: fixed;
+    list-style: none;
+    padding: 0;
+    top: 110px;
+    z-index: 999999;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.toast li {
+	width: 200px;
+    margin: 10px 0 0;
+    display: block;
+    background-color: #fcf8e3;
+    color: #c09853;
+    border: 1px solid #fbeed5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+}
+.toast li:first-child {
+    margin-top: 10px;
+}
+.toast li.danger {
+    color: #fdfdfd;
+    background-color: #C96158;
+    border-color: #C96158;
+}
+.toast li.info {
+    color: #fdfdfd;
+    background-color: #56AAC2;
+    border-color: #56AAC2;
+}
+.toast li.success {
+    color: #fdfdfd;
+    background-color: #71B471;
+    border-color: #71B471;
+}
+.toast li.success2 {
+    color: #fdfdfd;
+    background-color: #71B471;
+    border-color: #71B471;
+}
+.toast li.danger font {
+    color: #fdfdfd !important;
+}
+.toast button.close {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+	height: 20px;
+    float: right;
+    padding: 0;
+    margin: 0 0 0 5px;
+    color: rgba(0, 0, 0, .25);
+    cursor: pointer;
+}
+.toast h1,
+.toast h2,
+.toast h3,
+.toast h4 {
+    display: inline;
+}

@@ -1,0 +1,1262 @@
+.w22 {width:22% !important}
+.w27 {width:27% !important}
+.w37 {width:37% !important}
+.w48 {width: 48% !important}
+.w47{width: 47% !important;}
+
+/* 2020-06-18 - 새로운 레이아웃 추가 */
+
+
+.table-zone {
+	height: -webkit-calc(100% - 40px);
+	height: -moz-calc(100% - 40px);
+	height:calc(100% - 40px)
+}
+
+
+.input-zone dt,
+.input-zone dd{
+	height:35px;
+}
+
+.input-zone dt {
+	width: 75px !important;
+}
+
+.input-zone dd {
+	width: -webkit-calc( 100% - 75px) !important;
+	width: -moz-calc( 100% - 75px) !important;
+	width: calc( 100% - 75px) !important;
+}
+
+.input-zone dd.second,
+.input-zone dd.first{
+	width: -webkit-calc( 50% - 75px) !important;
+	width: -moz-calc( 50% - 75px) !important;
+	width: calc( 50% - 75px) !important;
+}
+
+#dv_in{
+	text-align:center;
+    margin-bottom: 10px;
+}
+#dv_up{
+	width:100%;
+	padding:0 33%;
+	text-align:center;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- esti ---------- */
+
+
+.esti .h-scroll {
+    /* height:462px; */
+    height:-webkit-calc(100% - 124px);
+    height:-moz-calc(100% - 124px);
+    height:calc(100% - 124px);
+}
+
+
+.esti .dl-height {
+	background-color:#fff;
+	height:595px;
+	height:-webkit-calc(100% - 20px);
+	height:-moz-calc(100% - 20px);
+	height:calc(100% - 20px);
+}
+
+.esti table td{
+    background-color: #fff;
+}
+.esti table tr:nth-child(2n-1) td{
+    background-color: #fff;
+}
+.esti #left-component {
+	width: 400px;
+}
+
+.esti #left-component .pretty-split-pane-component-inner {
+	min-width:360px;
+}
+
+.esti #vertical-divider {
+	left:400px;
+}
+
+.esti #right-component {
+	left: 400px;
+
+}
+
+.esti #right-component  .pretty-split-pane-component-inner {
+	min-width:1150px;
+}
+
+.input-zone {
+	width: 100%;
+	height:615px;
+	height:-webkit-calc(100% - 73px);
+	height:-moz-calc(100% - 73px);
+	height:calc(100% - 73px);
+}
+.input-zone form {
+	height: 100%;
+}
+
+.esti .input-zone dt,
+.esti .input-zone dd{
+	height: 28.7px;
+}
+
+.esti .input-zone dd input[type='number'],
+.esti .input-zone dd input[type='text'],
+.esti .input-zone dd select {
+	display:block;
+	height: 22px;
+	width: 100%;
+}
+td.discount{
+	color: blue;
+}
+.esti .input-zone dd button{
+	height: 22px;
+	line-height: 22px;
+}
+.input-zone dd input[type='number'],
+.input-zone dd input[type='text'],
+.input-zone dd select {
+	display:block;
+	height: 25px;
+	width: 100%;
+}
+.esti .input-zone dd{
+	padding: 3px 3px 0;;
+}
+.esti .input-zone dt{
+	padding: 6px;
+}
+.input-zone dd span {
+	font-size:11px;
+	height: 25px;
+	line-height:25px;
+	text-align:center
+}
+
+.input-zone .flot dt,
+.input-zone .flot dd {
+	float:left
+}
+
+.input-zone .flot dd.first {
+	width: 110px;
+}
+
+.input-zone .flot dd.second {
+	width: 130px;
+	width: -webkit-calc( 100% - 262px);
+	width: -moz-calc( 100% - 262px);
+	width: calc( 100% - 262px);
+}
+.input-zone .flot dt.second{
+	border-left: 1px solid #d5d5d5;
+}
+
+
+.input-zone dd.ws input,
+.input-zone dd.ws select,
+.input-zone dd.ws span,
+.input-zone dd.ws button {
+	float:left;
+	margin-right: 5px;
+}
+
+.input-zone dd .datepicker{
+	float:left;
+}
+.input-zone dl dd{
+	line-height:25px;
+}
+
+.disabled-cover {
+	position:absolute;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(255,255,255,.7);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.esti .table-zone {
+	height: -webkit-calc(100% - 18px);
+	height: -moz-calc(100% - 18px);
+	height:calc(100% - 18px);
+	overflow:hidden;
+}
+.esti #dv_in,
+.esti #dv_up button{
+	margin-top:10px;
+}
+
+.input-zone dd input.biz_null,
+.input-zone dd input.hebe{
+	border:none;
+	box-shadow:none;
+	color:red;
+	font-weight:bold;
+}
+.esti dt.nomportant{
+	padding-left: 15px;
+}
+.esti dt.important{
+	padding-left: 6px !important;
+}
+.esti dt.important::before{
+	content: '*';
+	color: #FF9BA1;
+	font-weight: bold;
+	vertical-align: top;
+	margin-right:0px;
+}
+.esti .calenderImg {
+	width: 22px;
+	height: 22px;
+	vertical-align: top;
+}
+
+
+.esti .top{
+    margin-bottom: 20px;
+}
+.esti .bottom{
+    height: calc(100% - 80px);
+    height: -moz-calc(100% - 80px);
+    height: -webkit-calc(100% - 80px);
+
+}
+.esti .bottom .out-height{
+    background-color: #fff;
+    overflow: auto;
+    height: calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+}
+.split-pane h4{
+    font-size: 16px;
+    margin-bottom: 6px !important;
+}
+
+
+table.summery .hovering tr:first-child td{
+	height: 50px !important;
+}
+.w23{width: 23%;}
+.w27{width: 27%;}
+
+.ord-info hr{
+	margin: 10px 0;
+	height: 0px;
+	width: 100%;
+	border: .5px dashed #eaeaea;
+}
+table tr.hidden .x-scroll  {
+	height: 277px;
+	background-color: #f1f1f1;
+	overflow: auto;
+}
+table tr.hidden .x-scroll table tfoot{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	border: 0;
+}
+
+table tr.hidden td {
+	position: relative;
+}
+table tr.bgo td{
+	border-right: 1px solid #ccc !important;
+	color: #8c8c8c;
+}
+table tr.bgo td{
+	border-right: 1px solid #ccc !important;
+	color: #8c8c8c;
+	height: 26px !important;
+}
+table tr.active td {
+	background-color:#E3F1FF !important;
+}
+
+table tr.active td.active {
+	border:1px solid #1D8DF3 !important;
+	background-color:#E3F1FF !important;
+}
+ table tr td {
+	background-color: #f3f3f3;
+}
+.w33{width: 33%;}
+ .pagination {
+	text-align: center;
+}
+ table tr.open td{
+	background-color: #fff;
+}
+ table tr.open:nth-child(2) td{
+	background-color: #fff !important;
+}
+ table tr.open:hover td{
+	background-color: #E3F1FF;
+}
+ table tr.hidden .ord_detail table tr.cov td{
+	background-color: #fff;
+}
+ table tr.hidden .ord_detail table tr.bgo td {
+	background-color: #fff;
+}
+ .ord-info{
+	padding: 2px 0;
+}
+ .h-scroll table tr{
+	position: relative;
+}
+ span.bunhal {
+	color: red;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 11px;
+}
+ span.bunhal_list{
+	background-color: #fff;
+	width:250px;
+	border: 1px solid #eee;
+	position: absolute;
+	font-size: 11px;
+	color: #222;
+	font-weight: normal;
+	z-index: 999;
+	padding: 5px;
+	display: none;
+	text-align: center;
+}
+ span.bunhal_list span{
+	display: block;
+}
+ table .name02 .counter{
+	height: 23px;
+	line-height: 22px;
+	border-bottom: 1px solid #ddd;
+}
+ table tr td.name02{
+	padding: 0;
+}
+ table tr td.name02 p:last-child{
+	border-left: 1px solid #ddd;
+}
+ table tr td.name02 p{
+	width: 50%;
+	height: 23px;
+	line-height: 23px;
+	float: left;
+}
+
+table tr td.name02 p.no:last-child{
+	border-left: 1px solid #ddd;
+}
+table tr td.name02 p.no{
+	width: 50%;
+	height: 100%;
+	line-height: 50px;
+	float: left;
+}
+
+ td.ord-info p.nobun{
+	color: #bdbdbd;
+	font-size: 11px;
+}
+ table tr td.name03{padding: 0;}
+ table tr td.name03 p:first-child{
+	border-bottom: 1px solid #ddd;
+}
+ table tr td.name03 p{
+	height: 36px;
+	line-height: 36px;
+	padding: 0 5px;
+	display: block;
+}
+
+.w21{
+	width: 21%;
+}
+ span.factory,
+ span.center,
+ span.mewachang{
+	border: 1px solid #0d62ba;
+	display: inline-block;
+	color: #0d62ba;
+	width: 50px;
+}
+ span.center{
+	color: #339900;
+	border-color: #339900;
+}
+ span.mewachang{
+	color: #cc3366;
+	border-color: #cc3366;
+}
+ span.dg,
+ span.ing,
+ span.cancle,
+ span.complete{
+	border: 1px solid #339900;
+	color: #339900;
+	width: 50px;
+	padding: 5px 0;
+	display: inline-block;
+}
+ span.ing{
+	color: #EC8E02;
+	border-color: #EC8E02;
+}
+ span.cancle{
+	color: #cc3366;
+	border-color: #cc3366;
+}
+ span.complete{
+	color: #ccc;
+	border-color: #ccc;
+}
+ table .ord_detail tr td.name{padding: 0;}
+ table .ord_detail tr td.name p:first-child{
+	border-bottom: 1px solid #ddd;
+}
+ table .ord_detail tr td.name p{
+	line-height: 60px;
+	padding: 0 5px;
+	display: block;
+}
+table button{padding: 0 6px;}
+span.buy{
+	display: inline-block;
+	border: 1px solid #339900;
+	padding: 4px 10px;
+	color: #339900;
+}
+span.make{
+	display: inline-block;
+	border: 1px solid #0d62ba;
+	padding: 4px 10px;
+	color: #0d62ba;
+}
+dl.item_wrap{
+    padding: 10px !important;
+    border-bottom: 1px solid #ddd !important;
+}
+dl.item_wrap h6{
+    font-size: 14px;
+}
+dl.item_wrap .left_s p{
+    font-size: 12px;
+}
+dl.item_wrap .item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+dl.item_wrap .left_s{
+    width: 46%;
+    padding-top: 4px;
+}
+dl.item_wrap .right_s{
+    display: flex;
+    width: 54%;
+}
+dl.item_wrap .right_s .box{
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+}
+dl.item_wrap .right_s .box p,
+dl.item_wrap .right_s .box b{
+    border-left: 1px solid #ddd;
+    display: block;
+}
+
+dl.item_wrap .right_s .box button{
+    margin-bottom: 5px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #1D8DF3;
+    background-color: #fff;
+    color: #1D8DF3;
+
+}
+dl.item_wrap .right_s .box strong{
+    color: #ff0000;
+}
+dl.price_wrap{
+    padding: 14px !important;
+    font-size: 14px;
+}
+dl.price_wrap .price,
+dl.price_wrap .total_price{
+    display: flex;
+    justify-content: space-between;
+}
+dl.price_wrap .price{
+	border-top: 2px solid #111;
+	padding-top: 20px;
+	padding-right: 14px;
+}
+dl.price_wrap .price h6{
+    width: 50%;
+	padding-left: 12px;
+}
+dl.price_wrap .price p{
+    width: 50px;
+}
+dl.price_wrap ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+	padding-right: 14px;
+}
+dl.price_wrap ul li span{
+    color: #000;
+}
+dl.price_wrap strong{
+    font-weight: bolder;
+}
+.esti .phrases{
+	margin-bottom: 0;
+}
+dl.price_wrap .total_price {
+    margin-top: 15px;
+    font-size: 16px;
+	padding-left: 12px;
+	padding-right: 14px;
+}
+dl.price_wrap .total_price strong{
+    color: #1D8DF3;
+	font-family:'Noto Sans KR';
+	font-weight:700;
+}
+dl.price_wrap .total_price span{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.esti .Division {
+	display:none;
+}
+
+.esti #dd_div {
+	width: 100% !important;
+	padding: 5px 0;
+	height:auto;
+}
+
+
+.esti #dd_div select,.esti #dd_div input {
+	display:inline-block;
+}
+
+.esti .dv span {
+	margin: 0 1px;
+}
+
+.esti .dv {
+	margin-bottom:5px;
+	width:100%;
+}
+.esti .dv:last-child {
+	margin-bottom: 0
+}
+.esti .dv span:nth-child(3) {
+	margin: 0 3px;
+}
+
+/* 견적서 찾기 팝업 */
+.mn-popup .inner{
+	padding: 15px;
+}
+.esti_popup .pagination{
+	margin-bottom:0px;
+	margin-left:0px;
+}
+
+.esti_popup {
+	margin-top: 0 !important;
+	width: 1100px !Important;
+	display: none;
+	height: 719px;
+}
+
+.esti_popup .title {
+	padding:15px 0;
+}
+
+.esti_popup .inner .table-wrap{
+	background-color:#eee;
+	height:520px;
+	overflow:hidden
+}
+.esti_popup .inner{
+	width:100%;
+	padding:20px;
+	overflow:auto;
+}
+.esti_popup table.summery .ord_detail table{border:0px}
+.esti_popup table.summery .ord_detail tr{
+	border:0px solid transparent;
+	border-bottom:0px;
+	border-top:0px;
+	padding:0;
+}
+.esti_popup table.summery .ord_detail tr th{
+	border-right:0px;
+}
+.esti_popup table.summery .ord_detail .inner-table tr td{
+	border:0px solid transparent;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.esti_popup .h-scroll{
+	height:495px;
+}
+.esti_popup .item-table .hidden tr td:last-child{
+	border-right:0px;
+}
+
+.esti_popup .item-table .hidden tr th:last-child{
+	border-right:0px
+}
+/* 21-10-19 새로운 주문 등록 거래원장 검색 팝업 수정 */
+.esti_popup table.summery .hovering tr:first-child td{
+	height: 50px !important;
+}
+.w23{width: 23%;}
+
+.esti_popup .ord-info{
+	padding: 10px 5px;
+}
+.esti_popup .ord-info hr{
+	margin: 10px 0;
+	height: 0px;
+	width: 100%;
+	border: .5px dashed #eaeaea;
+}
+.esti_popup table tr.hidden .mCustomScrollbar  {
+	height: 277px;
+	background-color: #f1f1f1;
+}
+.esti_popup table tr.hidden .mCustomScrollbar table tfoot{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	border: 0;
+}
+.esti_popup table tr.hidden td {
+	position: relative;
+}
+.esti_popup .covering table tr.bgo td{
+	border-right: 1px solid #ccc !important;
+	color: #8c8c8c;
+}
+.esti_popup .open td.T-left{
+	padding-left: 10px;
+}
+.covering .cov td:nth-child(2n){
+	padding-left: 10px;
+}
+table tr.active td {
+	background-color:#E3F1FF !important;
+}
+
+table tr.active td.active {
+	border:1px solid #1D8DF3 !important;
+	background-color:#E3F1FF !important;
+}
+
+
+
+
+/* 제품검색 팝업창 */
+.item_li_popup {
+	margin-top: 0 !important;
+	width: 900px;
+	display: none;
+	height: 680px;
+}
+.item_li_popup .h-scroll{
+	height: 480px;
+	background-color: #efefef;
+
+}
+.item_li_popup table tr:nth-child(2n-1) td{
+	background-color: #fff;
+}
+
+/* 위치 선택 팝업*/
+.place_popup{
+	display: none;
+	width: 400px;
+	height: 550px;
+}
+.mn-popup .b-close{
+	margin-top: 8px;
+}
+.place_popup .h-scroll{
+	height: 440px;
+	background-color: #efefef;
+}
+.place_popup .btn_wrap{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+.place_popup .btn_wrap button{
+	height: 32px;
+	padding: 0 26px;
+	line-height: 32px;
+}
+.place_popup table tr:nth-child(3n-1) td{
+	background-color: #fff;
+}
+.place_popup table tr:nth-child(2n-1) td{
+	background-color: #fff;
+}
+/* 고객검색팝업 */
+.client_pop {
+	display: none;
+	width: 1000px !important;
+	height: 600px;
+}
+.client_pop .h-scroll{
+	background-color: #efefef;
+	height: 400px;
+}
+.client_pop table tr:nth-child(3n-1) td{
+	background-color: #fff;
+}
+.client_pop table tr:nth-child(2n-1) td{
+	background-color: #efefef;
+}
+.client_pop .h-scroll button{
+	padding: 0 10px;
+}
+/* 고객등록 */
+.client_in_pop{
+	display: none;
+	width: 400px !important;
+}
+.client_in_pop tr:nth-child(2n-1) td{
+	background-color: #fff;
+}
+.client_in_pop th{
+	width: 100px;
+	text-align: left;
+	padding-left: 15px;
+}
+.client_in_pop th::before{
+	content: '*';
+	display: inline-block;
+	margin-right: 5px;
+	color: #FF9BA1;
+}
+.client_in_pop td{
+	text-align: left;
+	background-color: #fff;
+}
+.client_in_pop td input{
+	text-align: left;
+	max-width: 300px;
+}
+.client_in_pop tr.add input{
+	margin-bottom: 2px;
+}
+.client_in_pop tr.add input:last-child{
+	margin-bottom: 0;
+}
+.client_in_pop .btn-wrap{
+	width: 100%;
+	text-align: center;
+	margin:30px 0 10px;
+}
+.client_in_pop .btn-wrap button{
+	height: 32px;
+	padding: 0 26px;
+	line-height: 32px;
+}
+
+.client_in_pop .phrases{
+    padding-left: 0px !important;
+}
+.client_in_pop td button{
+	height: 22px;
+	line-height: 22px;
+}
+
+
+
+
+/* esti_test */
+.esti_test .input-zone{
+	height:-webkit-calc(100% - 20px);
+	height:-moz-calc(100% - 20px);
+	height:calc(100% - 20px);
+}
+.esti_test .bottom{
+    height: calc(100% - 20px);
+    height: -moz-calc(100% - 20px);
+    height: -webkit-calc(100% - 20px);
+}
+.esti_test .phrases{
+    padding-left: 15px !important;
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+/* 계약금 팝업창  */
+.contract_in_pop{
+	width: 350px !important;
+}
+.contract_in_pop h5{
+	font-size: 16px;
+	font-weight: 700;
+}
+.contract_in_pop h5 strong{
+	vertical-align: text-bottom;
+	float: right;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+
+}
+.contract_in_pop h5 strong span{
+	font-size: 12px;
+	vertical-align: text-bottom;
+	font-family:'Nanumgothic';
+	font-weight: normal;
+}
+.contract_in_pop .price_ul li{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #767676;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+.contract_in_pop .price_ul li span{
+	font-size: 12px;
+	font-family:'Nanumgothic';
+	font-weight: 400;
+}
+.contract_in_pop .price_ul li strong{
+	font-size: 13px;
+	color: #111;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+}
+.contract_in_pop .price_ul li .red{
+	color: #de0e0e;
+}
+.contract_in_pop h6{
+	margin-top: 10px;
+	border-top: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.contract_in_pop h6 strong{
+	color: #1D8DF3;
+	font-size: 17px;
+	font-weight: bolder;
+	float: right;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+}
+.contract_in_pop h6 strong span{
+	font-size: 12px;
+	font-family:'Nanumgothic';
+	font-weight: 400;
+}
+.contract_in_pop .flex{
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0 20px;
+}
+.contract_in_pop .flex div{
+	width: 49%;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	padding: 5px 10px;
+	font-weight: bolder;
+	color: #111;
+	line-height: 28px;
+	
+}
+.contract_in_pop .flex div input{
+	width: 80%;
+	border: 0px;
+	text-align: right;
+	height: 28px;
+	box-shadow: none;
+}
+.contract_in_pop .flex .discount span{
+	color: #de0e0e;
+	float: right;
+	width: 80%;
+	text-align: right;
+}
+.contract_in_pop .flex .discount input{
+	color: #de0e0e;
+}
+.contract_in_pop .flex .discount input::placeholder{
+	color: #de0e0e;
+}
+.contract_in_pop .flex .add input{
+	color: #1D8DF3;
+}
+.contract_in_pop .flex .add input::placeholder{
+	color: #1D8DF3;
+}
+.contract_in_pop .flex .add span{
+	color: #1D8DF3;
+	float: right;
+	width: 80%;
+	text-align: right;
+}
+.contract_in_pop ul.payment li{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.contract_in_pop .payment li input+label{
+	padding-left: 18px;
+	font-size: 13px;
+	height: 25px;
+	line-height: 25px;
+}
+.payment li input[type='text']{
+	text-align: right;
+}
+.payment li span{
+	font-size: 12px;
+}
+.contract_in_pop .btn-wrap{
+	margin: 40px 0 10px;
+	width: 100%;
+	text-align: center;
+}
+.contract_in_pop .btn-wrap button{
+	height: 32px;
+	padding: 0 26px;
+	line-height: 32px;
+}
+
+
+
+
+/* test2 */
+.test2 .h-scroll{
+	height: 380px;
+}
+.test2 .payment_wrap{
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+}
+.test2 .left{
+	width: 33%;
+	padding:10px 50px 10px 20px;
+}
+.test2 .payment{
+	width: 33%;
+	padding: 20px 20px 0 50px;
+}
+.test2 .right{
+	display: flex;
+	flex-flow: row wrap;
+	width: 33%;
+	justify-content: space-between;
+	border-left: 2px dotted #eee;
+	border-right: 2px dotted #eee;
+	padding: 20px 40px;
+}
+.test2 h5{
+	font-size: 16px;
+	font-weight: 700;
+}
+.test2 h5 strong{
+	vertical-align: text-bottom;
+	float: right;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+
+}
+.test2 h5 strong span{
+	font-size: 12px;
+	vertical-align: text-bottom;
+	font-family:'Nanumgothic';
+	font-weight: normal;
+}
+.test2 .price_ul li{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #767676;
+	margin-top: 4px;
+	padding-left: 10px;
+}
+.test2 .price_ul li span{
+	font-size: 12px;
+	font-family:'Nanumgothic';
+	font-weight: 400;
+}
+.test2 .price_ul li strong{
+	font-size: 13px;
+	color: #111;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+}
+.test2 .price_ul li .red{
+	color: #de0e0e;
+}
+.test2 .payment_wrap h6{
+	font-size: 16px;
+	font-weight: bold;
+	width: 100%;
+}
+.test2 .payment_wrap h6 strong{
+	color: #1D8DF3;
+	font-size: 17px;
+	font-weight: bolder;
+	float: right;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+}
+.test2 .payment_wrap h6 strong span{
+	font-size: 12px;
+	font-family:'Nanumgothic';
+	font-weight: 400;
+}
+.test2 .flexs{
+	width: 100%;
+	margin: 0px 0 20px;
+	height: 40px;
+}
+.test2 .flexs div{
+	width: 100%;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	padding: 5px 10px;
+	font-weight: bolder;
+	color: #111;
+	display: block;
+	line-height: 28px;
+	margin-bottom: 10px;
+	
+}
+.test2 .flexs div input{
+	width: 80%;
+	border: 0px;
+	text-align: right;
+	height: 28px;
+	box-shadow: none;
+}
+.test2 .flexs .discount span{
+	color: #de0e0e;
+	float: right;
+	width: 80%;
+	text-align: right;
+}
+.test2 .flexs .discount input{
+	color: #de0e0e;
+}
+.test2 .flexs .discount input::placeholder{
+	color: #de0e0e;
+}
+.test2 .flexs .add input{
+	color: #1D8DF3;
+}
+.test2 .flexs .add input::placeholder{
+	color: #1D8DF3;
+}
+.test2 .flexs .add span{
+	color: #1D8DF3;
+	float: right;
+	width: 80%;
+	text-align: right;
+}
+.test2 ul.payment li{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	width: 100%;
+}
+.test2 .payment li input+label{
+	padding-left:26px;
+	font-size: 15px;
+	height: 34px;
+	line-height: 34px;
+	background-size: 16px;
+}
+.test2 .payment li input[type='text']{
+	text-align: right;
+	margin-right: 2px;
+	width: 170px;
+	height: 34px;
+}
+.test2 .payment li span{
+	font-size: 14px;
+}
+
+
+/* test3 */
+
+.test3 dl.price_wrap{
+    padding: 20px !important;
+    font-size: 14px;
+}
+.test3 h5{
+	font-size: 15px;
+	font-weight: 700;
+}
+.test3 h5 strong{
+	vertical-align: text-bottom;
+	float: right;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+
+}
+.test3 h5 strong span{
+	font-size: 12px;
+	vertical-align: text-bottom;
+	font-family:'Nanumgothic';
+	font-weight: normal;
+	margin-left: 2px;
+}
+.test3 .price_ul li{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13px;
+	color: #767676;
+	margin-top: 4px;
+	padding: 0;
+}
+.test3 .price_ul li span{
+	font-size: 12px;
+	font-family:'Nanumgothic';
+	font-weight: 400;
+	margin-left: 2px;
+}
+.test3 .price_ul li strong{
+	font-size: 13px;
+	color: #111;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+}
+.test3 .price_ul li .red{
+	color: #de0e0e;
+}
+.test3 h6{
+	margin-top: 10px;
+	border-top: 2px solid #111;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+.test3 h6 strong{
+	color: #1D8DF3;
+	font-size: 16px;
+	font-weight: bolder;
+	float: right;
+	font-family:'NanumgothicEB';
+	font-weight:600;
+}
+.test3 h6 strong span{
+	font-size: 12px;
+	font-family:'Nanumgothic';
+	font-weight: 400;
+	margin-left: 2px;
+}
+.test3 .flex{
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0 20px;
+}
+.test3 .flex div{
+	width: 49%;
+	border: 1px solid #ddd;
+	font-size: 12px;
+	padding: 5px 10px;
+	font-weight: bolder;
+	color: #111;
+	line-height: 28px;
+	
+}
+.test3 .flex div input{
+	width: 80%;
+	border: 0px;
+	text-align: right;
+	height: 28px;
+	box-shadow: none;
+}
+.test3 .flex .discount span{
+	color: #de0e0e;
+	float: right;
+	width: 80%;
+	text-align: right;
+}
+.test3 .flex .discount input{
+	color: #de0e0e;
+}
+.test3 .flex .discount input::placeholder{
+	color: #de0e0e;
+}
+.test3 .flex .add input{
+	color: #1D8DF3;
+}
+.test3 .flex .add input::placeholder{
+	color: #1D8DF3;
+}
+.test3 .flex .add span{
+	color: #1D8DF3;
+	float: right;
+	width: 80%;
+	text-align: right;
+}
+.test3 ul.payment{
+	margin-bottom: 5px;
+}
+.test3 ul.payment li{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	padding: 0;
+}
+.test3 .payment li input+label{
+	padding-left: 18px;
+	font-size: 13px;
+	height: 25px;
+	line-height: 25px;
+	color: #000;
+}
+.test3 .payment li input[type='text']{
+	text-align: right;
+}
+.test3 .payment li span{
+	font-size: 12px;
+}

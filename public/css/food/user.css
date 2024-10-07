@@ -1,0 +1,1043 @@
+/* user css */
+.content{
+    background-color: #f5f5f8;
+    padding: 1.5rem 1.875rem;
+}
+.auth .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.auth .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.auth .search_zone dl{
+	height: 2.188rem;
+}
+.auth .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.auth .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+}
+
+.auth .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.auth .section dd select,
+.auth .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.auth .section dd input{
+    padding: 0 0.5rem;
+}
+
+.auth .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.auth .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.auth .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.auth .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+.auth .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.auth .input_zone{
+    width: 25rem;
+    height: 100%;
+}
+
+.auth .input_zone .short{
+	padding-bottom: 0.5rem;
+}
+.auth .input_zone .short dl{
+	padding: 0 1rem;
+}
+
+.auth .input_zone .long .btn-box{
+	height:2.5rem;
+	display: flex;
+	border-radius: 0.25rem;
+	justify-content: space-between;
+	overflow: hidden;
+
+}
+.auth .input_zone .long .btn-box button{
+	border: 0;
+	background-color: #0176f9;
+	color: #fff;
+	width: 100%;
+    font-size: 0.875rem;
+	height: 2.5rem;
+	border-radius: 0;
+}
+.auth .input_zone .long .btn-box button#del{
+	background-color: #f1f1f5;
+	color: #111;
+}
+/* .input_zone .long .btn-box button:last-child{
+	margin-left: 0.625rem !important;
+} */
+.auth .input_zone .long{
+	height: calc(100% - 11.375rem);
+	margin-top: 1.25rem;
+}
+.auth .input_zone .long .table_wrap{
+	width: 100%;
+	padding: 0 0.625rem;
+	height: calc(100% - 5.375rem);
+}
+.auth .input_zone h4{
+	padding: 0.875rem 0.875rem 0.625rem;
+	position: relative;
+	font-size: 0.875rem;
+}
+.auth .input_zone .long h4 input + label{
+	background-color: #fff;
+	color: #444;
+	border: 0.063rem solid #e5e5e5;
+	background-image: none;
+	padding-left: 0;
+	width: 5rem;
+	height: 1.625rem;
+	text-align: center;
+	line-height: 1.563rem;
+	border-radius: 0.25rem;
+	position: absolute;
+	top: 0.625rem;
+	right: 0.875rem;
+}
+.auth .input_zone .long h4 input:checked + label{
+	background-color: #0176f9;
+	color: #fff;
+}
+
+
+.auth .input_zone .long .h-scroll{
+	height: calc(100% - 4.125rem);
+	border-bottom: 0.063rem solid #E5E5EC;
+}
+.auth .input_zone .long table{
+    border: 0;
+}
+.auth .input_zone .long table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size: 0.75rem;
+    height: 1.75rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    box-shadow: none;
+}
+.auth .input_zone .long  table tr:first-child th:first-child{
+	border-left: 0;
+}
+.auth .input_zone .long  table tr:first-child th{
+	border-bottom: 0;
+}
+
+.auth .input_zone .long table td{
+    background-color: #fff !important;
+    height: 1.75rem;
+    color: #111;
+    font-size: 0.75rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.auth .input_zone .long table input+label{
+	background-image: url(/public//img/checkbox.png) !important;
+	background-size: 0.813rem;
+	width: 0.813rem;
+	height: 0.813rem;
+	line-height: 0.813rem;
+	margin-top: -0.25rem;
+}
+.auth .input_zone .long table input:checked+label{
+	background-image: url(/public//img/checkbox_on.png) !important;
+}
+.auth .input_zone dl {
+    margin-bottom: 0.625rem;
+}
+.auth .input_zone dl dt{
+    width: 6.875rem;
+    height: 2.125rem;
+    line-height: 2.125rem;
+    font-size: .875rem;
+}
+.auth .input_zone dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.5rem;
+}
+
+.auth .input_zone dl dd{
+    height: 2.125rem;
+    width: calc(100% - 6.875rem);
+    display: flex;
+}
+.auth .input_zone dd input::placeholder{
+    font-size: 0.75rem;
+}
+.auth .input_zone dl dd .input_line {
+    margin-right: 0 !important;
+}
+.auth .input_zone dl dd .input_line input,
+.auth .input_zone dl dd .input_line select{
+    height: 2.125rem;
+	font-size: 0.75rem !important;
+}
+.auth .input_zone dl dd button{
+    height: 2.125rem;
+    width: 3.75rem;
+    margin-left: 0.625rem;
+}
+.auth .input_zone .btn_wrap{
+    position: sticky;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.auth .input_zone .btn_wrap button{
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    background-color: #0176f9;
+    border: 0;
+}
+.auth p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.625rem;
+    text-align: right;
+	padding-right: 1.25rem;
+}
+.auth p.imptp span{
+    color: #dc0000;
+}
+
+
+
+
+
+
+.auth .bottom .list_zone{
+	width: calc(100% - 26.25rem);
+	position: relative;
+}
+
+.auth .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.auth .bottom .list_zone table{
+    border: 0;
+}
+.auth .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    box-shadow: none;
+}
+.auth .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.auth .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.auth .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.auth .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+.auth .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.auth .bottom .list_zone .h-scroll{
+    height: calc(100% - 9.375rem);
+}
+
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 2.5rem;
+	height: 1.125rem !important;
+    margin-top: 0.25rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0.313rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 0.25rem !important;
+    margin-right: 0.313rem;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 1rem;
+	width: 1rem;
+	left: 0;
+	bottom: calc(50% - .5rem);
+	background-color: #f1f1f5;
+	-webkit-transition: .4s;
+	transition: .4s;
+    box-shadow: 0 0.125rem 0.188rem rgba(0,0,0,0.3);
+}
+
+input:checked + .slider {
+	background-color: #9fccff;
+}
+
+input:checked + .slider::before {
+	background-color: #0176F9;
+}
+input:focus + .slider {
+	box-shadow: 0 0 .063rem #0176f9;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(1.375rem);
+	-ms-transform: translateX(1.375rem);
+	transform: translateX(1.375rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 1.75rem;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.auth .input_zone .long table tr td.set-title{
+	font-weight: 500;
+}
+.auth .input_zone .long table tr td.pad{
+	padding-left: 1.188rem;
+}
+
+.auth .bottom .list_zone table{
+    border: 0;
+}
+.auth .bottom .list_zone table tr.active td{
+	background-color: #f1f8ff !important;
+}
+
+
+
+
+
+table.hovering tr:hover td {
+	background-color:#f1f8ff !important;
+}
+
+
+
+
+
+
+
+
+
+/* user */
+.user .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.user .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.user .search_zone dl{
+	height: 2.188rem;
+}
+.user .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.user .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+}
+
+.user .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.user .section dd select,
+.user .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.user .section dd input{
+    padding: 0 0.5rem;
+}
+
+.user .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+.user .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.user .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.user .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+.user .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+	
+}
+
+.user .input_zone{
+	width: 39.375rem;
+    height: 100%;
+}
+
+.user .input_zone .short{
+	width: 100%;
+	padding: 0 1rem;
+	height: calc(50% + 2.6rem);
+	overflow: auto;
+}
+.user .input_zone .short .left,
+.user .input_zone .short .right{
+	width: 48.5%;
+}
+.user .input_zone .short dl{
+	height:1.5rem;
+	margin-bottom:0.375rem;
+}
+.user .input_zone .short dl:last-child{
+	margin-bottom: 0;
+}
+
+.user .input_zone .short dt{
+	font-size: 0.813rem;
+    line-height:1.5rem;
+	height: 1.5rem;
+	width: 6.25rem;
+    float: left;
+    padding-left: 0.5rem;
+}
+.user .input_zone .short dd{
+	font-size: 0.813rem;
+	height: 1.5rem;
+	width: calc(100% - 6.25rem);
+    float: left;
+}
+.user .input_zone .short dd.half{
+	width: calc(50% - 6.25rem);
+}
+.user .input_zone .short dd input,
+.user .input_zone .short dd select{
+	height:1.5rem !important;
+	font-size: 0.813rem !important;
+    padding: 0 4px;
+}
+.w48{
+	width: 48% !important;
+}
+.w56{
+	width: 56% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.user .input_zone .long{
+	width: 100%;
+	height: calc(50% - 3.6rem);
+	padding-top:0.625rem;
+	margin-top: 0.375rem;
+	border-top: 0.063rem dashed #e5e5ee;
+}
+.user .input_zone .long h4{
+	padding: 0 1rem 0.5rem;
+}
+.user .input_zone .long .btn-box{
+	height:2.5rem;
+	display: flex;
+	border-radius: 0.25rem;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.user .input_zone .long .btn-box button{
+	border: 0;
+	background-color: #0176f9;
+	color: #fff;
+	width: 100%;
+    font-size: 0.875rem;
+	height: 2.5rem;
+	border-radius: 0;
+}
+.user .input_zone .long .btn-box button#del{
+	background-color: #f1f1f5;
+	color: #111;
+}
+/* .input_zone .long .btn-box button:last-child{
+	margin-left: 0.625rem !important;
+} */
+.user .input_zone .long .table_wrap{
+	width: 100%;
+	height: calc(100% - 3.5rem);
+	padding: 0 1rem;
+}
+.user .input_zone h4{
+	padding: 0.875rem 0 0.625rem;
+	position: relative;
+	font-size: 0.875rem;
+}
+.user .input_zone .long h4 input + label{
+	background-color: #fff;
+	color: #444;
+	border: 0.063rem solid #e5e5e5;
+	background-image: none;
+	padding-left: 0;
+	width: 5rem;
+	height: 1.625rem;
+	text-align: center;
+	line-height: 1.563rem;
+	border-radius: 0.25rem;
+	position: absolute;
+	top: -0.125rem;
+	right: 1rem;
+}
+.user .input_zone .long h4 input + label:hover{
+	background-color: #f5f5f8;
+}
+.user .input_zone .long h4 input:checked + label{
+	background-color: #0176f9;
+	color: #fff;
+}
+
+
+.user .input_zone .long .h-scroll{
+	height: calc(100% - 3.8rem);
+	border-bottom: 0.063rem solid #E5E5EC;
+}
+.user .input_zone .long table{
+    border: 0;
+}
+.user .input_zone .long table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size: 0.813rem;
+    height: 1.75rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC !important;
+    box-shadow: none;
+}
+.user .input_zone .long  table tr:first-child th:first-child{
+	border-left: 0;
+}
+.user .input_zone .long  table tr:first-child th{
+    border-top: 0.063rem solid #E5E5EC;
+}
+.user .input_zone .long  .n-scroll{
+    border-bottom: 1px solid #e5e5ec;
+}
+.user .input_zone .long table td{
+    background-color: #fff;
+    height: 1.75rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.user .input_zone .long table tr td.set-title{
+	font-weight: 500;
+}
+.user .input_zone .long table tr td.pad{
+	padding-left: 1.188rem;
+}
+.user .input_zone .long table input+label{
+	background-image: url(/public//img/checkbox.png) !important;
+	background-size: 0.813rem;
+	width: 0.813rem;
+	height: 0.813rem;
+	line-height: 0.813rem;
+	margin-top: -0.188rem;
+}
+.user .input_zone .long table input:checked+label{
+	background-image: url(/public//img/checkbox_on.png) !important;
+}
+.user .input_zone dl {
+    margin-bottom: 0.625rem;
+}
+.user .input_zone dl dt{
+    width: 6.875rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+	font-size: 0.813rem;
+}
+.user .input_zone dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.375rem;
+}
+
+.user .input_zone dl dd{
+    height: 1.875rem;
+    width: calc(100% - 6.875rem);
+    display: flex;
+	font-size: 0.813rem;
+}
+.user .input_zone dl dd .input_line input,
+.user .input_zone dl dd .input_line select{
+    height: 1.875rem;
+	font-size: 0.813rem;
+}
+
+.user .input_zone dl.bgo dd{
+    height: 5.625rem;
+}
+.user .input_zone dl dd .input_line textarea{
+    padding: 0.313rem;
+    font-size: 0.813rem;
+    width: 100%;
+    height: 5.625rem !important;
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: #111;
+    border-bottom: 0.063rem solid #707070;;
+}
+.user .input_zone dl dd button{
+    height: 1.75rem;
+    width: 3.75rem;
+}
+.user .input_zone .btn_wrap{
+    position: sticky;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.user .input_zone .btn_wrap button{
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    background-color: #0176f9;
+    border: 0;
+}
+.user p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.375rem;
+    text-align: right;
+}
+.user p.imptp span{
+    color: #dc0000;
+}
+.user .calenderImg{
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+	background-color: #f5f5f8;
+}
+.user input.gray{
+	background-color: #e1e1e5 !important;
+}
+.w57{width: 57%;}
+
+.set-table td.chan {
+	background-color:#E3F1FF;
+	border: 0.063rem solid #1D8DF3 !important;
+}
+
+
+
+
+
+.user .bottom .list_zone{
+	width: calc(100% - 40.625rem);
+	position: relative;
+}
+
+.user .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.user .bottom .list_zone table{
+    border: 0;
+}
+.user .bottom .list_zone table tr.active td{
+	background-color: #f1f8ff !important;
+}
+.user .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size: 0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    box-shadow: none;
+}
+.user .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.user .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size:0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.user .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.user .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+.user .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.user .bottom .list_zone .h-scroll{
+    height: calc(100% - 9.375rem);
+}
+
+table td.tb_click{
+	color: #0176f9 !important;
+	text-decoration: underline;
+}
+
+.total {
+    position: fixed;
+    bottom: 0;
+    left: 15.625rem;
+    right: 0;
+    background-color: #fff;
+    height: 2.375rem;
+    z-index: 999;
+    
+}
+.total ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0 1.875rem;
+}
+.total ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.375rem;
+}
+.total ul li strong {
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left: 1.875rem;
+}
+.total ul li span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 0.313rem;
+}
+
+
+
+
+/* log */
+
+.log .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.log .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.log .search_zone dl{
+	height: 2.188rem;
+}
+.log .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.log .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+    line-height: 2.188rem;
+}
+
+.log .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.log .section dd select,
+.log .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.log .section dd input{
+    padding: 0 0.5rem;
+}
+
+.log .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+
+.log .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.log .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.log .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+
+.log input.gray{
+	background-color: #e1e1e5 !important;
+}
+
+.log .calenderImg{
+	width: 2.188rem !important;
+	height: 2.188rem !important;
+	background-color: #f5f5f8;
+}
+
+
+
+.log .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.log .bottom .list_zone{
+	width:  100%;
+	position: relative;
+}
+
+.log .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.log .bottom .list_zone table{
+    border: 0;
+}
+.log .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    box-shadow: none;
+}
+.log .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.log .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.log .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.log .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+.log .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.log .bottom .list_zone .h-scroll{
+    height: calc(100% - 9.375rem);
+}

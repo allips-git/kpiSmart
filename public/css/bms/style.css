@@ -1,0 +1,75 @@
+/* sweetalert 디자인 기존에 있던 소스 이관 2022-01-13 김원명 */
+.swal2-popup{
+    width: 20em !important;
+}
+.swal2-header{
+    padding: 0 !important;
+}
+.swal2-title {
+    margin: 0 0 1.25rem !important;
+    font-size: 1.125rem !important;
+    font-family: 'Noto Sans KR' !important;
+    font-weight: 500 !important;
+    color: #111 !important;
+    position: relative !important;
+}
+.swal2-content {
+    margin-bottom: 0.875rem !important;
+    font-size: 0.875rem !important;
+    padding: 0 !important;
+    color: #111 !important;
+}
+.swal2-content div{
+    font-size: 0.875rem;
+}
+.swal2-content span{
+    font-size: 1.125rem !important;
+    color: #0176f9 !important;
+    font-weight: 500 !important;
+}
+.swal2-styled {
+    padding: .4em 2.5em !important;
+}
+.swal2-styled.swal2-confirm {
+    font-size: .9em !important;
+}
+.swal2-styled.swal2-cancel {
+    font-size: .9em !important;
+}
+
+/* 버튼두개 wrap */
+.swal2-actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0 0 0.625rem 0.625rem;
+    overflow: hidden;
+    flex-flow:row !important;
+}
+.swal2-actions button{
+    width: 100% !important;
+    margin: 0 !important;
+    height: 3rem !important;
+    border-radius: 0 !important;
+}
+.swal2-styled.swal2-cancel{
+    color: #111 !important;
+}
+.swal2-icon {
+    width: 2.6em !important;
+    height: 2.6em !important;
+    margin: 1.1em auto 1.1em !important;
+    line-height: 2.6em !important;
+	border: .2em solid transparent !important;
+}
+.swal2-icon .swal2-icon-content {
+    display: flex;
+    align-items: center;
+    font-size: 2em !important;
+}
+.swal2-popup {
+    max-width: 80% !important;
+    padding:2.5rem 0 4.688rem !important;
+    border-radius: 0.625rem !important;
+}

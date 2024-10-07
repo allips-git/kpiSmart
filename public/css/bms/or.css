@@ -1,0 +1,71 @@
+/* or css - 주문관리 */
+
+table tr th {
+	border-bottom:1px solid #d5d5d5
+}
+
+
+.releaseset-box {
+	margin-bottom: 40px;
+}
+
+.releaseset-box .kind {
+	width: 49%;
+	
+}
+
+.releaseset-box .radiochk span label {
+	display:inline-block;
+	width: 100px;
+	text-align:left
+}
+
+.releaseset-box .week select {
+	width: 100px;
+}
+
+.releaseset-box .ordertime input[type='text'] {
+	width: 50px
+}
+
+.releaseset-box .btn-box {
+	text-align:center
+}
+
+.releaseset-box .btn-box button {
+	width: 100px;
+}
+
+.label {
+	display:inline-block;
+	margin-bottom: 5px;
+	font-family:'NanumgothicEB';
+}
+
+
+.closed-box input[type='text'] {
+	max-width:350px
+}
+
+.closed-box input[type='text'].datepicker {
+	width: 120px;
+}
+
+.set-zone {
+	height:-webkit-calc(100% - 40px);
+	height:-moz-calc(100% - 40px);
+	height:calc(100% - 40px)
+}
+
+.closed-box {
+	height:-webkit-calc(100% - 180px);
+	height:-moz-calc(100% - 180px);
+	height:calc(100% - 180px);
+}
+
+.h-scroll {
+	height: 515px;
+	height:-webkit-calc(100% - 105px);
+	height:-moz-calc(100% - 105px);
+	height:calc(100% - 105px);
+}

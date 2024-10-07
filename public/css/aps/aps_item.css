@@ -1,0 +1,331 @@
+.com_item #left-component {
+	width: 380px;
+	
+}
+
+.com_item #left-component .pretty-split-pane-component-inner {
+	min-width:360px;
+	
+}
+
+.com_item #vertical-divider {
+	left:380px;
+	
+}
+
+.com_item #right-component {
+	left: 380px;
+}
+
+.com_item #right-component  .pretty-split-pane-component-inner {
+	min-width:1075px;
+    border: 1px solid red;
+	overflow-x:auto
+}
+
+.com_item .input-zone{
+    height: calc(100% - 82px);
+    background-color: #fff;
+}
+
+.com_item .input-zone dt{
+    width: 90px;
+}
+
+.com_item .input-zone dd{
+    width: calc(100% - 90px);
+}
+.com_item .input-zone dd input[type='checkbox']{
+    background-color: #45ADF9;
+}
+.com_item .input-zone dl.bgo{
+    height: 130px;
+}
+
+.com_item .input-zone dl.bgo dt{
+    line-height: 130px;
+    height: 130px;
+	padding-top: 0;
+}
+.com_item .input-zone dl.bgo dd{
+    height: 130px;
+}
+.com_item .input-zone dl.bgo textarea{
+    height: 116px;
+    border-radius: 4px;
+    width: 100%;
+	font-size: 12px;
+    padding: 5px;
+}
+.com_item .input-zone dd.half{
+	width: calc(50% - 90px);
+}
+.com_item .input-zone .ddchk{
+    padding-top: 10px;
+}
+.com_item .input-zone .btn-wrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.com_item .first-table{
+    width: 100%;
+    overflow-x: auto;
+}
+.com_item .first-table .n-scroll{
+    min-width: 1600px !important;
+}
+
+.com_item .first-table .table-sor{
+    min-width: 1600px !important;
+    height: calc(100vh - 717px) !important;
+	background-color: #fff;
+	overflow: auto;
+}
+.com_item .first-table .tail-box{
+    min-width: 1600px !important;
+}
+
+
+
+.com_item .second-table{
+    width: 100%;
+    overflow-x: auto;
+}
+.com_item .second-table .n-scroll{
+    min-width: 1680px !important;
+}
+
+.com_item .second-table .table-sor{
+    min-width: 1680px !important;
+    height: 267px;
+	background-color: #fff;
+	overflow: auto;
+}
+.com_item .second-table .tail-box{
+    min-width: 1680px !important;
+}
+
+
+
+
+/* 스크롤바 수정 */
+.first-table::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.first-table::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.first-table::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.second-table::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.second-table::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.second-table::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 22px !important;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 21px !important;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 17px;
+	left: 4px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #45ADF9;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #45ADF9;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(36px);
+	-ms-transform: translateX(36px);
+	transform: translateX(36px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 28px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
+  .offtxt{
+	  color: #777;
+	  font-size: 13px;
+	  width: 100%;
+	  position: relative;
+	  right: 15px;
+	  top: 2px;
+	  text-align: right;
+	  display: inline-block;
+	  transition: .4s;
+      cursor: pointer;
+  }
+  .ontxt{
+	  color: #fff;
+	  font-size: 13px;
+	  width: 100%;
+	  position: relative;
+	  top: 1px;
+	  left: 15px;
+	  text-align: left;
+	  display: none;
+	  height: 10px;
+	  transition: .4s;
+      cursor: pointer;
+  }
+  input:checked ~ .offtxt{
+	  display: none;
+  }
+  
+  input:checked ~ .ontxt{
+	display: inline-block;
+}
+
+.com_item .tail-box{
+	text-align: left;
+}
+
+.com_item .nomportant{
+	padding-left:20px;
+}
+
+.com_item .disable{
+	color:#CCCCCC;
+}
+
+
+/* 템플릿 */
+.template .h-scrolls{
+	height: 617px;
+	height: calc(100% - 113px);
+	overflow-x: scroll;
+	background-color: #fff;
+}
+.wrp{
+	min-width: 1800px;
+	height: 100%;
+}
+/* 스크롤바 수정 */
+.h-scrolls::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.h-scrolls::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.h-scrolls::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.h-scrolls::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.h-scrolls::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.h-scrolls::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.template .h80 .select_wrp{
+	display: flex;
+	flex-flow: row wrap;
+	width:100%;
+
+}
+.template .h80 dt{
+	display: table;
+}
+.template .h80 dt p{
+	display: table-cell;
+	vertical-align: middle;
+}
+.template .h80 dt,
+.template .h80 dd{
+	min-height: 40px;
+	height: auto;
+}
+.template .selected{
+	display: block;
+	margin: 0px 0px 5px;
+}
+.template .selected span{
+	border: 1px solid #ddd;
+	display: inline-block;
+	min-width: 55px;
+	padding: 1px 4px 0;
+	margin-top: 4px;
+	margin-right: 5px;
+	border-radius: 2px;
+}
+.template .selected span i{
+	float: right;
+	padding-top: 3px;
+	margin-left: 5px;
+	color: #bbb;
+	font-weight: lighter !important;
+	cursor: pointer;
+}
+.template .selected span i:hover{
+	color: #45ADF9;
+}

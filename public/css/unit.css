@@ -1,0 +1,619 @@
+/* unit css */
+/* price css */
+.h-scroll {
+	height:595px;
+	height:-webkit-calc(100% - 135px);
+	height:-moz-calc(100% - 135px);
+	height:calc(100% - 135px)
+}
+
+
+.dl-height {
+	background-color:#fff;
+	height:600px;
+	height:-webkit-calc(100% - 10px);
+	height:-moz-calc(100% - 10px);
+	height:calc(100% - 10px)
+}
+
+
+#left-component {
+	width: 370px;
+
+}
+
+#left-component .pretty-split-pane-component-inner {
+	min-width:350px;
+
+}
+
+#vertical-divider {
+	left:370px;
+
+}
+
+#right-component {
+	left: 370px;
+}
+
+#right-component  .pretty-split-pane-component-inner {
+	overflow-x:auto
+}
+
+
+/* 2020-05-11 추가 */
+.input-zone {
+	width: 100%;
+	height:615px;
+	height:-webkit-calc(100% - 70px);
+	height:-moz-calc(100% - 70px);
+	height:calc(100% - 70px)
+}
+
+.input-zone form {
+	height: 100%;
+}
+
+.input-zone dd.radiochk {
+	height: 25px;
+}
+
+.input-zone dd.p3 {
+	padding-top: 3px;
+}
+
+.input-zone dd input[type='number'],
+.input-zone dd input[type='text'],
+.input-zone dd select {
+	display:block;
+	height: 25px;
+}
+.input-zone dd input[type='text'].datepicker{
+	display: inline-block;
+}
+
+.input-zone dd span {
+	font-size:11px;
+	height: 25px;
+	line-height:25px;
+	text-align:center
+}
+
+.input-zone dd.ws input,
+.input-zone dd.ws span,
+.input-zone dd.ws button {
+	float:left;
+	margin-right: 5px;
+}
+
+.input-zone .btn-box {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.input-zone .btn-box button {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+}
+
+.input-zone .phrases {
+	font-size: 10px;
+	color: #adadad;
+	padding-left: 15px;
+	margin: 10px 0;
+}
+
+.input-zone .phrases strong {
+	color:#FF9BA1
+}
+
+.save-btn{
+	padding:0 10px;
+}
+.w70p {
+	width: 70px !important
+}
+
+.w50p {
+	width: 50px !important
+}
+
+.w40p {
+	width: 40px !important
+}
+
+.w100p{
+	width: 100px !important
+}
+
+.w120p {
+	width: 120px !important
+}
+
+
+.unit-price-list .radiochk span {
+	display:inline-block;
+	text-align:left;
+	margin-top: -7px;
+	vertical-align:middle;
+	width: 50px
+}
+
+/* =============================== */
+
+
+.unit .no {
+	width: 5%;
+}
+
+.unit table .w9 {
+	width: 9%;
+}
+
+.unit .update {
+	width: 12%;
+}
+
+.unit .gdcode {
+	width: 16%;
+}
+.unit .gdname {
+	width: 22%;
+}
+
+/* ============================ */
+
+/* 2020-05-11 POPUP추가 */
+.cp-popup {
+	margin: 0 !important;
+	display:block !important;
+	width:650px !important;
+	height: 320px;
+}
+.biz-li-pop {
+	margin: 0 !important;
+	display:block;
+	width: 800px !important;
+	height: 590px;
+}
+.biz-li-pop .table-wrap{
+	height: 401px;
+}
+.cp-popup .searchbox {
+	margin-bottom: 10px
+}
+
+.unit #dv_in {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+/* 테이블 thead top고정 */
+
+
+.unit .table-sor {
+	height:620px;
+	height: -webkit-calc(100% - 113px);
+	height: -moz-calc(100% - 113px);
+	height: calc(100% - 113px);
+	overflow: auto;
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+/* w-house 창고관리css */
+
+.whouse .h-scroll {
+	height:595px;
+	height:-webkit-calc(100% - 135px);
+	height:-moz-calc(100% - 135px);
+	height:calc(100% - 135px)
+}
+
+
+.whouse .dl-height {
+	background-color:#fff;
+	height:600px;
+	height:-webkit-calc(100% - 10px);
+	height:-moz-calc(100% - 10px);
+	height:calc(100% - 10px)
+}
+/* 스크롤바 수정 */
+.whouse .dl-height::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.whouse .dl-height::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.whouse .dl-height::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+
+.whouse #left-component {
+	width: 380px;
+
+}
+
+.whouse #left-component .pretty-split-pane-component-inner {
+	min-width:370px;
+
+}
+
+.whouse #vertical-divider {
+	left:380px;
+
+}
+
+.whouse #right-component {
+	left: 380px;
+}
+
+.whouse #right-component .pretty-split-pane-component-inner {
+	overflow-x:auto
+}
+
+.whouse .input-zone {
+	width: 100%;
+	height:615px;
+	height:-webkit-calc(100% - 70px);
+	height:-moz-calc(100% - 70px);
+	height:calc(100% - 70px)
+}
+
+.whouse .input-zone form {
+	height: 100%;
+}
+.whouse .input-zone dt{
+	width: 85px;
+}
+.whouse .input-zone dd{
+	width: calc(100% - 85px);
+	width: -webkit-calc( 100% - 85px);
+	width: -moz-calc( 100% - 85px);
+}
+.whouse .input-zone dd.half{
+	width: calc(50% - 85px);
+}
+
+.whouse .input-zone dd.radiochk {
+	height: 40px;
+}
+
+/* 리스트 테이블 */
+.whouse .table-sor {
+	height:620px;
+	height: -webkit-calc(100% - 113px);
+	height: -moz-calc(100% - 113px);
+	height: calc(100% - 113px);
+	overflow: auto;
+	background-color: #fff;
+}
+
+
+
+
+.w100{
+	width: 100% !important;
+}
+.w50{width: 50% !important;}
+.w30{width: 30% !important;}
+.w12{width: 12% !important;}
+.w15{width: 15% !important;}
+
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	cursor: pointer;
+	height: 22px !important;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 21px !important;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 17px;
+	left: 4px;
+	bottom: 2px;
+	background-color: white;
+	cursor: pointer;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #45ADF9;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #45ADF9;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(36px);
+	-ms-transform: translateX(36px);
+	transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 28px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+.offtxt{
+	color: #777;
+	font-size: 13px;
+	width: 100%;
+	position: relative;
+	right: 15px;
+	top: 2px;
+	text-align: right;
+	display: inline-block;
+	transition: .4s;
+}
+.ontxt{
+	color: #fff;
+	font-size: 13px;
+	width: 100%;
+	position: relative;
+	top: 1px;
+	left: 15px;
+	text-align: left;
+	display: none;
+	height: 10px;
+	transition: .4s;
+}
+input:checked ~ .offtxt{
+	display: none;
+}
+
+input:checked ~ .ontxt{
+	display: inline-block;
+}
+.whouse .bgo dt {
+	padding-left: 20px;
+	height: 114px;
+}
+.whouse .bgo dd{
+	height: 114px;
+}
+.whouse .bgo dd textarea{
+	height: 100px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.whouse .table-sor{
+	height: 100%;
+}
+
+.whouse .table-wrap{
+	width: 100%;
+	overflow-x: auto;
+	height: calc(100% - 115px);
+}
+.whouse .table-wrap .unitprice-table{
+	min-width: 2060px !important;
+}
+.whouse .noport{
+	padding-left: 20px;
+}
+
+
+/* 스크롤바 수정 */
+.whouse .table-wrap::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.whouse .table-wrap::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.whouse .table-wrap::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+
+
+/* 작업장 wplace */
+.wplace .table-wrap .wplace-table{
+	min-width: 2100px !important;
+}
+
+/* 설비관리 css */
+
+.machine #left-component {
+	width: 400px;
+
+}
+
+.machine #left-component .pretty-split-pane-component-inner {
+	min-width:390px;
+
+}
+
+.machine #vertical-divider {
+	left:400px;
+
+}
+
+.machine #right-component {
+	left: 400px;
+}
+
+.machine #right-component  .pretty-split-pane-component-inner {
+	overflow-x:auto
+}
+
+.machine .input-zone dd.half{
+	width: calc(50% - 70px);
+}
+.machine .input-zone dd.half_right{
+	width: calc(50% - 100px);
+}
+
+
+
+
+
+.machine .noim{
+	padding-left: 20px;
+}
+.half .datepicker{
+	display: inline-block !important;
+}
+.w75{
+	width: 75%;
+}
+.machine .table-sor{
+	height: 100% !important;
+}
+
+.machine .table-wrap{
+	width: 100%;
+	overflow-x: auto;
+	height: calc(100% - 115px);
+}
+.machine .table-wrap .unitprice-table{
+	min-width: 2560px !important;
+}
+
+
+/* 스크롤바 수정 */
+.machine .table-wrap::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.machine .table-wrap::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.machine .table-wrap::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+
+
+
+/* 공통코드관리 */
+.common_cd .table-wrap .table01{
+	min-width: 1200px !important;
+}
+.common_cd .table-wrap .tail-box01{
+	min-width: 1200px !important;
+}
+
+.common_cd .table-wrap .table02{
+	min-width: 2100px !important;
+}
+.common_cd .table-wrap .tail-box02{
+	min-width: 2100px !important;
+}
+
+.common_cd .table-wrap {
+	height: 298px;
+}
+
+.common_cd .input-zone dd input[type='checkbox']+label{
+	background: url(/public/img/checkbox_b.png) left/12px no-repeat;
+}
+.common_cd .input-zone dd input[type='checkbox']:checked + label {
+	background-image: url(/public/img/checkbox_on_b.png);
+}
+.common_cd .input-zone dd.ddchk{
+	line-height: 30px;
+}
+.common_cd .input-zone dd.two input[type='text']{
+	display: inline-block;
+	margin-left: 10px;
+	margin-top:-3px;
+}
+.common_cd .input-zone dt.nomportant{
+	padding-left:20px
+}
+/* prod_c */
+
+.prod_c .input-zone dt.nomportant{
+	padding-left:20px
+}
+.prod_c .table-wrap .prod-table{
+	min-width: 1900px !important;
+}
+
+td.long_td{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.nov{
+	display: flex;
+	width: calc(100% - 112px);
+}
+
+
+/* 단가관리 */
+
+.unit_price .sale-table{
+	width: 1700px;
+}
+
+/* 스크롤바 수정 */
+.machine .table-sor::-webkit-scrollbar{
+	width:11px;
+	background-color: #e1e1e1;
+}
+.machine .table-sor::-webkit-scrollbar-thumb{
+	width:11px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.machine .table-sor::-webkit-scrollbar-track{
+	width:11px;
+	background-color: #e1e1e1;
+}
+
+
+/* 쿠폰 */
+.coupon .table-wrap{
+	height: calc(100% - 113px);
+}

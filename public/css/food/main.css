@@ -1,0 +1,418 @@
+
+
+.main .inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+    padding: 3.125rem 5rem;
+    min-height: 48.125rem;
+    overflow: auto;
+}
+.main .left{
+    width: 22rem;
+    height: 100%;
+}
+.main .right{
+    width: calc(100% - 24rem);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.main .box{
+    background-color: #fff;
+    box-shadow: 0 0.188rem 0.375rem #00000014;
+    border-radius: 0.625rem;
+}
+.main .box h4{
+    font-size: 1.125rem;
+    font-family: 'Noto Sans KR';
+    padding: 1rem 1rem 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+.main .right h4 a{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.main .right h4 a i{
+    font-size: 1.063rem;
+    margin-left: 0.25rem;
+}
+
+.main .left .box{
+    width: 100%;
+}
+.main .left .box01{
+    margin-bottom:2rem;
+    height: calc(37% - 1rem);
+	overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+.main .left .box01::-webkit-scrollbar{
+	width:0.75rem;
+	background-color: #edeff3;
+}
+.main .left .box01::-webkit-scrollbar-thumb{
+	width:0.75rem;
+	background-color: #fff;
+    border: 0.063rem solid #edeff3;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.188rem 0.625rem rgba(0,0,0,0.1);
+}
+.main .left .box01::-webkit-scrollbar-track{
+	width:0.75rem;
+	border:0.063rem solid #edeff3;
+}
+
+
+.main .icon_wrap{
+	display: flex;
+	flex-flow: row wrap;
+	height: 83%;
+    padding:1rem .5rem 0;
+}
+
+.main .icon_wrap .icon{
+	width:33.3%;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 0 !important;
+}
+.main .icon_wrap .icon:last-child{
+	margin-bottom: 0;
+}
+.main .icon_wrap .icon .img{
+	width: 3.75rem;
+	height:3.75rem;
+	margin: 0 auto;
+	background-color: #ccc;
+	box-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.1);
+	border-radius: 0.5rem;
+}
+
+.main .icon_wrap .icon .img{
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.main .icon_wrap .icon .img01{
+	background-color: #4388c9;
+	background-image: url(/public/img/online.png);
+	background-position: 67% 50%;
+	background-size: 70%;
+}
+.main .icon_wrap .icon .img02{
+	background-color: #f2753f;
+	/* background-color: #41bfbc; */
+	background-image: url(/public/img/boxes.png);
+	background-size: 65%;
+}
+.main .icon_wrap .icon .img03{
+	/* background-color: #f2753f; */
+	background-color: #41bfbc;
+	background-image: url(/public/img/deli.png);
+	background-size: 70%;
+	background-position: 50% 55%;
+}
+.main .icon_wrap .icon .img04{
+	background-color: #e26573;
+	background-image: url(/public/img/emplo.png);
+	background-size: 70%;
+}
+.main .icon_wrap .icon .img05{
+	background-color: #785dc4;
+	background-image: url(/public/img/payment.png);
+	background-position: 50% 50%;
+	background-size: 50%;
+}
+.main .icon_wrap .icon .img06{
+	background-color: #5e78bd;
+	background-image: url(/public/img/compa.png);
+	background-size: 77%;
+}
+
+
+
+.main .icon_wrap .icon p{
+	font-size: 0.813rem;
+	margin-top:0.4rem;
+	display: inline-block;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+}
+
+
+
+
+
+
+
+
+
+
+
+.main .left .box02{
+    height: calc(63% - 1rem);
+}
+.main .left .box02 .now{
+    width: 100%;
+    height: 90%;
+    padding:.75rem 1.25rem 1rem;
+}
+.main .left .box02 .now ul{
+    height: 100%;
+    overflow: auto;
+    background-color: #F8F8FA;
+    padding: 0.75rem;
+}
+.main .left .box02 .now ul li{
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
+    font-family: 'Noto Sans KR';
+}
+
+
+.main .left .box02 .now ul::-webkit-scrollbar{
+	width:0.75rem;
+	background-color: #edeff3;
+}
+.main .left .box02 .now ul::-webkit-scrollbar-thumb{
+	width:0.75rem;
+	background-color: #fff;
+    border: 0.063rem solid #edeff3;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.188rem 0.625rem rgba(0,0,0,0.1);
+}
+.main .left .box02 .now ul::-webkit-scrollbar-track{
+	width:0.75rem;
+	border:0.063rem solid #edeff3;
+}
+
+.main .right .wrap01{
+    width: 100%;
+    display: flex;
+    height: calc(25% - 1.406rem);
+}
+.main .right .wrap01 .box{
+    width: 25%;
+    margin-right: 1.875rem;
+    position: relative;
+}
+.main .right .wrap01 .box p{
+    padding: 2.188rem 0 0 0;
+    font-size: 2.25rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+}
+.main .right .wrap01 .box span{
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+}
+.main .right .wrap01 .box span.blue{
+    color: #0176F9;
+}
+.main .right .wrap01 .box span.red{
+    color: #FF2366;
+    font-weight: 400;
+}
+.main .right .wrap01 .box span.green{
+    color: #02BC77;
+}
+.main .counter{
+    /* color: #0176F9;  */
+    font-weight: 700;}
+
+.main .right .wrap02{
+    width: 100%;
+    height: calc(37% - 1rem);
+    /* height: calc(50% - 0.938rem); */
+    /* margin-top: 1.875rem; */
+}
+.main .right .wrap02 .first{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main .right .wrap02 .date{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+}
+.main .right .wrap02 .box{
+    width: 25%;
+    height: calc(100% - 40px);
+    margin-right: 1.875rem;
+    margin-top: 20px;
+}
+.main .right .wrap02 ul li {
+    font-size: 1.25rem;
+    font-family: 'Noto Sans KR';
+    text-align: right;
+    padding: 70px 2rem;
+}
+.main .right .wrap02 ul li{
+    background-image: url(/public/img/shopping.png);
+    background-size: 25%;
+    background-position: 12% center;
+}
+.main .right .wrap02 ul li.li02{
+    background-image: url(/public/img/bill.png);
+    background-size: 15%;
+}
+.main .right .wrap02 ul li.li03{
+    background-image: url(/public/img/box.png);
+}
+.main .right .wrap02 ul li.li04{
+    background-image: url(/public/img/truck.png);
+}
+.main .right .wrap02 ul li b{
+    font-size: 18px;
+    color: #777;
+    font-weight: 400;
+}
+.main .right .wrap02 ul li p{
+    font-size: 24px;
+    color: #111;
+    font-weight: 500;
+}
+
+
+.main .right .wrap03{
+    display: flex;
+    width: 100%;
+    height: calc(63% - 1em);
+    margin-top: 2rem;
+}
+.main .right .wrap03 .box{
+    width: 100%;
+}
+.main .right .wrap03 .box .noti{
+    height: 100%;
+    width: 100%;
+}
+.main .right .wrap03 .box .noti h4{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 0.625rem;
+}
+.main .right .box04,
+.main .right .box10{
+    margin-right: 0 !important;
+}
+
+.main .wrap03 .box .table_wrap{
+    padding: 0 1rem;
+    height: calc(100% - 54px);
+}
+.main .wrap03 .box .table_wrap .h-scroll{
+    height: calc(100% - 60px);
+}
+.main .wrap03 table{
+    border: 0;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+.main .wrap03 table th,
+.main .wrap03 table td{
+    background-image: none;
+    border: 0;
+    box-shadow: none;
+
+}
+.main .wrap03 table th{
+    background-color: #F8F8FA;
+    padding: 0.8rem;
+    border-top: 0.063rem solid #EFF2F7;
+    border-bottom: 0.063rem solid #EFF2F7;
+    font-size: 0.875rem;
+}
+.main .wrap03 table td{
+    background-color: transparent;
+    padding:  0.8rem;
+    border-bottom: 0.063rem solid #EFF2F7;
+    font-size: 0.875rem;
+}
+.main .wrap03 table td .impt{
+    color: #dc0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box .charts-container{
+    width: 40% !important;
+    position: absolute;
+    bottom: 20%;
+    right:1.25rem;
+}
+
+/* GRAPH - 1 */
+.box #graph-1 {
+  stroke: #0176F9;
+  stroke-width: 1.5;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -moz-animation: lineani 1.3s linear forwards;
+  -webkit-animation: lineani 1.3s linear forwards;
+  animation: lineani 1.3s linear forwards;
+  opacity: .7;
+}
+
+.box #poly-1 {
+  fill: none;
+}
+
+.box #graph-2 {
+    stroke: #FF2366;
+    stroke-width: 1.5;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    -moz-animation: lineani 1.3s linear forwards;
+    -webkit-animation: lineani 1.3s linear forwards;
+    animation: lineani 1.3s linear forwards;
+  }
+
+  #poly-2 {
+    fill:  none;
+  }
+
+@-moz-keyframes lineani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes lineani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes lineani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+

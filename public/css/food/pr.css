@@ -1,0 +1,1083 @@
+/* job_ord */
+.content{
+    background-color: #f5f5f8;
+    padding: 1.5rem 1.875rem;
+}
+.job_ord .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.job_ord .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.job_ord .search_zone dl{
+	height: 2.188rem;
+}
+.job_ord .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.job_ord .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+    line-height: 2.188rem;
+    float: left;
+}
+
+.job_ord .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.stock .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.stock .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.stock .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+.job_ord .section dd select,
+.job_ord .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.job_ord .section dd input{
+    padding: 0 0.5rem;
+}
+
+.job_ord .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+.job_ord .section dl dd.half01{
+    width: calc(50% - 15rem);
+}
+
+.job_ord .section dl dd.half02{
+    width: 50%;
+}
+.job_ord .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.job_ord .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.job_ord .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+
+.job_ord input.gray{
+	background-color: #e1e1e5 !important;
+}
+
+.job_ord .calenderImg{
+	width: 2.188rem !important;
+	height: 2.188rem !important;
+	background-color: #f5f5f8;
+}
+
+
+
+.job_ord .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.job_ord .bottom .list_zone{
+	width:  100%;
+	position: relative;
+}
+
+.job_ord .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.job_ord .bottom .list_zone .btns{
+    position: absolute;
+    top: .74rem;
+    right: 1.25rem;
+
+}
+.job_ord .bottom .list_zone .btns button{
+    height: 2.188rem !important;
+    width: 8.75rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 0.813rem;
+}
+.job_ord .bottom .list_zone .btns button.w{
+    background-color: #fff;
+    color: #111;
+    margin-right: 8px;
+}
+.job_ord .bottom .list_zone table{
+    border: 0;
+}
+.job_ord .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    /* border-bottom: 0.063rem solid #E5E5EC; */
+    box-shadow: none;
+}
+.job_ord .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.job_ord .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.job_ord .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.job_ord .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+.job_ord .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.job_ord .bottom .list_zone .h-scroll{
+    height: calc(100% - 7.375rem);
+}
+
+.job_ord .bottom .list_zone table input[type="checkbox"] + label{
+    background-image: url(/public/img/empty_chk.png);
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 1.5rem;
+}
+.job_ord .bottom .list_zone table input[type="checkbox"]:checked + label{
+    background-image: url(/public/img/blue_chk.png);
+}
+table td.tb_click{
+	color: #0176f9 !important;
+	text-decoration: underline;
+}
+.job_ord .view_count{
+    position: absolute;
+    right: 1.125rem;
+    bottom: 0.875rem;
+}
+.job_ord .view_count select{
+    width: 8.125rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: .063rem solid #CED4DA;
+}
+
+.total {
+    position: fixed;
+    bottom: 0;
+    left: 15.625rem;
+    right: 0;
+    background-color: #fff;
+    height: 2.375rem;
+    z-index: 999;
+    
+}
+.total ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0 1.875rem;
+}
+.total ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.375rem;
+    margin-left: 2rem;
+}
+.total ul li strong {
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left:  1.875rem;
+}
+.total ul li span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 0.313rem;
+}
+.total ul li.blue{
+    color: #0176f9;
+}
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.job_ord .bottom table td span.blue{
+    color: #0176f9;
+}
+.job_ord .bottom table td span.red{
+    color: #dc0000;
+    font-weight: 400;
+}
+.job_ord .bottom table button{
+    height: 1.625rem;
+    line-height: 1.563rem;
+    padding: 0 0.875rem;
+}
+.job_ord .bottom button.w{
+    background-color: #fff !important;
+    color: #111 !important;
+}
+
+
+
+
+
+
+
+
+
+/* job_reg */
+.job_reg .search_zone{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+.job_reg .search_zone h4{
+    margin-bottom: 0.625rem;
+}
+.job_reg .search_zone dl{
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+.job_reg .search_zone dl dt{
+    width: 6.25rem;
+    line-height: 1.875rem;
+    height: 1.875rem;
+}
+.job_reg .search_zone dl dd{
+    width: calc(100% - 6.25rem);
+    height: 1.875rem;
+}
+.job_reg .search_zone dl dd input,
+.job_reg .search_zone dl dd select{
+    height: 1.813rem;
+    font-size: 0.813rem;
+}
+.job_reg .search_zone dd .calenderImg{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+.job_reg .search_zone button{
+    height: 1.75rem !important;
+    font-size: 0.813rem;
+    padding:0 1.2rem !important;
+}
+.w165{width: 16.6% !important;}
+
+
+.job_reg .bottom {
+    width: 100%;
+    height: calc(100vh - 25.27rem);
+    margin-top: 1.25rem;
+    display: block !important;
+}
+.job_reg .bottom .tabbox{
+    display: none;
+    width: 100%;
+    height: calc(100vh - 29.5rem);
+    float: left;
+}
+.job_reg .bottom .list_zone{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.job_reg .bottom .list_zone > input[type="radio"] + label{
+    background-image: none;
+    padding:0 1.25rem;
+    font-size: 16px;
+    line-height: 160%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    border: 1px solid#e5e5ec;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    color: #c2c2c4;
+    float: left;
+    background-color: #f4f4f7;
+}
+.job_reg .bottom .list_zone > input[type="radio"]:checked + label{
+    color: #0176f9;
+    background-color: #fff;
+}
+.job_reg .bottom #tab01:checked ~ .tabbox01{display: block;}
+.job_reg .bottom #tab02:checked ~ .tabbox02{display: block;}
+.job_reg .bottom .tab01{border-right: 0 !important;}
+
+
+.job_reg .bottom .h-scroll{
+    height: calc(100% - 1.75rem) !important;
+    background-color: #fff;
+}
+.job_reg .bottom table td input.gray{
+    background-color: #e1e1e5;
+}
+.job_reg .bottom table td select.gray{
+    background-color: #e1e1e5;
+}
+.job_reg .bottom table td input,
+.job_reg .bottom table td select{
+    border: 1px solid #e4e4e7;
+    height: 1.75rem;
+    transition: none;
+    max-width: none;
+    background-color: #f5f5f8;
+}
+.job_reg .bottom table td button{
+    height: 1.75rem;
+}
+.job_reg .bottom table td input.T-left{
+    text-align: left !important;
+}
+.job_reg .bottom table td input.gray:hover,
+.job_reg .bottom table td input.gray:focus{
+    background-color: #e1e1e5 !important;
+    border: 0;
+}
+.job_reg .bottom table td input:focus{
+    border: 1px solid #0176f9;
+    transition:all .5s ;
+}
+.job_reg .bottom table td .calenderImg{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+
+/* 수량 카운터 css */
+.job_reg .spin{
+    text-align: center;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.job_reg table tr .spindd{
+    padding: 0 !important;
+}
+.job_reg .spin input[type="number"]{
+    height: 1.75rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 0;
+    padding: 0 !important;
+    font-size: 0.813rem !important;
+    background-color: #f5f5f8;
+}
+.job_reg input[type="number"]::-webkit-outer-spin-button,
+.job_reg input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+.job_reg .input_zone .spin span.spinner > .sub{
+    padding-top: .1rem;
+}
+.job_reg .spin span.spinner > .sub,
+.job_reg .spin span.spinner > .add {
+    display: block;
+    width: 30%;
+    height: 1.75rem;
+    font-weight: 700;
+    color: #111;
+    border: 0;
+    cursor: pointer;
+    transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.job_reg .spin span.spinner > .add {
+    right:.8rem;
+    float:right;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    border: 0.063rem solid #E5E5EC;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+.job_reg .spin span.spinner > .sub {
+    left:-1rem;
+    float:left;
+    height:1.75rem;
+    line-height: 1.25rem;
+    font-size: 1.5rem !important;
+    border: 0.063rem solid #E5E5EC;
+    overflow: hidden;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.job_reg .spin span.spinner > .sub:hover,
+.job_reg .spin span.spinner > .add:hover {
+    background: #fff !important;
+    color: #333;
+}
+/* 수량카운터끝 */
+.w27{width: 27% !important;}
+.job_reg .bottom table td button.del{
+    color: #dc0000;
+    background-color: #fff;
+}
+.job_reg .bottom table td button.del:hover{
+    background-color: #efefef;
+}
+.job_reg dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.5rem;
+}
+
+.job_reg .btn_wrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+.job_reg .btn_wrap button{
+    background-color: #0176f9;
+    box-shadow: 0 0 0.5rem rgba(0, 0,0,.2);
+    color: #fff;
+    border: 0;
+    width: 8.75rem;
+    height: 2.188rem;
+    font-size: 0.875rem;
+}
+.job_reg .btn_wrap button.red{
+    background-color: #dc0000;
+}
+.job_reg .btn_wrap button.gray{
+    color: #111;
+    margin-right: 0.625rem;
+}
+.job_reg p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.625rem;
+    text-align: right;
+    position: absolute;
+    top: 1.125rem;
+    right:30px;
+}
+.job_reg p.imptp span{
+    color: #dc0000;
+}
+.job_reg .select2 {
+    width: 100% !important;
+}
+.job_reg .search_zone .select2-container .select2-selection--single {
+    height: 1.813rem !important;
+    background-color: #f5f5f8 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0 !important;
+}
+.job_reg .search_zone .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.813rem !important;
+}
+
+.job_reg table .select2-container .select2-selection--single {
+    height: 1.813rem !important;
+    background-color: #f5f5f8 !important;
+    border: 0 !important;
+}
+.job_reg table .search_zone .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.813rem !important;
+}
+
+
+
+
+/* prod_list */
+
+.prod_list .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.prod_list .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.prod_list .search_zone dl{
+	height: 2.188rem;
+}
+.prod_list .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.prod_list .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+    line-height: 2.188rem;
+}
+
+.prod_list .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.prod_list .section dd select,
+.prod_list .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.prod_list .section dd input{
+    padding: 0 0.5rem;
+}
+
+.prod_list .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+
+.prod_list .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.prod_list .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.prod_list .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+
+.prod_list input.gray{
+	background-color: #e1e1e5 !important;
+}
+
+.prod_list .calenderImg{
+	width: 2.188rem !important;
+	height: 2.188rem !important;
+	background-color: #f5f5f8;
+}
+
+
+
+.prod_list .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+.prod_list .bottom .btns{
+    position: absolute;
+    top: 0.7rem;
+    right: 1.25rem;
+}
+.prod_list .bottom .btns button{
+    background-color: #0176f9;
+    border: 0;
+    font-weight: 400;
+    height: 2.188rem;
+    width: 8.75rem;
+    font-size: 0.813rem;
+    font-weight: 400;
+    margin-left: 0.625rem;
+}
+.prod_list .bottom .btns button.w{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+.prod_list .bottom .btns select{
+    width: 8.75rem;
+    height: 2.188rem;
+    border: 1px solid #dbdbdb;
+    padding-left: 5px;
+    border-radius: 4px;
+} 
+.prod_list .bottom .list_zone{
+	width:  100%;
+	position: relative;
+}
+
+.prod_list .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.prod_list .bottom .list_zone table{
+    border: 0;
+}
+.prod_list .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0;
+    box-shadow: none;
+}
+.prod_list .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.prod_list .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.prod_list .bottom .list_zone table td button{
+    padding: 0 0.875rem;
+    height: 1.625rem;
+    line-height: 1.563rem;
+}
+.prod_list .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.prod_list .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+
+
+.prod_list .bottom .list_zone table input[type='checkbox'] + label{
+    background-image: url(/public/img/empty_chk.png);
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 1.5rem;
+}
+
+.prod_list .bottom .list_zone table input[type='checkbox']:checked + label{
+    background-image: url(/public/img/blue_chk.png);
+
+}
+
+.prod_list .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.prod_list .bottom .list_zone .h-scroll{
+    height: calc(100% - 7.375rem);
+}
+
+.prod_list .view_count{
+    position: absolute;
+    right: 1.125rem;
+    bottom: 0.875rem;
+}
+.prod_list .view_count select{
+    width: 8.125rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: .063rem solid #CED4DA;
+}
+
+
+
+
+/* prod_detail */
+.prod_detail .search_zone{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+.prod_detail .search_zone button.cancle{
+    width: 8.75rem;
+    height: 2.188rem !important;
+    background-color: #dc0000;
+    color: #fff;
+    font-size: 0.813rem;
+    position: absolute;
+    top: 0.625rem;
+    right: 1.25rem;
+}
+.prod_detail .search_zone h4{
+    margin-bottom: 0.625rem;
+}
+.prod_detail .search_zone dl{
+    height: 1.875rem;
+    line-height: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+.prod_detail .search_zone dl dt{
+    width: 6.25rem;
+    line-height: 1.875rem;
+    height: 1.875rem;
+}
+.prod_detail .search_zone dl dd{
+    width: calc(100% - 6.25rem);
+    height: 1.875rem;
+}
+.prod_detail .search_zone dl dd span{
+    font-size: 0.875rem !important;
+    line-height: 1.875rem;
+}
+.prod_detail .search_zone dl dd input,
+.prod_detail .search_zone dl dd select{
+    height: 1.813rem;
+    font-size: 0.813rem;
+}
+.prod_detail .search_zone dd .calenderImg{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+.prod_detail .search_zone button{
+    height: 1.75rem !important;
+    font-size: 0.813rem;
+    padding:0 1.2rem !important;
+}
+.w165{width: 16.6% !important;}
+
+
+.prod_detail .bottom {
+    width: 100%;
+    height: calc(100vh - 25.27rem);
+    margin-top: 1.25rem;
+}
+.prod_detail .bottom .tabbox{
+    display: none;
+    width: 100%;
+    height: calc(100vh - 28.5rem);
+}
+
+.prod_detail .bottom .list_zone{
+    display: flex;
+    flex-flow: row wrap;
+}
+.prod_detail .bottom .list_zone > input[type="radio"] + label{
+    background-image: none;
+    padding:0 1.25rem;
+    font-size: 16px;
+    line-height: 160%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    display: inline-block;
+    border: 1px solid#e5e5ec;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    color: #c2c2c4;
+    background-color: #f4f4f7;
+}
+.prod_detail .bottom .list_zone > input[type="radio"]:checked + label{
+    color: #0176f9;
+    background-color: #fff;
+}
+.prod_detail .bottom #tab01:checked ~ .tabbox01{display: block;}
+.prod_detail .bottom #tab02:checked ~ .tabbox02{display: block;}
+.prod_detail .bottom .tab01{border-right: 0 !important;}
+
+
+.prod_detail .bottom {
+    width: 100%;
+    height: calc(100vh - 27rem);
+    margin-top: 1.25rem;
+}
+.prod_detail .bottom .h-scroll{
+    height: calc(100% - 4.5rem) !important;
+    background-color: #fff;
+}
+.prod_detail .bottom table td input.gray{
+    background-color: #e1e1e5;
+}
+.prod_detail .bottom table td select.gray{
+    background-color: #e1e1e5;
+}
+.prod_detail .bottom table td input,
+.prod_detail .bottom table td select{
+    border: 1px solid #e4e4e7;
+    height: 1.75rem;
+    transition: none;
+    max-width: none;
+}
+.prod_detail .bottom table td select{
+    background-color: #f5f5f8;
+}
+.prod_detail .bottom table td button{
+    height: 1.75rem;
+}
+.prod_detail .bottom table td input.T-left{
+    text-align: left !important;
+}
+.prod_detail .bottom table td input:hover,
+.prod_detail .bottom table td input:focus{
+    background-color: #f5f5f8 !important;
+}
+.prod_detail .bottom table td input.gray:hover,
+.prod_detail .bottom table td input.gray:focus{
+    background-color: #e1e1e5 !important;
+    border: 0;
+}
+.prod_detail .bottom table td .calenderImg{
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+}
+
+/* 수량 카운터 css */
+.prod_detail .spin{
+    text-align: center;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.prod_detail table tr .spindd{
+    padding: 0 !important;
+}
+.prod_detail .spin input[type="number"]{
+    height: 1.75rem;
+    width: 40%;
+    text-align: center;
+    border-radius: 0;
+    padding: 0 !important;
+    font-size: 0.813rem !important;
+    background-color: #f5f5f8;
+}
+.prod_detail input[type="number"]::-webkit-outer-spin-button,
+.prod_detail input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+.prod_detail .input_zone .spin span.spinner > .sub{
+    padding-top: .1rem;
+}
+.prod_detail .spin span.spinner > .sub,
+.prod_detail .spin span.spinner > .add {
+    display: block;
+    width: 30%;
+    height: 1.75rem;
+    font-weight: 700;
+    color: #111;
+    border: 0;
+    cursor: pointer;
+    transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.prod_detail .spin span.spinner > .add {
+    right:.8rem;
+    float:right;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    border: 0.063rem solid #E5E5EC;
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+.prod_detail .spin span.spinner > .sub {
+    left:-1rem;
+    float:left;
+    height:1.75rem;
+    line-height: 1.25rem;
+    font-size: 1.5rem !important;
+    border: 0.063rem solid #E5E5EC;
+    overflow: hidden;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.prod_detail .spin span.spinner > .sub:hover,
+.prod_detail .spin span.spinner > .add:hover {
+    background: #fff !important;
+    color: #333;
+}
+/* 수량카운터끝 */
+.w27{width: 27% !important;}
+.prod_detail .bottom table td button.del{
+    color: #dc0000;
+    background-color: #fff;
+}
+.prod_detail .bottom table td button.del:hover{
+    background-color: #efefef;
+}
+.prod_detail dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.5rem;
+}
+
+.prod_detail .btn_wrap{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+.prod_detail .btn_wrap button{
+    background-color: #0176f9;
+    box-shadow: 0 0 0.5rem rgba(0, 0,0,.2);
+    color: #fff;
+    border: 0;
+    width: 8.75rem;
+    height: 2.188rem;
+    font-size: 0.875rem;
+}
+.prod_detail .btn_wrap button.gray{
+    color: #111;
+    margin-right: 0.625rem;
+}
+.prod_detail p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.625rem;
+    text-align: right;
+    position: absolute;
+    bottom: 1.125rem;
+    right:20px;
+}
+.prod_detail p.imptp span{
+    color: #dc0000;
+}
+
+.prod_detail .select2 {
+    width: 100% !important;
+}
+.prod_detail .search_zone .select2-container .select2-selection--single {
+    height: 1.813rem !important;
+    background-color: #f5f5f8 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0 !important;
+}
+.prod_detail .search_zone .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.781rem !important;
+}
+
+.prod_detail table .select2-container .select2-selection--single {
+    height: 1.813rem !important;
+    background-color: #f5f5f8 !important;
+    border: 0 !important;
+}
+.prod_detail table .search_zone .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.781rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.w165{width: 16.6% !important;}
+.w37{width: 37%;}
+.w38{width: 38%;}
+.w26{width: 26%;}
+.w24{width: 24%;}
+.w72{width: 72%;}
+.w73{width: 73%;}
+.w74{width: 74%;}
+.w76{width: 76%;}
+.w27{width: 27% !important;}
+.w22{width: 22% !important;}
+.T-right{text-align: right !important;}

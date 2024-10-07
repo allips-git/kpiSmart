@@ -1,0 +1,1007 @@
+.content{
+    background-color: #f5f5f8;
+    padding: 1.5rem 1.875rem;
+}
+.item_list .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.item_list .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.item_list .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.813rem;
+}
+.item_list .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+}
+
+.item_list .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.item_list .section dd select,
+.item_list .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 .25rem;
+    color: #111;
+}
+.item_list .section dd input{
+    padding: 0 0.5rem;
+}
+
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.item_list .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.item_list .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.item_list .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+.item_list .input_zone h4{
+	padding: 0 0 0.625rem;
+	position: relative;
+	font-size: 0.875rem;
+}
+.item_list .input_zone h4 button.blue{
+    background-color: #0176f9;
+    border: 0;
+    font-weight: 400;
+}
+.item_list .bottom{
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.input_zone{
+    width: 25.5rem;
+    height: 100%;
+    /* padding: 1.25rem; */
+}
+
+.input_zone .input_wrap{
+    height: calc(100% - 2.5rem);
+    padding: 1.25rem;
+    position: relative !important;
+    overflow-y: auto;
+}
+.input_zone dl dd input[type='radio'] + label{
+    background-image: url(/public/img/app/chk_b.png);
+    background-size: 1.125rem;
+    height: 2.125rem;
+    line-height: 2.063rem;
+    padding-left: 1.563rem;
+    font-size: 0.781rem;
+    margin-right: 1.25rem;
+}
+.input_zone dl dd input[type='radio']:checked + label{
+    background-image: url(/public/img/app/chked_b.png);
+}
+
+.input_zone dl {
+    margin-bottom: 0.625rem;
+}
+.input_zone dl.half dt:nth-child(3n){
+    padding-left: 0.625rem;
+}
+.input_zone dl dt{
+    width: 5.25rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+    font-size: 0.813rem;
+}
+.input_zone dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.375rem;
+}
+.input_zone dl.half dd{
+    width: calc(50% - 5.25rem);
+}
+
+.input_zone dl dd{
+    height: 1.875rem;
+    width: calc(100% - 5.25rem);
+    display: flex;
+    float: left;
+    font-size: 0.781rem;
+    line-height: 1.875rem;
+}
+.input_zone dl dd .input_line {
+    margin-right: 0 !important;
+}
+.input_zone dl dd .input_line input,
+.input_zone dl dd .input_line select{
+    height: 1.875rem;
+    font-size: 0.781rem;
+}
+
+.input_zone dl.bgo dd{
+    height: 5.625rem;
+}
+.input_zone dl dd .input_line textarea{
+    padding: 0.313rem;
+    font-size: 0.781rem;
+    width: 100%;
+    height: 5.625rem !important;
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: #111;
+    border-bottom: 0.063rem solid #707070;;
+}
+.input_zone dl dd button{
+    height: 2.125rem;
+    width: 3.75rem;
+    margin-left: 0.625rem;
+}
+.input_zone .btn_wrap{
+    position: sticky;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+.input_zone .btn_wrap button{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    background-color: #0176f9;
+    border: 0;
+}
+.input_zone .btn_wrap button.btn_del{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+	background-color: #f1f1f5;
+	color: #111;
+    border: 0;
+}
+p.imptp {
+    font-size: 0.688rem;
+    color: #999;
+    margin-top: 0.625rem;
+    text-align: right;
+}
+p.imptp span{
+    color: #dc0000;
+}
+
+
+
+
+
+
+
+
+
+
+.item_list input.gray{
+	background-color: #e1e1e5 !important;
+}
+table td.tb_click{
+	color: #0176f9 !important;
+	text-decoration: underline;
+}
+.list_zone{
+    width: calc(100% - 26.75rem);
+    position: relative;
+}
+.list_zone h2{
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+.list_zone .btns{
+    position: absolute;
+    top: 0.75rem;
+    right: 1.25rem;
+}
+.list_zone .btns button.blue{
+    background-color: #0176f9;
+    border: 0;
+    font-weight: 400;
+    height: 2.188rem;
+    width: 8.75rem;
+    font-size: 0.813rem;
+    font-weight: 400;
+    margin-left: 0.625rem;
+}
+.list_zone .list_wrap{
+    width: 100%;
+    height: calc(100% - 7.2rem);
+    overflow: auto;
+}
+.list_zone .h-scroll{
+    height: calc(100% - 7.5rem);
+    margin-top: 0.0.313rem;
+}
+
+/* 스크롤바 수정 */
+.list_zone .list_wrap::-webkit-scrollbar,
+.input_zone .input_wrap::-webkit-scrollbar{
+	width:0.688rem;
+	background-color: #e6e6eb;
+    border-radius: 0.25rem;
+}
+.list_zone .list_wrap::-webkit-scrollbar-thumb,
+.input_zone .input_wrap::-webkit-scrollbar-thumb{
+	width:0.688rem;
+	background-color: #fff;
+    border: 0.063rem solid #edeff3;
+    border-radius: 0.25rem;
+}
+.list_zone .list_wrap::-webkit-scrollbar-track,
+.input_zone .input_wrap::-webkit-scrollbar-track{
+	width:0.688rem;
+	border:0.063rem solid #edeff3;
+    border-radius: 0.25rem;
+}
+.list_zone table{
+    border: 0;
+}
+.list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    /* border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    border-style: none; */
+    box-shadow: none;
+}
+.list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+.list_zone table tr.active td{
+    background-color: #f1f8ff !important;
+}
+
+.list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+
+.list_zone table td span.red{
+    color: #dc0000;
+    font-weight: 400;
+}
+
+
+
+
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 2.5rem;
+	height: 1.125rem !important;
+    margin-top: 0.25rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0.5rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 0.25rem !important;
+    margin-right: 0.313rem;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 1rem;
+	width: 1rem;
+	left: 0;
+	bottom: calc(50% - .5rem);
+	background-color: #f1f1f5;
+	-webkit-transition: .4s;
+	transition: .4s;
+    box-shadow: 0 0.125rem 0.188rem rgba(0,0,0,0.3);
+}
+
+input:checked + .slider {
+	background-color: #9fccff;
+}
+
+input:checked + .slider::before {
+	background-color: #0176F9;
+}
+input:focus + .slider {
+	box-shadow: 0 0 .063rem #0176f9;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(1.375rem);
+	-ms-transform: translateX(1.375rem);
+	transform: translateX(1.375rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 1.75rem;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.list_zone .view_count{
+    position: absolute;
+    right: 1.125rem;
+    bottom: 0.875rem;
+}
+.list_zone .view_count select{
+    width: 8.125rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: .063rem solid #CED4DA;
+}
+.total {
+    position: fixed;
+    bottom: 0;
+    left: 15.625rem;
+    right: 0;
+    background-color: #fff;
+    height: 2.375rem;
+    z-index: 999;
+    
+}
+.total ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0 1.875rem;
+}
+.total ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.375rem;
+}
+.total ul li strong {
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left: 1.875rem;
+}
+.total ul li span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 0.313rem;
+}
+.w43{width: 43% !important;}
+.w37{width: 37% !important;}
+
+
+
+/* 원자재관리 화면 */
+.buy_item .input_zone{
+    width: 26.25rem;
+}
+.buy_item .list_zone{
+    width: calc(100% - 27.5rem);
+}
+.buy_item .h-scroll{
+    margin-top: 0.006rem;
+}
+
+
+/* 단가 명칭관리 팝업 */
+.amt_pop{
+    width: 21.875rem;
+    position: relative;
+    display: none;
+}
+.amt_pop .inner{
+    padding: 1.25rem;
+    background-color: #fff !important; 
+}
+
+.amt_pop .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.amt_pop table input{
+    height: 1.75rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.75rem;
+    padding: 0 0.313rem;
+    color: #111;
+    max-width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: left;
+}
+
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.amt_pop table .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.amt_pop table .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.amt_pop table input::placeholder{
+    font-size: 0.75rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+.amt_pop table{
+    border: 0;
+}
+.amt_pop table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.781rem;
+    height: 2.25rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    /* border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    border-style: none; */
+    box-shadow: none;
+}
+.amt_pop table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+.amt_pop table tr.active td{
+    background-color: #f1f8ff !important;
+}
+
+.amt_pop table td{
+    background-color: #fff;
+    color: #111;
+    font-size: 0.781rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+    padding: 0.438rem;
+}
+.amt_pop table td.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.375rem;
+}
+.amt_pop table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.amt_pop table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+
+.amt_pop table td span.red{
+    color: #dc0000;
+    font-weight: 400;
+}
+
+
+.amt_pop .btn_wrap {
+    display: flex;
+    width: 100%;
+}
+
+
+.amt_pop .btn_wrap button{
+    width: 100%;
+    height: 2.875rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 0.875rem;
+    border: 0;
+    border-radius: 0;
+}
+.amt_pop .btn_wrap button.gray{
+    color: #111;
+    background-color: #f1f1f5;
+}
+
+
+/* 기초재고 팝업 */
+.base_pop{
+    width: 31.25rem;
+    display: none;
+}
+.base_pop .inner{
+    padding: 1.25rem 1.25rem 1.875rem !important; 
+    background-color: #fff !important; 
+}
+.base_pop .inner p.txt{
+    font-size: 0.813rem;
+    color: #111;
+    line-height: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    background-color: #0175f90c;
+    padding: 0.875rem 1.25rem;
+    border-radius: 0.25rem;
+}
+.base_pop dl{
+    margin-bottom: 0.5rem;
+}
+.base_pop dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.375rem;
+}
+.base_pop dl dt{
+    height: 2.125rem;
+    width: 7.5rem;
+    font-size: 0.813rem;
+    line-height: 2.063rem;
+}
+.base_pop dl dd{
+    height: 2.125rem;
+    width: calc(100% - 7.5rem);
+    float: left;
+    font-size: 0.813rem;
+}
+.base_pop .datepicker{background-color: #f5f5f8 }
+.base_pop .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.base_pop dd input,
+.base_pop dd select {
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+    max-width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: left;
+}
+
+.base_pop table .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.base_pop table .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.base_pop table input::placeholder{
+    font-size: 0.75rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+.base_pop .calenderImg{
+	width: 2rem !important;
+	height: 2rem !important;
+	background-color: #f5f5f8;
+}
+.base_pop input.gray{
+	background-color: #e1e1e5 !important;
+}
+.base_pop select.gray{
+	background-color: #e1e1e5 !important;
+}
+
+.base_pop .btn_wrap{
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+.base_pop .btn_wrap button.blue{
+    width: 100%;
+    height: 2.875rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 0.875rem;
+    border: 0;
+}
+.base_pop .btn_wrap button.gray{
+    width: 100%;
+    height: 2.875rem;
+    font-size: 0.875rem;
+	background-color: #f1f1f5;
+	color: #111;
+    border: 0;
+}
+
+.buy_item dl dd .select2 {
+    width: 100% !important;
+}
+.select2-container .select2-selection--single {
+    height: 1.875rem !important;
+    background-color: #f5f5f8 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0.063rem solid #707070;
+    border-radius: 0.25rem 0.25rem 0 0 !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #111 !important;
+    line-height: 1.875rem !important;
+    font-size: 0.781rem !important;
+}
+
+/* 제품분류 관리 팝업 */
+.category_pop{
+    width: 50rem;
+    margin-top: 3.75rem !important;
+    background-color: #f5f5f8;
+    position: relative;
+    display: none;
+}
+.category_pop .inner{
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.category_pop .left{
+    width: 49%;
+    background-color: #fff;
+    padding: 0.75rem;
+    box-shadow: 0 0.188rem 0.313rem rgb(0 0 0 / 10%);
+    border-radius: 0.25rem;
+    position: relative;
+}
+.category_pop .left dl{
+    margin-bottom: .625rem;
+}
+.category_pop .left dt{
+    font-size: .875rem;
+    width: 5.625rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+}
+.category_pop .left dd{
+    font-size: .875rem;
+    width: calc(100% - 5.625rem);
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+.category_pop .input_line{
+    position: relative;
+    width: 100%;
+    height: 2.125rem;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.category_pop select,
+.category_pop input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.category_pop input{
+    padding: 0 0.5rem;
+}
+
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.category_pop .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.category_pop .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.category_pop input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+.category_pop .left .btn_wrap{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.category_pop .left .btn_wrap div{
+    display: flex;
+}
+.category_pop .left .btn_wrap button.blue{
+    width: 100%;
+    height: 2.875rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 0.875rem;
+    border: 0;
+}
+.category_pop .left .btn_wrap button.gray{
+    width: 100%;
+    height: 2.875rem;
+    font-size: 0.875rem;
+    background-color: #f1f1f5;
+    color: #111;
+    border: 0;
+}
+
+
+
+
+.category_pop .right{
+    width: 49%;
+    box-shadow: 0 0.188rem 0.313rem rgb(0 0 0 / 10%);
+    background-color: #fff;
+    border-radius: 0.25rem;
+    padding:0.75rem;
+    position: relative;
+}
+.category_pop .right h4{
+    margin-bottom: 0.625rem;
+}
+.category_pop .right .h-scroll{
+    height: 28.75rem;
+}
+.category_pop .right .h-scroll > ul{
+    margin-bottom: 0.625rem;
+}
+.category_pop .right ul li.top_menu{
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 0.313rem 0 0.313rem 1.875rem;
+    position: relative;
+}
+.category_pop .right ul li.top_menu::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0.625rem;
+    top: 0.563rem;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-image: url(/public/img/folder.png);
+    background-size: 0.875rem;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.category_pop .right ul ul li.sub_menu{
+    font-size: 0.875rem ;
+    padding: 0.313rem 0 0.313rem 3.125rem;
+    position: relative;
+    cursor: pointer;
+}
+.category_pop .right ul ul li.sub_menu::before{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.75rem;
+    background-image: url(/public/img/app/under.png);
+    background-size: 0.5rem;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.875rem;
+}
+.category_pop .right ul ul li.sub_menu::after{
+    content: '';
+    display: inline-block;
+    width: 0.875rem;
+    height: 0.875rem;
+    background-image: url(/public/img/file.png);
+    background-size: 0.875rem;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0.625rem;
+    left: 1.75rem;
+}
+.category_pop .ac li.active{
+    background-color: #f1f8ff;
+    border: 0.063rem solid #0176f9;
+    box-sizing: border-box;
+}
+.category_pop .hovering li:hover{
+    background-color: #f1f8ff;
+}
+.category_pop .radio_box input[type='radio'] + label{
+    background-image: url(/public/img/app/chk_b.png);
+    background-size: 1.125rem;
+    height: 2.125rem;
+    line-height: 2.063rem;
+    padding-left: 1.563rem;
+    font-size: 0.875rem;
+    margin-right: 2rem;
+}
+.category_pop .radio_box input[type='radio']:checked + label{
+    background-image: url(/public/img/app/chked_b.png);
+}
+.category_pop .h-scroll ul li span.on{
+    background-color: rgba(1, 118, 249, .1);
+    color: #0176f9;
+    display: inline-block;
+    padding: .0625rem .9375rem;
+    font-size: .6875rem;
+    border-radius: 1.25rem;
+    margin-left: .625rem;
+    font-weight: 500;
+}
+.category_pop .h-scroll ul li span.off{
+    background-color: rgba(185, 185, 185, .1);
+    color: #999;
+    display: inline-block;
+    padding: .0625rem .9375rem;
+    font-size: .6875rem;
+    border-radius:1.25rem;
+    margin-left: .625rem;
+    font-weight: 500;
+}
+
+ dl dt.impt::after{
+    content: '*';
+    color: #dc0000;
+    margin-left: 0.5rem;
+}
+
+.category_pop .no_list{
+    width: 100%;
+    font-size: .8125rem;
+    text-align: center;
+    color: #777;
+}

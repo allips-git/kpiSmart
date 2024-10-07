@@ -1,0 +1,35 @@
+@media (max-width:330px){
+    body, html{
+        font-size: 19px !important;
+    }
+}
+@media (min-width:331px) and (max-width:399px){
+    body, html{
+        font-size: 20px ;
+    }
+}
+@media (min-width:400px){
+    body, html{
+        font-size: 23px !important;
+    }
+}
+@media (min-width:600px){
+        /* 메인 배너 슬라이더 */
+    .main{
+        margin-bottom: 7.5rem !important;
+    }
+    .main .content03{height: 7.5rem !important;}
+    .main .content03 #eclipse5{
+        max-width:1660px !important;
+        width:1660px !important;
+        left: -94% !important;
+    }
+    .main .content03 img{
+        width: 100% !important;
+    }
+    .eclipse-slides{
+        height: 7.5rem !important;
+        max-height: none !important;
+    }
+    
+}

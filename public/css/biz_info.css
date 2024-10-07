@@ -1,0 +1,184 @@
+.biz_info .conte{
+    display: flex;
+    justify-content: space-between;
+}
+.biz_info .left{
+    width: 12%;
+}
+.biz_info .left >div:first-child{
+    margin-bottom: 15px;
+}
+.left .img-box{
+    height: 257px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+.left .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.biz_info .left >div span{
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+}
+.biz_info .left>div span strong{
+    color: #FF9BA1;
+}
+
+.biz_info .right{
+    width: 100%;
+}
+
+.biz_info .input-zone{
+    margin-bottom: 20px;
+}
+.biz_info h1{
+    margin-bottom: 5px;
+}
+.biz_info .input-zone dt{
+    width: 130px;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px 0 21px;
+    vertical-align: middle;
+}
+.biz_info .input-zone dt.important{
+    padding-left: 10px !important;
+}
+.biz_info .input-zone dd{
+    width: calc(100% - 130px);
+    height: 31px;
+    line-height: 31px;
+    padding: 0 5px;
+}
+.biz_info .input-zone dd.half{
+    width: calc(50% - 130px);
+}
+.biz_info .input-zone dd button{
+    height: 22px;
+    line-height: 22px;
+}
+.biz_info .input-zone dd input,
+.biz_info .input-zone dd select{
+    height: 22px;
+    margin: 0;
+}
+
+dl.add dt{
+    line-height: 90px !important;
+    height:90px !important;
+}
+dl.add dd{
+    height:90px !important;
+    line-height: 32px !important;
+}
+dl.add dd .add01{
+    display: block;
+}
+
+dl.bgo dt,
+dl.bgo dd{
+    height: 70px !important;
+    line-height:70px !important;
+}
+dl.bgo dd textarea{
+    height: 58px;
+    margin-top: 5px;
+    padding: 5px;
+}
+dt.use{
+    height: 60px !important;
+    width: 100% !important;
+    padding: 13px 15px !important;
+}
+dt.use p{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(230, 144, 15);
+    line-height: 12px !important;
+}
+
+dt.use p strong{
+    color: rgb(15, 39, 92);
+    font-weight: bold;
+    font-family: 'NanumBarunGothicWeb';
+}
+dt.use span{
+    color: #777;
+}
+dd span.hint-txt{
+    font-size: 12px;
+    color: #999;
+    margin-left: 5px;
+}
+dt.bb{
+    border-left: 1px solid #d5d5d5;
+}
+.w24{width: 24%;}
+.btn_box{
+    width: 100%;
+    text-align: center;
+}
+.btn_box button{
+    padding: 0px 30px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+  }
+  
+  .filebox label {
+    display: inline-block;
+    width: 68px;
+    line-height: 34px;
+    text-align: center;
+    height: 34px;
+    color: #555;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .filebox label:hover{
+      background-color: #f5f5f5;
+  }
+  /* named upload */
+  .filebox .upload-name,
+  .filebox .upload-name02 {
+    height: 34px;
+    width: calc(100% - 72px);
+    font-size:18px; 
+    padding: 0 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  .filebox input:focus{
+      border: 0px !important;
+      border: none;
+  }
+  .biz_info .right span.ph{
+      font-size: 12px;
+      color: #999;
+      display: inline-block;
+  }
+  .biz_info .right span.ph strong{
+      color: #FF9BA1;
+  }
+  

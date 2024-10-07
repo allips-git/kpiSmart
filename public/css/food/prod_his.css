@@ -1,0 +1,274 @@
+/* ord_put */
+.content{
+    background-color: #f5f5f8;
+    padding: 1.5rem 1.875rem;
+}
+.ord_put .section{
+    box-shadow: .625rem .625rem 1.25rem rgba(0,0,0,0.05);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.ord_put .search_zone{
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+}
+.ord_put .search_zone dl{
+	height: 2.188rem;
+}
+.ord_put .search_zone dl dt{
+    width: 7.5rem;
+    height:2.188rem;
+    line-height: 2.188rem;
+    font-size: 0.875rem;
+}
+.ord_put .search_zone dl dd{
+    width: calc(100% - 7.5rem);
+    display: flex;
+    line-height: 2.188rem;
+    float: left;
+}
+
+.ord_put .section dd .input_line{
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f8 !important;
+    margin-right: 0.625rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+.stock .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.stock .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.stock .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+@keyframes bd_bottom{
+    0%{
+        background-color: #707070;
+        opacity: 0;
+    }
+    100%{
+        background-color: #0176f9;
+        opacity: 1;
+    }
+}
+
+.ord_put .section dd select,
+.ord_put .section dd input{
+    height: 2.125rem;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+    border-bottom: 0.063rem solid #707070;
+    font-size: 0.813rem;
+    padding: 0 0.313rem;
+    color: #111;
+}
+.ord_put .section dd input{
+    padding: 0 0.5rem;
+}
+
+.ord_put .search_zone dl dd button{
+	height: 2.188rem;
+	padding: 0 1.875rem;
+	font-size: 0.813rem;
+}
+.ord_put .section dl dd.half01{
+    width: calc(50% - 15rem);
+}
+
+.ord_put .section dl dd.half02{
+    width: 50%;
+}
+.ord_put .section dd .input_line::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0.125rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.ord_put .section dd .input_line.active::after{
+    animation-name: bd_bottom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards
+}
+.ord_put .section dd input::placeholder{
+    font-size: 0.813rem;
+    padding-left: 0.25rem;
+    color: #767676;
+}
+
+.ord_put input.gray{
+	background-color: #e1e1e5 !important;
+}
+
+.ord_put .calenderImg{
+	width: 2.188rem !important;
+	height: 2.188rem !important;
+	background-color: #f5f5f8;
+}
+
+
+
+.ord_put .bottom {
+    width: 100%;
+    height: calc(100% - 7.188rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.ord_put .bottom .list_zone{
+	width:  100%;
+	position: relative;
+}
+
+.ord_put .bottom .list_zone h4{
+    padding: 1rem 1.25rem;
+}
+.ord_put .bottom .list_zone .btns{
+    position: absolute;
+    top: .74rem;
+    right: 1.25rem;
+
+}
+.ord_put .bottom .list_zone .btns button{
+    height: 2.188rem;
+    width: 8.75rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: 0.813rem;
+}
+.ord_put .bottom .list_zone table{
+    border: 0;
+}
+.ord_put .bottom .list_zone table th{
+    background-image: none;
+    background-color: #F8F8FA;
+    color: #111;
+    font-size:0.813rem;
+    height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    border-left: 0.063rem solid #E5E5EC;
+    border-top: 0.063rem solid #E5E5EC;
+    border-bottom: 0.063rem solid #E5E5EC;
+    box-shadow: none;
+}
+.ord_put .bottom .list_zone table tr th:last-child{
+    border-right: 0.063rem solid #E5E5EC;
+}
+
+.ord_put .bottom .list_zone table td{
+    background-color: #fff;
+    height: 2.5rem;
+    color: #111;
+    font-size: 0.813rem;
+    border-left:0.063rem solid #eff2f7;
+    border-bottom:0.063rem solid #eff2f7;
+    border-left:0.063rem solid #eff2f7;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    box-shadow: none;
+}
+.ord_put .bottom .list_zone table tr:first-child td{
+    border-top: 0.063rem solid #eff2f7;
+}
+.ord_put .bottom .list_zone table td:last-child{
+    border-right:0.063rem solid #eff2f7;
+}
+.ord_put .bottom .list_zone table td.red{
+	color: #dc0000;
+	font-weight: 400;
+}
+.ord_put .bottom .list_zone .h-scroll{
+    height: calc(100% - 9.375rem);
+}
+
+table td.tb_click{
+	color: #0176f9 !important;
+	text-decoration: underline;
+}
+.ord_put .view_count{
+    position: absolute;
+    right: 1.125rem;
+    bottom: 0.875rem;
+}
+.ord_put .view_count select{
+    width: 8.125rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    border: .063rem solid #CED4DA;
+}
+
+.total {
+    position: fixed;
+    bottom: 0;
+    left: 15.625rem;
+    right: 0;
+    background-color: #fff;
+    height: 2.375rem;
+    z-index: 999;
+    
+}
+.total ul {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 0 1.875rem;
+}
+.total ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.375rem;
+}
+.total ul li strong {
+    font-size: 1.125rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-left:  1.875rem;
+}
+.total ul li span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-left: 0.313rem;
+}
+textarea:focus,
+select:focus,
+input:focus{
+    box-shadow: none !important;
+}
+.ord_reg .total ul li.blue {
+    color: #0176f9;
+    margin-right:24rem;
+}
+
+
+
+
+.prod_his .h-scroll,
+.work_his .h-scroll{
+    height: calc(100% - 7.375rem) !important;
+    overflow: auto;
+}
+.prod_his .h-scroll thead,
+.work_his .h-scroll thead{
+    position: sticky ;
+    top: 0;
+}

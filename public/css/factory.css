@@ -1,0 +1,609 @@
+/* user css */
+
+
+#left-component {
+	width: 620px;
+	height: -webkit-calc(100% - 52px);
+	height: -moz-calc(100% - 52px);
+	height: calc(100% - 52px);
+}
+
+#left-component .pretty-split-pane-component-inner {
+	min-width:600px;
+
+}
+
+#vertical-divider {
+	left: 620px;
+
+}
+
+#right-component {
+	left:620px;
+}
+
+#right-component  .pretty-split-pane-component-inner {
+	min-width:700px;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+#left-component .input-box{
+	width: calc(100% - 5px);
+}
+
+.split-pane h4{
+	margin-bottom: 6px !important;
+	font-size: 16px;
+}
+.form-group dt {
+	width: 110px;
+	height: 24px;
+	font-size:12px;
+	background-image: linear-gradient(to bottom,#fbfbfb,#F6F6F6);
+	background-color:#fbfbfb;
+	border-right: 1px solid #d5d5d5;
+	color:#363636;
+	border-bottom: 1px solid #d5d5d5;
+	line-height:24px;
+	padding-left: 20px;
+}
+dt.important{
+	padding-left: 10px;
+}
+
+.form-group dd {
+	float:left;
+	height: 24px;
+	line-height:22px;
+	padding: 0 5px !important;
+	border-bottom: 1px solid #d5d5d5;
+	background-color:#fff;
+	width: calc(100% - 110px);
+}
+.form-group dd input,
+.form-group dd select{
+	height: 18px !important;
+}
+
+.form-group dd label {
+	font-size:12px;
+	cursor:pointer
+}
+
+.form-group dd.half {
+	width: calc(50% - 110px) !important;
+}
+
+.form-group dd button{
+	height: 18px;
+	line-height: 18px;
+}
+.form-group .add dt{
+	height: 68px;
+	line-height: 68px;
+}
+.form-group .add dd{
+	height: 68px;
+	line-height: 22px !important;
+}
+.form-group .add dd input:first-child{
+	margin-top: 2px;
+}
+
+.form-group .bgo dt{
+	height: 66px;
+	line-height: 66px;
+}
+.form-group .bgo dd{
+	height: 66px;
+	line-height: 22px !important;
+}
+.form-group .bgo dd textarea{
+	height: 60px;
+	margin-top: 2px;
+	border-radius: 4px;
+}
+.form-group dd.radiochk input+label{
+	margin-top: -2px;
+}
+.form-group dd input[type="checkbox"]+label{
+	margin-top: 2px;
+}
+table {
+	table-layout:auto
+}
+.w48{width: 48% !important;}
+
+.factory .table-wrap.long {
+	background-color:#fff;
+	height: 617px;
+	height: -webkit-calc(100% - 117px);
+	height: -moz-calc(100% - 117px);
+	height: calc(100% - 117px);
+	border:1px solid #d5d5d5
+}
+
+.factory .h-scroll {
+	height: 100%;
+}
+
+.factory .table-wrap.long{
+	overflow: auto;
+}
+.factory .long .n-scroll{
+	width: 2400px;
+}
+.factory .long .h-scroll{
+	width: 2400px;
+	height:calc( 100% - 27px );
+}
+/* 스크롤바 수정 */
+.factory .table-wrap.long::-webkit-scrollbar{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.factory .table-wrap.long::-webkit-scrollbar-thumb{
+	width:12px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.factory .table-wrap.long::-webkit-scrollbar-track{
+	width:12px;
+	background-color: #f2f2f2;
+}
+
+
+.change_scroll::-webkit-scrollbar{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.change_scroll::-webkit-scrollbar-thumb{
+	width:12px;
+	background-color: #f3f3f3;
+	border:1px solid #ddd;
+}
+.change_scroll::-webkit-scrollbar-track{
+	width:12px;
+	background-color: #f2f2f2;
+}
+.phrases strong {
+	color:#FF9BA1
+}
+
+.phrases {
+	font-size: 10px;
+	color: #adadad;
+	padding-left: 0px;
+	margin: 10px 0;
+}
+
+.disable{
+	color:#CCCCCC;
+}
+
+
+
+
+
+
+/* tree */
+.ttable_wrap{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding-bottom: 5px;
+}
+.ttable_wrap table{
+	text-align: left;
+	border: none;
+}
+.ttable_wrap table th{
+	display: block;
+	border: 0;
+	background-image: none;
+	padding: 8px 15px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.ttable_wrap table th i{
+	color: #fcc639;
+	margin-right: 3px;
+}
+
+.ttable_wrap table td{
+	display: block;
+	border: 0;
+	padding:5px 25px;
+	font-size: 14px !important;
+	background-color: #fff !important;
+}
+.ttable_wrap table td.active{
+	background-color: #f7f7f7 !important;
+}
+
+.factory dd input[type='checkbox'] + label{
+	background: url(/public/img/check.png) left/12px no-repeat !important;
+}
+.factory dd input[type='checkbox']:checked + label{
+	background: url(/public/img/chk_on.png) left/12px no-repeat !important;
+}
+
+.ttable_wrap table td label{
+	margin-left: 10px;
+	font-size: 14px !important;
+	margin-top: -5px;
+	background: url(/public/img/check.png);
+	background-repeat: no-repeat;
+	background-size: 12px;
+	background-position: 0% 110%;
+}
+.ttable_wrap table td i{
+	color: rgb(169, 174, 177);
+	font-size: 14px;
+	margin-right: 3px;
+	margin-top: -1px;
+}
+
+.ttable_wrap input[type='checkbox']:checked + label {
+	background-image: url(/public/img/chk_on.png) !important;
+	background-size: 12px;
+}
+/* 사용여부 토글 버튼 */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 22px !important;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+	height: 21px !important;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	width: 17px;
+	left: 4px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #45ADF9;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #45ADF9;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(36px);
+	-ms-transform: translateX(36px);
+	transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 28px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+.offtxt{
+	color: #777;
+	font-size: 13px;
+	width: 100%;
+	position: relative;
+	right: 15px;
+	top: 2px;
+	text-align: right;
+	display: inline-block;
+	transition: .4s;
+}
+.ontxt{
+	color: #fff;
+	font-size: 13px;
+	width: 100%;
+	position: relative;
+	top: 1px;
+	left: 15px;
+	text-align: left;
+	display: none;
+	height: 10px;
+	transition: .4s;
+}
+input:checked ~ .offtxt{
+	display: none;
+}
+
+input:checked ~ .ontxt{
+	display: inline-block;
+}
+label.all_chk{
+	padding: 0 10px !important;
+	height: 25px !important;
+	line-height: 25px !important;
+	border: 1px solid #d5d5d5;
+	font-size: 12px;
+	border-radius: 5px;
+	background-color: #45ADF9 !important;
+	color: #fff;
+	background-image: none !important;
+	float: right;
+}
+label.all_chk:hover {
+	background-color:#0785E2 !important;
+}
+
+
+
+/* 제품군선택 팝업창 */
+
+.choice_item .title {
+	position:relative;
+	text-align:center;
+	font-size:18px;
+	padding: 10px;
+	background-color:#788694;
+	color:#fdfdfd;
+	margin: 0
+}
+
+.choice_item .title .b-close {
+	position:absolute;
+	right: 10px;
+	top:8px;
+	cursor:pointer;
+	font-size:25px
+}
+
+.choice_item .title .b-close:hover {
+	opacity: .7;
+}
+
+.choice_item .content {
+	padding: 20px 20px 20px 30px;
+	min-height:auto;
+	background-color:#fff;
+	height: 320px;
+	overflow-y: auto;
+}
+
+.choice_item{
+	width: 400px !important;
+	display: none;
+}
+
+.choice_item dl {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.choice_item dl input + label{
+	padding-left: 30px;
+	font-size: 14px;
+}
+
+
+.center #left-component {
+	height: calc(100% - 32px) !important;
+}
+.center table{
+	table-layout: fixed;
+}
+
+.center #left-component form{
+	height: 100%;
+}
+.center .input-box{
+	height: calc(100% - 50px);
+}
+.center .form-group {
+	height:100%;
+}
+.center .input-box dl dt{
+	height: 30px;
+	line-height: 30px;
+}
+.center .input-box dl dd{
+	height: 30px;
+	line-height: 28px;
+	padding: 0 5px;
+}
+.center .input-box dl.bgo dt{
+	height:80px;
+	line-height: 78px;
+}
+.center .input-box dl.bgo dd{
+	height:80px
+}
+.center .input-box dl.bgo dd textarea{
+	height: 74px;
+	padding: 5px;
+}
+.center .input-box dl dd span{
+	font-size: 12px;
+}
+.center .long .n-scroll{
+	width: 1600px;
+}
+.center .long .h-scroll{
+	width: 1600px;
+	height:calc( 100% - 27px );
+}
+.center span.green-box{
+	color: green;
+	border: 1px solid green;
+	padding: 0px 15px;
+	display: inline-block;
+	line-height: 18px;
+}
+.center span.red-box{
+	color: red;
+	border: 1px solid red;
+	padding: 0px 15px;
+	display: inline-block;
+}
+.center span.blue-box{
+	color: blue;
+	border: 1px solid blue;
+	display: inline-block;
+	padding: 0px 15px;
+}
+.pagination{text-align: center;}
+.center .bg{
+	height: calc(100% - 491px);
+	background-color: #fff;
+}
+.center .bg .phrases{
+	padding-left: 5px;
+}
+.center .input-box{
+	position: relative;
+}
+.center .input-box .before {
+	position:absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 100px;
+	line-height:100px;
+	text-align:center;
+	font-size:13px;
+	border:1px solid #d5d5d5;
+	background-color:#efefef
+}
+
+
+
+
+
+
+
+
+.biz_wait #left-component {
+	height: calc(100% - 12px) !important;
+}
+.biz_wait table{
+	table-layout: fixed;
+}
+.biz_wait input:-internal-autofill-selected{
+	background: #fff !important;
+}
+.biz_wait .input-box{
+	height: calc(100% - 40px);
+}
+.biz_wait .form-group {
+	height:100%;
+}
+.biz_wait .input-box dl dt{
+	height: 30px;
+	line-height: 30px;
+}
+.biz_wait .input-box dl dd{
+	height: 30px;
+	line-height: 28px;
+	padding: 0 5px;
+}
+.biz_wait .input-box dl.bgo dt{
+	height:80px;
+	line-height: 78px;
+}
+.biz_wait .input-box dl.bgo dd{
+	height:80px
+}
+.biz_wait .input-box dl.bgo dd textarea{
+	height: 74px;
+	padding: 5px;
+}
+.biz_wait .input-box dl dd span{
+	font-size: 12px;
+}
+.biz_wait .long .n-scroll{
+	width: 1600px;
+}
+.biz_wait .long .h-scroll{
+	width: 1600px;
+	height:calc( 100% - 27px );
+}
+.biz_wait span.green-box{
+	color: green;
+	border: 1px solid green;
+	padding: 0px 15px;
+	display: inline-block;
+	line-height: 18px;
+}
+.biz_wait span.red-box{
+	color: red;
+	border: 1px solid red;
+	padding: 0px 15px;
+	display: inline-block;
+}
+.biz_wait span.blue-box{
+	color: blue;
+	border: 1px solid blue;
+	display: inline-block;
+	padding: 0px 15px;
+}
+.biz_wait .bg{
+	height: calc(100% - 411px);
+	background-color: #fff;
+}
+.biz_wait .bg .phrases{
+	padding-left: 5px;
+}
+.biz_wait .input-box{
+	position: relative;
+}
+.biz_wait .input-box .before {
+	position:absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 100px;
+	line-height:100px;
+	text-align:center;
+	font-size:13px;
+	border:1px solid #d5d5d5;
+	background-color:#efefef
+}
+/* aps */
+.aps_factory .form-group dt{
+	width: 120px;
+}
+.aps_factory .form-group dd{
+	width: calc(100% - 120px);
+}
+.aps_factory .form-group dd.half {
+	width: calc(50% - 120px) !important;
+}
+.aps_factory .long .table-sor{
+	width: 2400px;
+	height:100%;
+	overflow: auto;
+	background-color: #fff;
+}

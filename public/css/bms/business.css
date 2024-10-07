@@ -1,0 +1,1293 @@
+/* business css */
+
+.form-group {
+    background-color: #fff;
+   border-bottom:1px solid #d5d5d5;
+}
+
+
+.input-zone dt::before,
+.input-zone dt span::before{
+	content:none;
+    width: 10px;
+    display: inline-block;
+}
+
+.input-zone dt.important::before {
+	content:'*';
+	color:#FF9BA1;
+	font-weight:bold
+}
+
+.mbn {
+	margin-bottom: 0;
+}
+
+/* buying */
+.buying table .w8 {
+	width: 8%;
+}
+
+
+.buying table .w6 {
+	width: 6%;
+}
+
+.buying table .w5 {
+	width: 5%;
+}
+
+.buying .cpadd {
+	width: 17%;
+} 
+
+.buying .table-sor {
+	height:665px;
+	height: -webkit-calc(100% - 180px);
+	height: -moz-calc(100% - 180px);
+	height: calc(100% - 180px);
+}
+
+/* buying_in */
+.buying_in .btn-box {
+	margin-top:10px;
+}
+
+
+.buying_in .input-zone {
+	height:495px;
+	height: -webkit-calc(100% - 40px);
+	height: -moz-calc(100% - 40px);
+	height: calc(100% - 40px);
+}
+
+.buying_in .w5 {
+	width: 5%;
+}
+
+.buying_in .w7 {
+	width: 7%;
+}
+
+.buying_in .w10 {
+	width: 10%;
+}
+.buying_in .w11 {
+	width: 11%;
+}
+
+.buying_in .w15 {
+	width: 15%;
+}
+
+.buying_in #left-component {
+	width: 340px;
+}
+
+.buying_in #left-component .pretty-split-pane-component-inner {
+	min-width:330px;
+}
+
+.buying_in #vertical-divider {
+	left: 340px;
+}
+
+.buying_in #right-component {
+	left: 340px;
+}
+
+.buying_in #right-component  .pretty-split-pane-component-inner {
+	min-width:800px	
+}
+
+.buying_in .h-scroll {
+	height: 565px;
+	height: -webkit-calc(100% - 130px);
+	height: -moz-calc(100% - 130px);
+	height: calc(100% - 130px);
+}
+
+.buying_in .dl-height {
+	height:653px;
+	height: -webkit-calc(100% - 40px);
+	height: -moz-calc(100% - 40px);
+	height: calc(100% - 40px);
+	background-color:#fff;
+}
+
+.buying_in .table-sor {
+	height:618px;
+	height: -webkit-calc(100% - 112px);
+	height: -moz-calc(100% - 112px);
+	height: calc(100% - 112px);
+}
+
+.buying_in #dv_in{
+	width:100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.buying_in #sp_item{
+	width:100%;
+	text-align:center;
+	padding:40px 0;
+	display:block;
+	background-color:#eee;
+}
+.buying_in #sp_item {
+	font-size: 12px;
+	font-weight:bold;
+	color:red;
+}
+.buying_in .input-zone dt{
+	width:120px;
+	padding-top:3px;
+	height:25px;
+}
+.buying_in .input-zone dd{
+	width: calc(100% - 120px);
+	height:25px;
+	padding-top:3px;
+}
+.buying_in .input-zone .dl-height dl .important {
+    padding-left:7px;
+}
+.buying_in dt::before, .input-zone dt span::before {
+    width: 10px;
+}
+.buying_in .dl-height input, .buying_in .dl-height select {
+    height: 18px;
+}
+
+
+/* 2020-07-01  매입거래처 2*/
+.buy #left-component {
+	width: 370px;
+}
+
+.buy #left-component .pretty-split-pane-component-inner {
+	min-width:350px;
+}
+
+.buy #vertical-divider {
+	left: 370px;
+}
+
+.buy #right-component {
+	left: 370px;
+}
+
+.buy #right-component  .pretty-split-pane-component-inner {
+	min-width:1250px	
+}
+
+
+
+
+.buy table .w8 {
+	width: 8%;
+}
+
+
+.buy table .w6 {
+	width: 6%;
+}
+
+.buy table .w5 {
+	width: 5%;
+}
+
+.buy .cpadd {
+	width: 17%;
+} 
+
+.buy .input-zone {
+	height:620px;
+	height: -webkit-calc(100% - 110px);
+	height: -moz-calc(100% - 110px);
+	height: calc(100% - 110px);
+}
+
+.buy .dl-height {
+	height: -webkit-calc(100% - 0px);
+	height: -moz-calc(100% - 0px);
+	height: calc(100% - 0px);
+}
+
+.buy .h-scroll {
+	height:620px;
+	height: -webkit-calc(100% - 110px);
+	height: -moz-calc(100% - 110px);
+	height: calc(100% - 110px);
+}
+.buy-in-pop .w70{width:70%}
+
+.buy .w70 {
+	width: 70px;
+}
+
+.buy .w80 {
+	width: 80px;
+}
+
+.buy .w100 {
+	width: 100px;
+}
+.buy .w125 {
+	width: 125px;
+}
+
+.buy .w150 {
+	width: 150px;
+}
+
+.buy .input-zone dt,
+.buy .input-zone dd {
+	height: 34.7px;
+	padding:5px 7px 0px;
+}
+
+.buy .input-zone .dlX dt,
+.buy .input-zone .dlX dd {
+	height: 65px;
+}
+
+.buy .input-zone .dlX2 dt,
+.buy .input-zone .dlX2 dd {
+	height: 60px;
+}
+
+.buy .input-zone .dlX dt {
+	padding-top: 22px;
+}
+
+.buy .input-zone .dlX2 dt {
+	padding-top: 20px;
+}
+
+.buy .input-zone input,
+.buy .input-zone select,
+.buy .input-zone button {
+	height: 25px;
+}
+
+.buy .input-zone textarea {
+	height: 50px;
+}
+
+.buy .input-zone button {
+	line-height:25px
+}
+
+.buy .radiochk span {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: left;
+}
+
+.buy .input-zone dl .pd{
+	padding-left:20px;
+}
+
+/* sale */
+
+
+.sale table .w8 {
+	width: 8%;
+}
+
+.sale table .w6 {
+	width: 6%;
+}
+
+.sale table .w5 {
+	width: 5%;
+}
+
+.sale .cpadd {
+	width: 17%;
+} 
+
+.sale .table-sor {
+	height:665px;
+	height: -webkit-calc(100% - 180px);
+	height: -moz-calc(100% - 180px);
+	height: calc(100% - 180px);
+}
+
+/* sail_in */
+
+.sale_in .input-zone {
+	/* height: 590px; */
+	height: -webkit-calc(100% - 80px);
+	height: -moz-calc(100% - 80px);
+	height:calc(100% - 80px);
+	overflow:auto
+}
+
+.sale_in .radiochk {
+	padding-top: 10px;
+}
+
+.input-zone dt.dtX,
+.input-zone dt.dtX + dd {
+	height: 55px;
+}
+
+.input-zone dt.dtX + dd {
+	padding-top: 15px;
+}
+
+.sale_in .input-zone form {
+	height: 100%;
+}
+
+
+.sale_in .input-zone .phrases {
+    font-size: 10px;
+    color: #adadad;
+    padding-left: 15px;
+    margin: 7px 0;
+}
+.manage-table {
+	margin-bottom: 10px;
+}
+
+
+.sale_in .basic {
+	width: 10%;
+}
+
+
+.sale_in table .w5 {
+	width: 5%;
+}
+
+.sale_in table .w8 {
+	width: 7%;
+}
+
+.sale_in table .w10 {
+	width: 8%;
+}
+
+.sale_in table .w20 {
+	width: 12%;
+}
+.sale_in table .w30{
+	width:17%;
+}
+
+.sale_in .input-table tr:hover td {
+	background-color:#fff
+}
+
+.sale_in .radiochk span {
+	display:inline-block;
+	margin: 0 5px;
+	text-align:left
+}
+
+.sale_in table input[type='text'],
+.sale_in table input[type='tel'],
+.sale_in table input[type='number'],
+.sale_in table select {
+	width: 75%;
+}
+
+.sale_in .ws input[type='text'] {
+	width: 50px;
+}
+
+.sale_in tr.hidden {
+	display:none
+}
+
+.sale_in table input[type='text'].w40 {
+	width: 40px;
+}
+
+
+.sale_in .input-table th,
+.sale_in .input-table td {
+	border:1px solid #d5d5d5;
+}
+
+.sale_in select.w70,
+.sale_in input[type='number'].w70,
+.sale_in input[type='text'].w70 {
+	width: 70px
+}
+
+.sale_in select.w50,
+.sale_in input[type='number'].w50,
+.sale_in input[type='text'].w50 {
+	width: 50px
+}
+
+.sale_in select.w40,
+.sale_in input[type='number'].w40,
+.sale_in input[type='text'].w40 {
+	width: 40px
+}
+
+.sale_in select.w100 {
+	width: 100px
+}
+.sale_in select.w150 {
+	width: 150px
+}
+
+.sale_in .dl-height {
+	background-color:#fff;
+	height:100%;
+}
+
+.sale_in #sp_item{
+	width:100%;
+	text-align:center;
+	padding:40px 0;
+	display:block;
+	background-color:#eee;
+}
+.sale_in #dv_in{
+	width:100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* popup css */
+.sale_in-popup {
+	width: 650px !important
+}
+
+.sale_in-popup .kind {
+	width: 49%;
+}
+
+.sale_in-popup .mt {
+	margin-top: 8px;
+}
+
+
+.sale_in-popup .kind .disabled input,
+.sale_in-popup .kind .disabled select {
+	background-color:#efefef;
+	cursor:default;
+}
+
+.sale_in-popup .kind .disabled input:focus {
+	box-shadow:none
+}
+
+.sale_in-popup dt {
+	width: 43% !important;
+}
+
+.sale_in-popup dd {
+	width: 57% !important;
+}
+
+
+.sale_in-popup .kind .p3 {
+	padding-top:3px
+}
+
+.sale_in-popup .kind .p5 {
+	height:28px;
+}
+
+
+.sale_in-popup .kind .dtX {
+	height: auto;
+	line-height:normal
+}
+
+.sale_in-popup .kind .radio span {
+	margin-right: 10px;
+}
+
+.sale_in-popup .kind .dtX br {
+	display:block
+}
+
+.sale_in-popup .kind .dtX span::before {
+	content: '';
+    width: 14px;
+    display: inline-block;
+}
+
+.sale_in-popup .kind .in02 input[type='number'] {
+	width: 64%;
+	float:left
+}
+.sale_in-popup .kind .in02 select {
+	width: 35%;
+	float:right
+}
+
+.sale_in-popup .kind .cross input[type='text'],
+.sale_in-popup .kind .cross input[type='number'] {
+	width: 35%;
+	float:left;
+}
+.sale_in-popup .kind .cross span {
+	float:left;
+	width: 15%;
+	text-align:center;
+	height: 25px;
+	line-height:25px
+}
+
+.sale_in-popup .kind .in01 input[type='text'],
+.sale_in-popup .kind .in01 input[type='number'] {
+	width: 85%;
+	float:left
+}
+
+.sale_in-popup .kind .in01 span {
+	width: 15%;
+	line-height:25px;
+	height: 25px;
+	text-align:center;
+	float:left
+}
+
+/* 2020-04-09 가로 > 세로 변경 css */
+
+
+.sale-in-list {
+	width: 100%;
+}
+
+.sale-in-list dl {
+	padding: 3px;
+	border-bottom: 1px solid #ededed;
+    position: relative;
+}
+
+.sale-in-list dt {
+	width: 40%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 11px;
+}
+
+.sale-in-list dt.important::before {
+	content:'*';
+	color:#FF9BA1;
+	font-weight:bold
+}
+
+.sale-in-list dt.dtX {
+	line-height:normal;
+	height: auto;
+}
+
+.sale-in-list dd {
+	width: 60%;
+}
+
+.sale-in-list dd.radiochk {
+	height: 25px;
+}
+
+.sale-in-list dd.p3 {
+	padding-top: 3px;
+}
+
+.sale-in-list dd input[type='number'],
+.sale-in-list dd input[type='text'],
+.sale-in-list dd select {
+	display:block;
+	height: 25px;
+	width: 100%;
+}
+
+.sale-in-list dd span {
+	font-size:11px;
+	height: 25px;
+	line-height:25px;
+	text-align:center
+}
+
+.sale-in-list dd.ws input,
+.sale-in-list dd.ws span {
+	float:left;
+	margin-right: 5px;
+}
+
+.sale-in-list .btn-box {
+	/* margin: 20px 0; */
+    text-align: center;
+}
+
+.sale-in-list .btn-box button {
+	height: 30px;
+    line-height: 30px;
+	padding: 0 20px;
+}
+
+
+
+.sale-in-list .phrases strong {
+	color:#FF9BA1
+}
+
+.sale-in-list .btn-box button.b {
+	background-color: #312C54;
+    color: #fff
+}
+
+.sale-in-list .btn-box button.b:hover {
+	background-color:#222
+}
+
+
+/* 2020-06-22 레이아웃 변경 */
+.sale_in #left-component {
+	width: 380px;
+}
+
+.sale_in #left-component .pretty-split-pane-component-inner {
+	min-width:345px;
+}
+
+.sale_in #vertical-divider {
+	left: 380px;
+}
+
+.sale_in #right-component {
+	left: 380px;
+}
+.sale_in .w10{width: 10% !important;}
+.sale_in #right-component  .pretty-split-pane-component-inner {
+	min-width:1200px;
+}
+
+.sale_in .h-scroll {
+	height: 580px;
+	height: -webkit-calc(100% - 110px);
+	height: -moz-calc(100% - 110px);
+	height: calc(100% - 110px);
+}
+
+.tail-box {
+	text-align:right;
+	padding:7px 10px;
+}
+
+.phrases {
+    font-size: 10px;
+    color: #adadad;
+    padding-left: 15px;
+}   
+
+/* 2020-06-30 테이블 높이 수정 */
+.sale_in .input-zone .dl-height dl{
+	width:100%;
+}
+.sale_in .input-zone .dl-height dl dt{
+	height:25px;
+	padding: 3px 17px 0;
+	width:170px;
+}
+.sale_in .input-zone .dl-height dl .important{
+	padding: 3px 7px 0;
+}
+
+.sale_in .input-zone .dl-height dl dd{
+	height:25px;
+	padding:3px 7px 0;
+	width:57%;
+	width:calc(100% - 170px);
+}
+.sale_in .dl-height input,
+.sale_in .dl-height select{
+	height:18px;
+}
+
+
+/* 테이블 thead top고정 */
+
+.table-sor table {
+	width:100%;
+	border-top:0px;
+}
+
+.table-sor table thead tr th{
+	border-top:1px solid #ccc;
+}
+
+.table-sor {
+	height:655px;
+	height: -webkit-calc(100% - 110px);
+	height: -moz-calc(100% - 110px);
+	height: calc(100% - 110px);
+	overflow: auto;
+	background-color: #fff;
+}
+.fixedHeader{
+	position: sticky;
+	top:0;
+}
+
+/* 2020-05-11 POPUP */
+.delivery-popup {
+	width: 1000px !important;
+	display:block !important;
+	margin: 0 !important;
+}
+
+.delivery-popup .content {
+	height: 405px;
+	position:relative;
+}
+
+.delivery-popup .content .pagination {
+	position:absolute;
+	bottom: 10px;
+	left:26%;
+	right: 10px;
+	width: 500px;
+}
+
+.delivery-popup input{
+	margin:3px 0;
+}
+
+.delivery-popup .input-box{
+	margin-bottom:20px;
+	width:24%;
+	float:left;
+}
+
+.delivery-popup table{
+	width:75%;
+	float:right;
+}
+
+.delivery-popup h6::before{
+	display:inline-block;
+	content:'';
+	width:5px;
+	height:10px;
+	background-color:black;
+	margin-right:5px;
+}
+
+.delivery-popup h6{
+	font-size:14px;
+	font-family:'NanumgothicEB';
+	font-style:normal;
+	src:local(※),
+	url('/public/font/NanumgothicB.woff') format('woff');
+}
+
+
+/* 2020-06-30 */
+.sale-in-popup {
+	width: 350px !important;
+}
+.sale-in-popup .item-zone table tr{
+	height:30px;
+}
+
+.sale-in .item-zone #dv_in{
+	width:100%;
+	text-align: center;
+}
+.sale-in .item-zone table td input{
+	text-align: left;
+	max-width:90%;
+}
+.sale-in table tr td {
+    background-color: #fff;
+}
+#dv_in,
+#dv_up button{
+	margin-top:10px;
+}
+
+
+/* ord-buy 매입관리 */
+.ord-buy .table-zone{
+	height: -webkit-calc( 100% - 190px );
+	height: -moz-calc( 100% - 190px );
+	height: calc( 100% - 190px );
+}
+.ord-buy .table-zone .h-scroll{
+	/* height:495px; */
+	height: -webkit-calc( 100% - 55px );
+	height: -moz-calc( 100% - 55px );
+	height: calc( 100% - 55px );
+}
+
+/* ord/buy-pop 매입등록 팝업창 */
+.buy-in-pop {
+    margin-top: 0 !important;
+    display: block !important;
+    width: 1200px !important;
+}
+.buy-in-pop .title{
+	position: relative;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #788694;
+    color: #fdfdfd;
+    margin: 0;
+}
+
+.buy-in-pop .content {
+    height: 600px;
+}
+
+.buy-in-pop .content {
+    padding: 20px;
+    background-color: #fff;
+}
+/* 매입등록 팝업 */
+.buy-in-pop{
+	margin-top: 0 !important;
+	display:block !important;
+	width: 1200px !important;
+}
+
+.buy-in-pop .content h4::before{
+	display: inline-block;
+	content: '';
+	width:5px;
+	height: 12px;
+	background-color: black;
+	margin-right: 5px;
+}
+
+
+.buy-in-pop .content dt::before {
+	content:'';
+	width: 2px;
+	display:inline-block;
+}
+
+.buy-in-pop .content dt {
+	width:30%;
+	height: 25px;
+	line-height:25px;
+	font-size:12px
+}
+
+.buy-in-pop .content dd {
+	width:70%;
+	vertical-align:middle;
+	font-size:12px;
+	line-height:25px;
+}
+
+.buy-in-pop .top-table tr th{
+	width:100px !important;
+}
+
+.buy-in-pop .top-table tr td{
+	text-align: left;
+}
+
+.buy-in-pop .w100{max-width: 100%;}
+
+.buy-in-pop tr:nth-child(2n-1) td{
+	background-color: #fff;
+}
+
+.buy-in-pop .top-table input.datepicker{
+	width:100px !important;
+}
+
+.buy-in-pop table tr td input.T-right{
+	text-align: right;
+}
+
+.buy-in-pop table tr td input.T-left{
+	text-align: left;
+}
+
+
+
+
+
+
+.buy-in-pop input[type=number] {
+	float: left;
+	width: 50px;
+	height: 25px;
+	font-weight: 700;
+	font-size: 1.1em;
+	color: #333;
+	border: 1px #ccc solid;
+	position: relative;
+  }
+  
+  .buy-in-pop span.spinner {
+	height: 25px;
+  }
+  
+  .buy-in-pop span.spinner > .sub,
+  .buy-in-pop span.spinner > .add {
+	float: left;
+	display: block;
+	width: 25px;
+	height: 25px;
+	font-weight: 700;
+	font-size: 1.2em;
+	line-height: 23px;
+	color: #333;
+	border: 1px #ccc solid;
+	border-right: 0;
+	border-radius: 2px 0 0 2px;
+	cursor: pointer;
+	transition: 0.1s linear;
+	-o-transition: 0.1s linear;
+	-ms-transition: 0.1s linear;
+	-moz-transition: 0.1s linear;
+	-webkit-transition: 0.1s linear;
+  }
+  
+  .buy-in-pop span.spinner > .add {
+	border: 1px #ccc solid;
+	border-left: 0;
+	border-radius: 0 2px 2px 0;
+	right:16px;
+	float:left;
+  }
+  .buy-in-pop span.spinner > .sub {
+	left:-20px;
+	float:left;
+  }
+  
+  .buy-in-pop span.spinner > .sub:hover,
+  .buy-in-pop span.spinner > .add:hover {
+	background: #aaa;
+	color: #333;
+  }
+  .buy-in-pop .btn-box{
+	  width:100%;
+	  text-align: center;
+	  margin-top: 30px;;
+  }
+
+.pay-pop{
+	margin-top: 0 !important;
+	display:block !important;
+	width: 500px !important;
+}
+
+.pay-pop .content {
+    height: 350px;
+}
+
+.pay-pop .top-table tr th{
+	width:28% !important;
+}
+
+.pay-pop table th{
+	width:28%;
+}
+.pay-pop table tr td{
+	text-align: left;
+}
+.pay-pop .radio-box input[type='radio']+label{
+	margin-right: 10px;
+}
+/* biz_acc popup */
+
+.biz_acc {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 600px !Important;
+	height: 399px;
+}
+
+.biz_acc td:nth-child(2n){
+	background-color:#fff;
+}
+
+.biz_acc .wrap{
+	padding:20px;
+}
+
+.biz_acc .btn-box {
+	padding-top:70px;
+	margin:0 auto;
+}
+.biz_acc p{
+	font-size:13px;
+	margin-top:15px;
+	color:#777;
+}
+
+.biz_acc table th,
+.biz_acc table td {
+	height:30px;
+}
+.sales_p .tail-box {
+    font-size: 12px;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom,#fff,#F0F0F0);
+    border: 1px solid #ccc;
+    text-align: right;
+    padding: 7px 10px;
+    margin-top: -1px;
+}
+
+/*단가일괄수정 팝업*/
+
+.all_price {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 900px !Important;
+
+}
+
+.all_price .title {
+	padding:15px 0;
+}
+
+.all_price .inner .table-wrap{
+	overflow:auto;
+}
+.all_price .inner{
+	width:100%;
+	padding:20px;
+	overflow:auto;
+}
+.all_price table.summery .ord_detail table{border:0px}
+.all_price table.summery .ord_detail tr{
+	border:0px solid transparent;
+	border-bottom:0px;
+	border-top:0px;
+	padding:0;
+}
+.all_price table.summery .ord_detail tr th{
+	border-right:0px;
+}
+.all_price table.summery .ord_detail .inner-table tr td{
+	border:0px solid transparent;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.all_price .h-scroll{
+	height:465px;
+	background-color: #eee;
+}
+.all_price .item-table .hidden tr td:last-child{
+	border-right:0px;
+}
+
+.all_price .item-table .hidden tr th:last-child{
+	border-right:0px
+}
+
+.all_price .pagination{
+	margin-bottom:0px;
+	margin-left:0px;
+}
+.all_price .table02{
+	margin-top: 10px;
+}
+
+.all_price .table02 th{
+	color:#0d79c5;
+	font-weight: bold;
+	font-size: 14px;
+	border:2px solid #45ADF9;
+	background: none;
+	background-color: #e7f2fc;
+}
+
+.all_price .table02 th,
+.all_price .table02 td{
+	height: 33px;
+}
+.all_price .btn_box{
+	width: 100%;
+	text-align: center;
+	margin-top: 7px;
+}
+.all_price .btn_box button{
+	height: 40px;
+	padding: 0 20px;
+}
+
+/*
+	매입처 제품관리 팝업
+	2021-06-01 김원명 추가
+*/
+
+.biz_item {
+	margin-top: 0 !important;
+	display:block !important;
+	width: 1000px !Important;
+
+}
+
+.biz_item .title {
+	padding:15px 0;
+}
+
+.biz_item .inner .table-wrap{
+	overflow:auto;
+}
+.biz_item .inner{
+	width:100%;
+	padding:20px 20px 30px;
+}
+.biz_item table.summery .ord_detail table{border:0px}
+.biz_item table.summery .ord_detail tr{
+	border:0px solid transparent;
+	border-bottom:0px;
+	border-top:0px;
+	padding:0;
+}
+.biz_item table.summery .ord_detail tr th{
+	border-right:0px;
+}
+.biz_item table.summery .ord_detail .inner-table tr td{
+	border:0px solid transparent;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.biz_item .h-scroll{
+	height:501px;
+	background-color: #eee;
+}
+.biz_item .item-table .hidden tr td:last-child{
+	border-right:0px;
+}
+
+.biz_item .item-table .hidden tr th:last-child{
+	border-right:0px
+}
+
+.biz_item .pagination{
+	margin-bottom:0px;
+	margin-left:0px;
+}
+.biz_item .table02{
+	margin-top: 10px;
+}
+
+.biz_item .table02 th{
+	color:#0d79c5;
+	font-weight: bold;
+	font-size: 14px;
+	border:2px solid #45ADF9;
+	background: none;
+	background-color: #e7f2fc;
+}
+
+.biz_item .table02 th,
+.biz_item .table02 td{
+	height: 33px;
+}
+.biz_item .btn_box{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.sale_in .important::before {
+    padding-right: 0px;
+}
+.buying_in .important::before {
+    padding-right: 0px;
+}
+
+.possible{
+	border-color:blue;
+	color:blue;	
+	padding: 2px;	
+	border: 1px solid blue;
+}
+
+.impossible{
+	border-color:red;
+	color:red;		
+	padding: 2px;			
+	border: 1px solid red;
+}
+
+.sale_in_center .input-zone{
+	height: calc(100% - 60px);
+}
+.sale_in_center .dl-height{
+	height: calc(100% - 18px);
+}
+.sale_in_center .input-zone dl dt{
+	padding: 7px 21px 0 !important;
+}
+.sale_in_center .input-zone dl dt.important{
+	padding:7px 10px 0 !important
+}
+.sale_in_center .input-zone .dl-height dl dd{
+	padding: 6px 7px 0 !important;
+}
+
+.sale_in_center .input-zone .dl-height dl dt{
+	height:30px;
+	padding: 3px 17px 0;
+	width:120px;
+}
+.sale_in_center .input-zone .dl-height dl dd{
+	height:30px;
+	padding:3px 7px 0;
+	width:57%;
+	width:calc(100% - 120px);
+}
+
+.sale_in_center .table-sor{
+	overflow: auto;
+	height: calc(100% - 112px);
+}
+.sale_in_center .table-sor table{
+	min-width: 1170px;
+}
+.sale_in_center .table-sor table td{
+	cursor: pointer;
+}
+
+.sale_in #right-component .pretty-split-pane-component-inner{
+	min-width: 800px;
+}
+/* center 외주제품관리 */
+.buying_in_center #left-component {
+	width: 370px;
+}
+
+.buying_in_center #left-component .pretty-split-pane-component-inner {
+	min-width:360px;
+}
+
+.buying_in_center #vertical-divider {
+	left: 370px;
+}
+
+.buying_in_center #right-component {
+	left: 370px;
+}
+
+.buying_in_center #right-component  .pretty-split-pane-component-inner {
+	min-width:800px	
+}
+.buying_in_center dt.noim{
+	padding-left: 16px;
+}
+
+/* sale_in css 수정 210915 성시은 */
+.salein_s .sailin-table{
+	min-width: 1500px;
+}

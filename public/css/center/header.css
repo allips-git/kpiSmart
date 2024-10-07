@@ -1,0 +1,283 @@
+
+
+/* pc css */
+@media (min-width:700px){
+.mobile_header{display: none;}
+.popup_header{position: absolute !important;}
+.header{
+    width: 100%;
+    height: 3.1rem;
+    border-bottom: 1px solid #E5E5EC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background-color: #fff;
+}
+.header .menu_wrap ul{
+    display: flex;
+    padding-right: 35px;
+}
+.header .menu_wrap li{
+    width: 30px;
+    height: 100%;
+    height: 3.1rem;
+    text-align: center;
+    line-height: 3.1rem;
+    margin-left: 1.35rem;
+}
+.header .menu_wrap li.bell img{width: 24px;}
+.header .menu_wrap li.user_img img{width: 30px;}
+
+
+
+.aside{
+    display: block;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #092545;
+    z-index: 9;
+}
+.aside .aside_top{
+    width: 100%;
+    height: 3.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color: #fff;
+    padding-left: 1rem;
+    display: flex;
+}
+.aside .aside_top .title_img{
+    width: 30px;
+    height: 100%;
+    line-height: 3.2rem;
+    margin-right: 0.75rem;
+}
+.aside .aside_top img{
+    width: 30px;
+}
+
+.aside  .aside_menu{
+    width: 100%;
+    padding: 1.15rem 0 0;
+}
+.aside  .aside_menu ul li{
+    padding: 0 1.4rem 1.5rem;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+.aside  .aside_menu ul li .icon_wrap{
+    margin-right: 0.5rem;
+    height: 0.9rem;
+    line-height: 0.8rem;
+}
+.aside  .aside_menu ul li.li01 img{
+    width: 15px;
+}
+.aside  .aside_menu ul li.li04 img,
+.aside  .aside_menu ul li.li05 img,
+.aside  .aside_menu ul li.li06 img,
+.aside  .aside_menu ul li.li07 img,
+.aside  .aside_menu ul li.li08 img{
+    width: 16px;
+}
+.aside  .aside_menu ul li.li03 img{
+    width: 17px;
+}
+.aside  .aside_menu ul li.li02 img{
+    width: 18px;
+}
+
+
+}
+
+.popup_header{
+    display: block;
+    height: 2.1rem;
+    padding: 0 .6rem;
+    line-height: 2.1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #292D77;
+    /* border-radius: 0 0 .3rem .3rem; */
+    z-index: 9;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.popup_header .title{
+    text-align: center;
+    width: 100%;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    /* display: block; */
+}
+.popup_header .title a.title_name{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0 1.4rem;
+    display: inline-block;
+}
+
+
+/* moblie css */
+@media (max-width:700px){
+.pc_header{display: none;}
+.aside{display: none;}
+/* 모바일 헤더 */
+.mobile_header{
+    display: block;
+    height: 2.1rem;
+    padding: 0 .6rem;
+    line-height: 2.1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #292D77;
+    /* border-radius: 0 0 .3rem .3rem; */
+    z-index: 9;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.mobile_header .back_arrow{
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top:0.4rem;
+    left: 0.6rem;
+}
+.mobile_header .back_arrow img#ham{
+    width: 1.2rem;
+    margin: .4rem auto 0;
+    display: block;
+}
+.mobile_header .back_arrow img#back{
+    width: 0.84rem;
+    margin: 0.25rem 0 0;
+    display: block;
+}
+.mobile_header .title{
+    text-align: center;
+    width: 100%;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    /* display: block; */
+}
+.mobile_header .title a.title_name{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0 1.4rem;
+    display: inline-block;
+}
+.mobile_header .menu_btn{
+    display: flex;
+    position: absolute;
+    top:0.5rem;
+    right: 0.6rem;
+    line-height: 100%;
+}
+.mobile_header .ham_btn{
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    display: none;
+}
+.mobile_header .alram_btn{
+    width: 1.5rem;
+    height: 1.4rem;
+    text-align: center;
+    display: none;
+}
+.mobile_header .alram_btn img{
+    width: 0.8rem;
+    margin-top: .1rem;
+}
+.mobile_header a.logo_img{
+    width: 4.5rem;
+    display: block;
+}
+
+/* 모바일 하단 탭바 */
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: .05rem solid #E5E5EC;
+    z-index: 9;
+}
+.footer .tab_btn{
+    height: 2.6rem;
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    line-height: .8rem;
+
+}
+.footer .tab_btn a{
+    width: 4.5rem;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.footer .tab_btn a .imgbox{
+    width: 100%;
+    height: 1rem;
+}
+.footer .tab_btn a .imgbox01,
+.footer .tab_btn a .imgbox02{
+    margin-top: .45rem;
+}
+.footer .tab_btn a .imgbox03,
+.footer .tab_btn a .imgbox04{
+    margin-top: .45rem;
+}
+.footer .tab_btn a p{
+    font-size: 0.5rem;
+    color: #D8D8DC;
+    font-weight: 700;
+    text-align: center;
+    line-height: .6rem;
+    margin-top: .2rem;
+}
+.footer .tab_btn a.tab img{
+    height: 100%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+

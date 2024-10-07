@@ -1,0 +1,122 @@
+.paybox-pop {
+    width: 600px !important;
+}
+.paybox-pop h2 strong{
+    color: #22aeff;
+}
+.paybox-pop .kindbox{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.paybox-pop .kindbox .box{
+    width: 100%;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+.paybox-pop .top{   
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0 10px;
+}
+.paybox-pop .top input[type='radio']+label{
+    padding-left: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    background-image: url(/public/img/checkbox_b.png) ;
+    background-position: 0 40%;
+    background-size: 14px;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+}
+.paybox-pop .top input[type='radio']:checked + label{
+    background-image: url(/public/img/checkbox_on_b.png);
+}
+.paybox-pop .middle span.best {
+    font-size: 11px;
+    color: #f51000;
+    border: 1px solid #ffc1bc;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    display: inline-block;
+    right: 16px;
+    top: 12px;
+}
+.paybox-pop .middle span.sale{
+    font-size: 11px;
+    color: #ff7700;
+    border-radius: 2px;
+    border: 1px solid #ffd8b7;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    display: inline-block;
+    right: 16px;
+    top: 12px;
+}
+
+.paybox-pop .middle {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.paybox-pop .bottom{
+    padding: 15px 0;
+}
+.paybox-pop .bottom strong{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Noto Sans KR';
+    font-weight: bolder;
+    height: 44px;
+    color: #22aeff;
+}
+.paybox-pop .bottom p{
+    font-size: 12px;
+}
+.paybox-pop .coupon{
+    font-size: 14px;
+    color: #4c21f2;
+    margin-top: 20px;
+}
+.paybox-pop .coupon .coupon_in{
+    width: 100%;
+    border-bottom: 1px solid #4c21f2;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.paybox-pop .coupon_in input{
+    width: 84% !important;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    height: 40px;
+}
+.paybox-pop .coupon_in input:focus{
+    box-shadow: none;
+}
+.paybox-pop .coupon_in button{
+    color: #111;
+}
+.paybox-pop .btn_wrap{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 10px;
+
+}
+.paybox-pop .btn_wrap button{
+    height: 40px;
+    line-height: 40px;
+    width: 34%;
+}

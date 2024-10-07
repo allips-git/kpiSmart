@@ -1,0 +1,47 @@
+/*================================================================================
+ * 개발팀 공통 css
+ * @version: 1.0.0
+ ================================================================================*/
+
+.display_none { display:none; }
+.display_inline { display:inline; }
+.display_block { display:block; }
+.gray { background-color:#efefef !important; }
+.white { background-color:#ffffff !important; }
+.red { color:red; font-weight:bold; }
+.blue { color:blue; }
+.tb_click{ color:blue; cursor: pointer; }
+.tb_line{ color:blue; text-decoration:underline; cursor:pointer; }
+.cursor{ cursor:pointer; }
+.bold{ font-weight:bold; }
+.dp_visible { visibility:visible; }
+.dp_hidden { visibility:hidden; }
+.line { text-decoration:underline; }
+.btn_ban { background-color: #EAEAEA; color:gray; }
+button.btn_ban:hover { background-color: #EAEAEA; }
+
+/* span 상태관리 */
+.state span {
+	display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid #d5d5d5;
+    color: #a9a9a9;
+}
+.state span.yes {
+	border-color: #655EFB;
+    color: #4036FA;
+}
+.state span.no {
+		border-color: #BDBDBD;
+	    color: #BDBDBD;
+}
+.state span.yes {
+		border-color: #11AA0D;
+	    color: #0E8E0B;
+}
+
+/*
+.b_none { display:none; }
+.b_inline { display:inline; }
+.b_block { display:block; }
+*/

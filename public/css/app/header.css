@@ -1,0 +1,128 @@
+.header{
+    height: 2.1rem;
+    padding: 0 .6rem;
+    line-height: 2.1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #292D77;
+    /* border-radius: 0 0 .3rem .3rem; */
+    z-index: 9;
+    /* max-width: 25rem; */
+    margin: 0 auto;
+}
+.header .back_arrow{
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top:0.4rem;
+    left: 0.6rem;
+}
+.header .back_arrow img#ham{
+    width: 1.2rem;
+    margin: .4rem auto 0;
+    display: block;
+}
+.header .back_arrow img#back{
+    width: 0.84rem;
+    margin: 0.25rem 0 0;
+    display: block;
+}
+.header .title{
+    text-align: center;
+    width: 100%;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    /* display: block; */
+}
+.header .title a.title_name{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0 1.4rem;
+    display: inline-block;
+}
+.header .menu_btn{
+    display: flex;
+    position: absolute;
+    top:0.5rem;
+    right: 0.6rem;
+    line-height: 100%;
+}
+.header .ham_btn{
+    width: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    display: none;
+}
+.header .alram_btn{
+    width: 1.5rem;
+    height: 1.4rem;
+    text-align: center;
+    display: none;
+}
+.header .alram_btn img{
+    width: 0.8rem;
+    margin-top: .1rem;
+}
+.header a.logo_img{
+    width: 4.5rem;
+    display: block;
+}
+
+/* 하단 탭바 */
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: .05rem solid #E5E5EC;
+    background-color: #fff;
+    z-index: 9;
+}
+.footer .tab_btn{
+    height: 2.6rem;
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    line-height: .8rem;
+
+}
+.footer .tab_btn a{
+    width: 4.5rem;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.footer .tab_btn a .imgbox{
+    width: 100%;
+    height: 1rem;
+}
+.footer .tab_btn a .imgbox01,
+.footer .tab_btn a .imgbox02{
+    margin-top: .45rem;
+}
+.footer .tab_btn a .imgbox03,
+.footer .tab_btn a .imgbox04{
+    margin-top: .45rem;
+}
+.footer .tab_btn a p{
+    font-size: 0.5rem;
+    color: #D8D8DC;
+    font-weight: 700;
+    text-align: center;
+    line-height: .6rem;
+    margin-top: .2rem;
+}
+.footer .tab_btn a.tab img{
+    height: 100%;
+}

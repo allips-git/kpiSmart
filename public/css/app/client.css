@@ -1,0 +1,929 @@
+.client_list{
+    position: relative;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.client_list .search_zone{
+    background-color: #292D77;
+    padding: 0 0.6rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: fixed;
+    top: 2.1rem;
+    left: 0;
+    right: 0;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.client_list .search_zone .left{
+    width: 6.2rem;
+    margin-right: 0.6rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+}
+.client_list .search_zone .right{
+    width: calc(100% - 6.8rem);
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+}
+.client_list .search_zone select{
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+    color: #767676;
+    font-size: 0.6rem;
+}
+.client_list .search_zone input{
+    width: 100%;
+    height: 2rem;
+    border: 0;
+    background-color: transparent;
+}
+.client_list .search_zone input{
+    background-image: url(/public/img/app/sc_icon.png);
+    background-position: 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 0.7rem;
+}
+.client_list .search_zone input::placeholder{
+    padding-left: 1.2rem;
+    font-size: 0.6rem;
+    color: #767676;
+}
+.client_list .search_zone input:focus{
+    background-image: none;
+}
+
+
+.client_list .slide_zone{
+    width: 100%;
+    position: fixed;
+    top: 4.7rem;
+    overflow: hidden;
+    box-shadow: 0 .05rem .1rem #00000014;
+    background-color: #fff;
+}
+.client_list .slide_zone #menu_top{
+    padding: .6rem 0.8rem ;
+    width: 100%;
+    overflow-x: hidden;
+    overflow: auto;
+    -webkit-overflow-scrolling: auto;
+    -webkit-scrollbar: none;
+    -webkit-text-size-adjust: none;
+    -webkit-box-sizing: content-box;
+    -ms-overflow-style: none;
+    position: relative;
+    margin: 0 0 0;
+    -ms-touch-action: pan-x;
+    -webkit-animation-duration: 0.4s;
+    -moz-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+#menu_top .swiper-container2 {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    height: auto;
+}
+.swiper-container2 {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-wrapper2 {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.swiper-wrapper2 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+}
+#menu_top .swiper-wrapper2 li {
+    font-size: .55rem;
+    color: #C1C1C1;
+    width: auto;
+    padding: .25rem .5rem;
+    margin-right: .7rem;
+    border: .05rem solid #F2F2F7;
+    border-radius: 2rem;
+}
+#menu_top .swiper-wrapper2 li.active{
+    color: #0176f9;
+    border-color: #0176f9;
+    position: relative;
+}
+
+#menu_top .swiper-wrapper2 li:focus{
+    border: .05rem solid red;
+    color: red;
+    font-size: .6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+
+
+
+
+.client_list .list_zone{
+    padding: 5rem 0.6rem 0;
+}
+.client_list .list_zone ul li{
+    padding: 0.4rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    /* border-bottom: 0.05rem solid #f1f0f5; */
+}
+.client_list .list_zone ul li .icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 2.4rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 0.55rem;
+    font-weight:700;
+}
+.client_list ul li .icon.sigong{
+    background-color: #233CF9;
+}
+.client_list ul li .icon.est{
+    background-color: #409AFF;
+}
+.client_list ul li .icon.as, .icon.cancle{
+    background-color: #FF718B;
+}
+.client_list ul li .icon.balju{
+    background-color: #0061FF;
+}
+.client_list ul li .icon.pay{
+    background-color: #292D77;
+}
+.client_list ul li .icon.com{
+    background-color: #EBEBEB;
+}
+.client_list ul li .icon.unreg{
+    background-color: #C2E4FF;
+}
+.client_list ul li .icon.contract{
+    background-color: #233CF9;
+}
+
+.client_list .list_zone li .user{
+    width: calc(100% - 8.4rem);
+    margin: 0 0.8rem;
+    padding-top: 0.4rem;
+    line-height: 1rem;
+}
+.client_list .list_zone li .user h5{
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: .82rem;
+}
+.client_list .list_zone li .user p{
+    font-size: 0.5rem;
+    margin-top: 0.3rem;
+    line-height: 0.553rem;
+    color: #C1C1C1;
+}
+.client_list .list_zone li .etc{
+    width: 4.3rem;
+    text-align: right;
+    padding-top: 0.3rem;
+    font-weight: 500;
+}
+.client_list .list_zone li .etc p.date{
+    font-size: 0.55rem;
+    color: #C1C1C1;
+    font-weight: 400;
+}
+.client_list .list_zone li .etc p.price{
+    font-size: 0.65rem;
+    margin-top: .3rem;
+}
+.client_list .list_zone li .etc p.price span{
+    font-size: 0.65rem;
+}
+.client_list .add_client{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 3.5rem;
+    text-align: center;
+    background-color: #292D77;
+    opacity: .8;
+    color: #fff;
+    font-size: 0.7rem;
+    position: fixed;
+    bottom: 7vh;
+    right: 1.5rem;
+}
+.client_list .no_client{
+    text-align: center;
+    font-size: 0.7rem;
+    color: #767676;
+    margin-top: 2.5rem;
+}
+
+
+/* 고객등록, 수정화면 */
+.client_ing{
+    max-width: 25rem;
+    margin: 0 auto;
+    position: relative;
+}
+.client_ing .inner{
+    min-height: calc(100vh - 2.1rem);
+    padding: 1.9rem 0.6rem 5rem;
+
+}
+.client_ing .delete_client{
+    border: .05rem solid #dc0000;
+    color: #dc0000;
+    font-size: .65rem;
+    width: 3.6rem;
+    height: 1.3rem;
+    border-radius: .1rem;
+    position: absolute;
+    right: .6rem;
+    top: 3rem;
+}
+.client_ing .input_zone li{
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+.client_ing .input_zone li .li_title{
+    font-size: 0.5rem;
+    font-weight: 500;
+    width: 100%;
+    color: #BCBCC0;
+}
+.client_ing .input_zone li .li_title02{
+    font-size: 0.7rem;
+    line-height: .82rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+.client_ing .input_zone li.dt{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.client_ing .input_zone li.dt .datepick{
+    width: 49%;
+    border: .05rem solid #e5e5ec;
+    padding: 0 0.3rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    background-image: url(/public/img/app/arrow_right.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    background-size: .4rem;
+}
+
+.client_ing .input_zone li.dt .timepick{
+    width: 49%;
+    border: .05rem solid #e5e5ec;
+    padding: 0 0.3rem;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+.client_ing .input_zone li.dt .timepick:focus{
+    outline: none !important;
+}
+.mbsc-ios.mbsc-textfield-wrapper-box, .mbsc-ios.mbsc-textfield-wrapper-outline {
+    margin: 0 !important;
+}
+.mbsc-ios.mbsc-textfield-box, .mbsc-ios.mbsc-textfield-outline {
+    border: 0 !important;
+}
+.mbsc-ios.mbsc-textfield {
+    display: -moz-box;
+    display: flex;
+    padding: 0 !important;
+    background: transparent;
+    height: 1.9rem  !important;
+}
+.mbsc-ios.mbsc-label, .mbsc-ios.mbsc-textfield {
+    font-size: .7rem !important;
+}
+.mbsc-ios.mbsc-popup-buttons, .mbsc-ios.mbsc-popup-header-center, .mbsc-ios.mbsc-popup-header-no-buttons {
+    border: 0 !important;
+}
+.mbsc-button{
+    font-size: .8rem !important;
+    font-family: 'Noto Sans KR' !important;
+}
+.mbsc-ios.mbsc-popup-button-primary {
+    font-weight: 500 !important;
+}
+.mbsc-ios.mbsc-scroller-wheel-item-3d {
+    font-size: .9rem !important;
+    font-family: 'Noto Sans KR' !important;
+}
+.mbsc-ios.mbsc-scroller-wheel-item {
+    font-size: .9rem !important;
+    font-family: 'Noto Sans KR' !important;
+}
+.mbsc-popup-overlay {
+    margin: 0 !important;
+}
+.mbsc-ios.mbsc-scroller-wheel-item-3d div div{
+    color: #fff !important;
+}
+.mbsc-ios.mbsc-scroller-wheel-item div div{
+    color: #fff !important;
+}
+
+.client_ing .input_zone li.text_li .li_title{
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.client_ing .input_zone li.text_li .li_title_add{
+    margin-bottom: 0;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    display: none;
+    
+}
+.client_ing .input_zone li.text_li .li_title.active{
+    display: block;
+}
+.client_ing .input_zone li .input_line{
+    width: 100%;
+    border-bottom:.05rem solid #e5e5ec;
+    padding-bottom: 0.4rem;
+    padding-top: 0.6rem;
+}
+.client_ing .input_zone li .input_line input[type='text'],
+.input_line input[type='number']{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: 0.4rem 0 0 0;
+    height: 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+.client_ing li .input_line input[type='text']::placeholder,
+.input_line input[type='number']::placeholder{
+    font-size: 0.7rem;
+    color: #C1C1C1;
+}
+.client_ing li select{
+    width: 100%;
+    height: 1.6rem;
+    margin-top:1.3rem;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    font-size: 0.7rem;
+    border: 0;
+    line-height: 1.6rem;
+    border-bottom: .05rem solid #e5e5ec;
+}
+.client_ing li select option::selection{
+    font-size: 0.8rem;
+}
+.client_ing li textarea{
+    border: .05rem solid #0176f9;
+    height: 5.7rem;
+    width: 100%;
+    padding:0.25rem;
+    border-radius:0.2rem;
+    font-size: 0.8rem;
+}
+.client_ing li textarea::placeholder{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #C1C1C1;
+    text-align: center;
+    padding: 1.5rem 2rem 0;
+}
+.client_ing .btn_wrap{
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding:0.4rem 0.8rem 0.7rem ;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.16);
+}
+
+.client_ing .btn_wrap button{
+    background-color: #f1f1f5;
+    font-size: 0.7rem;
+    height: 2.3rem;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 0.15rem;
+    font-weight: 700;
+}
+.client_ing .btn_wrap button.blue{
+    background-color: #0176f9;
+    color: #fff;
+    margin-left: 0.4rem;
+}
+
+.client_ing ul li.add input.w100p{
+    width: 4rem !important;
+}
+.client_ing ul li.add button{
+    color: #707070;
+    /* border: .05rem solid #DBDBDB; */
+    width: 2rem;
+    height: 1.3rem;
+    border-radius: .4rem;
+    background-image: url(/public/img/gray_arrow_down.png);
+    background-size: 0.6rem;
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    opacity: .8;
+}
+
+
+
+/* 고객상세 */
+
+.client_info{
+    margin-bottom: 2.5rem;
+}
+.client_info .user_info{
+    padding: 1.25rem 0.8rem 1.4rem;
+    border-bottom: 0.05rem solid #dbdbdb;
+}
+
+.client_info .user_info h4{
+    font-size: .8rem;
+    line-height: 0.93rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+}
+.client_info .user_info h4 span{
+    width: 3.75rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    border: .05rem solid #e5e5ec;
+    border-radius: .2rem;
+    font-size: .6rem;
+    color: #999;
+    text-align: center;
+    font-weight: 400 !important;
+}
+.client_info .user_info dl{
+    margin-bottom: .27rem;
+    line-height: .75rem;
+}
+.client_info .user_info dl dt{
+    font-size: .65rem;
+    width: 3.1rem;
+    color: #949494;
+    line-height: 1rem;
+}
+.client_info .user_info dl dd{
+    font-size: .65rem;
+    float: left;
+    line-height: 1rem;
+    color: #111;
+}
+.client_info .user_info dl:last-child{
+    margin-bottom: 0;
+}
+.client_info .user_info .tel a{
+    color: #fff;
+    height: 1rem;
+    display: inline-block;
+    background-color: #0176f9;
+    border-radius: 1.1rem;
+    padding: 0 .45rem;
+    font-family: 'Roboto';
+    line-height: 1rem;
+    font-size: .6rem;
+    font-weight: 400 !important;    
+}
+
+.client_info .user_info .add a{
+    color: #fff;
+    height: 1rem;
+    display: inline-block;
+    background-color: #0176f9;
+    border-radius: 1rem;
+    padding: 0 .45rem;
+    line-height: 1.1rem;
+    font-size: .55rem;
+    font-weight: 400 !important;  
+}
+
+
+.client_info .order_list{
+    border-top: 0.4rem solid #f5f5f5;
+    padding: 0 0 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap
+}
+.client_info .order_list input + label{
+    width: 33.3%;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    background-image: none;
+    padding: 0;
+    font-size: .65rem;
+    font-weight: 400;
+    color: #c1c1c1;
+    text-align: center;
+    border-bottom: .05rem solid #EBEBEB;
+    position: relative;
+}
+.client_info .order_list label span{
+    font-size: .65rem;
+}
+.client_info .order_list input:checked + label{
+    color: #292D77;
+    font-weight: 700;
+}
+.client_info .order_list input:checked + label::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 1.4rem);
+    bottom: -.05rem;
+    width:2.8rem;
+    height: .1rem;
+    background-color: #292D77;
+}
+.client_info #tab01:checked ~ .tabbox01{display: block;}
+.client_info #tab02:checked ~ .tabbox02{display: block;}
+.client_info #tab03:checked ~ .tabbox03{display: block;}
+
+.client_info .order_list .tabbox{
+    width: 100%;
+    padding: 1.5rem .8rem 0;
+    display: none;
+}
+.client_info .order_list ul li{
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    padding: 0.9rem 0.5rem 0;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    border: 0.075rem solid #E5E5EC;
+}
+.client_info ul li .state_box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.05rem solid #F1F1F5;
+}
+.client_info ul li .state_box .st{
+    font-size: 0.7rem;
+    color: #0176f9;
+    font-weight: 700;
+    line-height: .8rem;
+    padding-bottom: .5rem;
+}
+.client_info ul li .state_box button{
+    font-size: 0.55rem;
+    color: #0176f9;
+    border: 0.05rem solid #0176f9;
+    width: 3.6rem;
+    height: 1.1rem;
+    border-radius: 0.1rem;
+}
+
+.client_info ul li .state_box .price{
+    font-size: 0.7rem;
+    color: #767676;
+    font-weight: 500;
+    line-height: .8rem;
+}
+.client_info ul li .process_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0 0.7rem;
+    position: relative;
+}
+.client_info ul li .process_box .hr{
+    width: 100%;
+    height: 0.1rem;
+    top: 0.45rem;
+    left: 0;
+    position: absolute;
+}
+.client_info ul li .process_box .hr div{
+    width: 78%;
+    max-width: 25rem;
+    margin: 0 auto;
+    height: 0.1rem;
+    background-color: #F1F1F5;
+}
+.client_info ul li .process_box .p_box{
+    width: 25%;
+    text-align: center;
+    z-index: 2;
+}
+.client_info ul li .p_box .chk{
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: 0.05rem solid #e5e5ec;
+    background-color: #fff;
+}
+.client_info ul li .p_box.active .chk{
+    background-color: #409AFF;
+    background-image: url(/public/img/app/process_chk.png);
+    background-size: 0.45rem;
+    background-position: center;
+}
+.client_info ul li .p_box p{
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+    color: #c1c1c1;
+    margin-top: .1rem;
+}
+.client_info ul li .p_box.active p{
+    color: #409AFF;
+}
+.client_info ul li .p_box p.sub{
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+}
+.client_info ul li .date_box{
+    display: flex;
+    width: 100%;
+    line-height: 0.9rem;
+    justify-content: center;
+}
+.client_info ul li .date_box .date{
+    position: relative;
+}
+.client_info ul li .date_box .date::after{
+    content: '';
+    width: 0.05rem;
+    height: 1.5rem;
+    background-color: #e5e5ec;
+    position: absolute;
+    right: 0;
+    top: 0.3rem;
+}
+.client_info ul li .date_box > div{
+    width: 6rem;
+    text-align: center;
+}
+.client_info ul li .date_box > div span{
+    font-size: 0.6rem;
+    line-height: 0.9rem ;
+    color: #9ba9b3;
+    display: inline-block;
+}
+.client_info ul li .date_box > div p{
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+}
+.client_info ul li .btn_box button.add_prod_btn{
+    background-color: #233CF9;
+    color: #fff;
+    width: calc(100% - 1.4rem);
+}
+.client_info ul li .btn_box{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 0 .7rem;
+}
+.client_info ul li .btn_box .wrap{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2.5rem);
+}
+.client_info ul li .btn_box .wrap button.gray{
+    margin-right: .3rem;
+}
+.client_info ul li .btn_box .wrap button{
+    width: 100%;
+}
+.client_info ul li .btn_box button{
+    height: 2.25rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: .15rem;
+}
+.client_info ul li .btn_box button.purple{
+    background-color: #233CF9;
+    color: #fff;
+}
+.client_info ul li .btn_box button.more{
+    width: 2.2rem !important;
+    background-color: #EBEBEB;
+    background-image: url(/public/img/app/tab_05.png);
+    background-size: .8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: .3rem;
+
+}
+.client_info .btn_wrap{
+    width: 100%;
+    max-width: 25rem;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    padding: .35rem .5rem;
+    box-shadow: 0 0 .15rem #00000029;
+    background-color: #fff;
+}
+.client_info .btn_wrap button{
+    background-color: #f1f1f5;
+    font-size: 0.7rem;
+    height: 2.3rem;
+    width: calc(50% - .2rem);
+    font-weight: 500;
+    border-radius: .15rem;
+}
+.client_info .btn_wrap button.blue{
+    background-color: #0176f9;
+    color: #fff;
+}
+.datepop{
+    display: none;
+    width: 90%;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+
+/* 고객정보 전후 선택 팝업 */
+
+/* .client_choice{
+    width: 14.8rem;
+    max-width: 20rem;
+    background-color: #fff;
+    display: none;
+    border-radius: 0.7rem;
+    padding: .8rem 1rem ;
+}
+.client_choice ul a{
+    display: block;
+    position: relative;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+} */
+
+
+
+.more_pop{
+    width: 100%;
+    max-width: 25rem;
+    display: none;
+}
+.more_pop .inner{
+    width: 100%;
+    position: absolute;
+    height: 16.5rem;
+    top: calc(100vh - 16.5rem) !important;
+    background-color: #fff;
+    padding: 1.35rem .6rem 1.5rem;
+    border-radius: .5rem .5rem 0 0;
+}
+.more_pop h5{
+    font-size: .7rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    line-height: 1rem;
+}
+.more_pop ul li{
+    width: 100%;
+    height: 2.1rem;
+    background-color: #0176f9;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2.05rem;
+    border-radius: .3rem;
+    margin-bottom: .35rem;
+}
+.more_pop ul li:hover{
+    background-color: #076fe6;
+}
+.more_pop ul li:last-child{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  견적등록 커버 페이지 client_choice */
+.client_choice{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    left: 0 !important;
+    right: 0;
+    position: relative;
+    display: none;
+    max-width: 25rem;
+    margin: 0 auto;
+}
+.client_choice .back_arrow{
+    
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.6rem;
+}
+.client_choice .back_arrow img#back {
+    width: 0.84rem;
+    margin: 0.25rem 0 0;
+    display: block;
+}
+.client_choice .bg{
+    background-color: #292D77;
+    padding: 4rem 0 5rem 1rem;
+    color: #fff;
+    background-image: url(/public/img/app/esti_bg_icon.png);
+    background-size: 48%;
+    background-position: 111.5% 60%;
+}
+.client_choice h1{
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+    line-height: 140%;
+}
+.client_choice .bg p:first-child{
+    font-size: .6rem;
+    margin-bottom: .25rem;
+}
+
+.client_choice .bg p:last-child{
+    font-size: .7rem;
+    margin-bottom: .5rem;
+}
+
+.client_choice .tabs{
+    margin-top: -1.6rem;
+    padding: 0 1rem;
+}
+.client_choice .go-btn{
+    width: 100%;
+    background-color: #fff;
+    color: #111;
+    border-radius: .25rem;
+    margin-bottom: .65rem;
+    padding: 1.15rem .75rem;
+    background-image: url(/public/img/app/arrow_p.png);
+    background-size: 3%;
+    background-position: 95% 50%;
+    box-shadow: .15rem .15rem .3rem rgba(0,0,0,0.2);
+    display: block;
+    font-weight: 500;
+    font-size: .75rem;
+}

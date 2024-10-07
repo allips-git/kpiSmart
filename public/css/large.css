@@ -1,0 +1,306 @@
+@media (min-width:2400px){
+	html,body{font-size: 18px !important;}
+	/* .member{width:550px !important; height:100px; position: relative;}
+
+	.member li {
+		font-size:16px !important;
+		margin-left: 5px;
+		line-height: 50px !important;
+	}
+
+	.member li .logout-btn {
+		height: 24px !important;
+		padding:0px 15px !important;
+		font-size: 14px !important;
+	}
+
+	.header {
+		height: 50px !important;
+		padding: 0 20px !important;
+	}
+
+
+	.header .toggle_btn  {
+		margin-top: 7px !important;
+		font-size: 22px;
+	}
+	.header .toggle_btn i{
+		line-height: 36px !important;
+	}
+
+	.header .logo {
+		margin: 0 40px 0 20px !important;
+	}
+
+	.header .logo img {
+		width: 90px !important;
+		margin-top: 12px !important;
+	}
+	.header .menu > li {
+		margin: 0 20px !important;
+	}
+
+	.header .menu > li a {
+		height: 50px !important;
+		padding-top: 0px !important;
+		font-size: 18px !important;
+		line-height: 50px !important;
+	}
+
+
+	/* aside */
+	/* .aside {
+		padding-top: 30px !important;
+		width: 210px !important;
+	}
+
+
+	.aside .title {
+		padding: 30px 0 30px !important;
+	}
+
+	.toggle_btn {
+		width: 36px !important;
+		height: 36px !important;
+	}
+
+
+	.aside .title a {
+		color:#fdfdfd;
+		font-size: 18px !important;
+	}
+
+
+	.aside .title a i {
+		display:inline-block;
+		margin-left:14px !important;
+		font-size: 14px !important;
+	}
+
+
+
+	.aside .sub-menu > li > i {
+		font-size: 18px !important;
+	}
+
+	.aside .sub-menu > li a {
+		padding: 10px 10px !important;
+		font-size: 18px !important;
+	}
+
+	.aside .banner a {
+		font-size: 16px !important;
+	}
+
+
+	.aside .banner a:first-child{
+		margin-bottom: 20px !important;
+	}
+	.aside .dropmenu li a{
+		font-size: 16px;
+	}
+
+
+	.container {
+		padding-top: 50px !important;
+		margin-left: 210px !important;
+		background-color:#EDF0F5;
+	}
+	.container.open {
+		margin-left: 0 !important;
+	}  */
+
+
+	/* main */
+	.main {
+		padding:50px !important;
+	}
+	.main .section h1{
+		font-size: 20px !important;
+	
+	}
+
+	.main .section01,
+	.main .section02,
+	.main .section03{
+		min-height: 280px !important;
+		overflow-y: auto;
+	}
+	.main .section04,
+	.main .section05,
+	.main .section06{
+		min-height: 280px !important;
+		overflow-y: auto;
+	}
+
+			
+	.section i{
+		font-size: 15px !important;
+		padding: 6px !important;
+	}
+	.section .monitor_top h1 i.fa-chart-line{
+		font-size:  20px !important;
+	}
+		
+	/* section01 */
+
+	.main .section01 .icon_wrap{
+		padding:5.5% 50px !important;
+		height: calc(100% - 53px ) !important;
+	}
+
+	.main .icon_wrap .icon{
+		margin-bottom: 15px !important;
+	}
+	.main .icon_wrap .icon05{
+		margin-bottom: 0 !important;
+	}
+	.main .icon_wrap .icon .img{
+		width: 80px !important;
+		height: 80px !important;
+	}
+	.main .icon_wrap .icon p{
+		font-size: 15px !important;
+		margin-top: 8px !important;
+	}
+
+	/* section02 */
+	.main h1.nbg{
+		font-size: 18px !important;
+	}   
+	
+    .mbox01,.mbox02,.mbox03{
+        margin-top: 10px !important;
+    }
+    .mbox04,.mbox05,.mbox06{
+        margin-top: 20px !important;
+    }
+
+	.mbox p{
+		width: calc(100% - 40px) !important;
+		font-size: 16px !important;
+		line-height: 27px !important;
+	}
+	.mbox img{
+		width: 25px !important;
+		height: 25px !important;
+	}
+    .mbox span strong{
+        font-size:24px !important;
+        line-height: 24px !important;
+    }
+
+    .main .section .graph{
+        height:60% !important;
+    }
+
+    #canvas,
+    #canvas2{
+        top:60px !important;
+    }
+
+    .main .section .graph .dan{
+        font-size: 14px !important;
+        top: 35px !important;
+    }
+
+    .main h1 span.dat{
+        font-size: 14px !important;
+    }
+            
+    .main h1 span.dat i{
+        line-height: 14px !important;
+    }
+
+	.monitor_btm h1 span.date_span {
+		font-size: 14px !important;
+	}
+  
+	/* section04 */
+
+	.section04 .online{
+		padding: 20px 25px !important;
+		height: calc(100% - 60px) !important;
+	}
+
+	.section04 .online div p{
+		font-size: 14px !important;
+	}
+
+
+	/* section05 */
+
+	.section h1 .arw{
+		width: 9px !important;
+		margin-left: 10px;
+	}
+	.section h1 .arw img{
+		width:9px !important;
+		margin-top: -3px;
+	}
+
+	.section span.now{
+		font-size: 14px !important;
+	}
+			
+	.refresh {
+		width: 18px !important;
+		height: 18px !important;
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.faq,.notice{
+		height: calc(100% - 52px) !important;
+		padding: 20px 25px!important;
+	}
+
+			
+	.main .faq ul li,
+	.main .notice ul li{
+		margin-bottom:14px !important;
+	}      
+
+	.main .faq ul li p,
+	.main .faq ul li .kind,
+	.main .faq ul li .date,
+	.main .notice ul li p,
+	.main .notice ul li .kind,
+	.main .notice ul li .date{
+		font-size: 15px!important;
+	}
+	.main .faq ul li:last-child,
+	.main .notice ul li:last-child{
+		margin-bottom: 0px !important;
+	}
+		
+	.no_list{
+		font-size: 17px !important;
+		padding-top:12% !important;
+	}
+
+	.notice ul li span.date{
+		width: 100px !important;
+	}
+	.faq ul li span.date{
+		width: 100px !important;
+	}
+
+	/* footer */
+	.section07{
+		padding-top: 1%  !important;
+	}
+	.footer_box{
+		font-size: 14px !important;
+	}
+	.section07 .copy{
+		font-size: 14px !important;
+	}
+		
+	.copy .logo_img_box{
+		width: 60px !important;
+	}
+
+	.footer_box .poli a{
+		font-size: 14px !important;
+	}
+}
