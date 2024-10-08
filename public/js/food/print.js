@@ -159,7 +159,14 @@ $('#UpdateCnt').on('click',function(){
 
     // 수량 초과가 없을 경우에만 AJAX 요청을 수행
     if (!isExceed) {
-        updateWorkCounts(updatedValues);
+        if(updatedValues.length === 0)
+        {
+            alert('완료할 실적이 없습니다.')
+        }
+        else
+        {
+            updateWorkCounts(updatedValues);
+        }
     }
 });
 
@@ -175,6 +182,7 @@ function updateWorkCounts(updatedValues) {
         },
         success: function(res) {
             console.log(res);
+            alert(res['ResultMessage'])
             // 성공 처리 로직 (예: 알림 메시지 표시)
         },
         error: function(error) {
