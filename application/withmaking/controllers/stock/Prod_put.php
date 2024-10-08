@@ -334,6 +334,32 @@ class Prod_put extends CI_Controller {
    }
 
     /**
+    * @description 바코드 출력 시 상태 update
+    */
+    public function getBarcodeUpdate()
+    {
+        $ikey = $this->input->post('ikey', TRUE);
+
+        $this->db->trans_begin();
+
+        foreach ($ikey as $key) {
+            $this->db->where('ikey', $key);
+            $this->db->update('stock_history', array('print_yn' => 'Y'));
+        }
+
+        if ($this->db->trans_status() === FALSE)
+        {
+            $this->db->trans_rollback();
+            exit(json_encode(['code'=>999, 'err_msg'=>'바코드 상태 업데이트에 실패하였습니다. 지속될 경우 관리자에게 문의하세요.']));
+        }
+        else
+        {
+            $this->db->trans_commit();
+            exit(json_encode(['code'=>100]));
+        }
+    }
+
+    /**
      * @description 최소 입력값 검증 (숫자, 콤마만 허용)
      * @return result code [bool] 
      */

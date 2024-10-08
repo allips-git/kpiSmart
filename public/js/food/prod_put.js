@@ -81,7 +81,7 @@
             // 체크가 1개라도 있을경우 출력
             if (Array.isArray(arr) && arr.length > 0)
             {
-                //barcode_update({'ikey':arr}, 'base');
+                barcode_update({'ikey':arr}, 'prod', '/stock/prod_put/getBarcodeUpdate');
                 barcode_print({'ikey':arr});
             }
             else

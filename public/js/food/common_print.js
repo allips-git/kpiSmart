@@ -141,6 +141,10 @@ function barcode_print(obj)
                     $("input[class=chk_all]").prop("checked", false);
                     get_equipment_list($("#frm_search").serializeObject(), "Y"); 
                 }
+                else if(path == 'prod')
+                {
+                    get_prod_put_list($("#frm_search").serializeObject(), "Y"); 
+                }
             }
             else if (data.code == '999') // fail 
             {
