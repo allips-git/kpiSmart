@@ -17,6 +17,24 @@
         }
     });
 
+    $('#re_nm').keydown(function(event) {
+        if(event.keyCode == 13) {
+            event.preventDefault();
+
+            if($('#re_nm').val() === '')
+            {
+                alert('반품 유형을 입력하세요');
+                return false;
+            }
+
+            var con = confirm(`${$(".p").val() === 'in' ? '등록' : '수정'}하시겠습니까?`);
+            if (con) 
+            {
+                return_gb_validation($(".frm_reg").serializeObject()); // form 데이터 유효성 검사
+            }
+        }
+    });
+
     // 등록 이벤트
     $(".btn_gb_reg").off().click(function () { 
         var con = confirm('등록 하시겠습니까?');
@@ -296,6 +314,7 @@ function return_gb_validation(obj) {
  {
     $('.frm_reg')[0].reset();
     $('.input').val("");
+    $(".p").val("in");
     $("input[name='gb_useyn'][value='Y']").prop("checked", true);
 
     // css 활성화/비활성화
