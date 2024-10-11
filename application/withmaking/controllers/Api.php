@@ -7,17 +7,43 @@ class Api extends CI_Controller {
     public function __construct() 
     { 
         parent::__construct();
-
-
     }
 
-    public function index() {
-                    $this->call_api_for_check1();
-                    $this->call_api_for_check2();
-                    $this->call_api_for_check3();
+    public function index() 
+    {
+        $apiKey  = '';
+        $localCd = '';
+
+        switch ($domain) 
+        {
+            case 'brceratech.allips.kr':
+                $apiKey  = '61e7-e4c2-bf08-cdbf';
+                $localCd = 'KR15';
+            break;
+            case 'withmaking.allips.kr':
+                $apiKey  = 'f583-dc75-531d-0ff1';
+                $localCd = 'KR19';
+            break;
+            case 'koai.allips.kr':
+                $apiKey  = '3ed2-c648-8836-cbd0';
+                $localCd = 'KR18';
+            break;
+            case 'gounhome.allips.kr':
+                $apiKey  = '96a7-3081-d0be-2246';
+                $localCd = 'KR17';
+            break;
+            case 'acevisual.allips.kr':
+                $apiKey  = '1dac-0804-40b8-77ec';
+                $localCd = 'KR16';
+            break;
+        }
+
+        $this->call_api_for_check1($apiKey);
+        $this->call_api_for_check2($apiKey);
+        $this->call_api_for_check3($apiKey);
     }
 
-    private function call_api_for_check3()
+    private function call_api_for_check3($apiKey, $localCd)
     {
 
         $sql = "SELECT SUM(sub.work_cnt) AS total_work_cnt 
@@ -34,14 +60,14 @@ class Api extends CI_Controller {
             INNER JOIN job_detail AS d ON (m.local_cd = d.local_cd AND m.job_no = d.job_no) 
             INNER JOIN prod_proc AS p ON (d.local_cd = p.local_cd AND d.pp_uc = p.pp_uc) 
             INNER JOIN z_plan.common_code AS gb ON (gb.code_gb ='PR' AND gb.code_main = '040' AND p.pp_gb = gb.code_sub) 
-            WHERE m.local_cd = 'KR13' 
+            WHERE m.local_cd = ?
             AND m.useyn = 'Y' 
             AND m.delyn = 'N' 
             AND m.state != '001' 
             AND m.job_dt BETWEEN DATE_FORMAT(NOW(), '%Y-%m-01') AND LAST_DAY(NOW())
         ) AS sub;";
 
-        $query = $this->db->query($sql);
+        $query = $this->db->query($sql, array($localCd));
         if ($query) {
             $result = $query->row();
             $totalWorkCnt = isset($result->total_work_cnt) ? $result->total_work_cnt : 0;
@@ -54,14 +80,14 @@ class Api extends CI_Controller {
         $kpiData = array(
             "KPILEVEL3" => array(
                 array(
-                    "kpiCertKey" => "3b80-96ec-f9ba-bdc2",
-                    "ocrDttm" => $currentTime,
-                    "kpiFldCd" => "P",
-                    "kpiDtlCd" => "B",
-                    "kpiDtlNm" => "생산량 증가",
-                    "msmtVl" => strval($totalWorkCnt),
-                    "unt" => "수량",
-                    "trsDttm" => $currentTime
+                    "kpiCertKey"    => $apiKey,
+                    "ocrDttm"       => $currentTime,
+                    "kpiFldCd"      => "P",
+                    "kpiDtlCd"      => "B",
+                    "kpiDtlNm"      => "생산량 증가",
+                    "msmtVl"        => strval($totalWorkCnt),
+                    "unt"           => "수량",
+                    "trsDttm"       => $currentTime
                 )
             )
         );
@@ -80,7 +106,7 @@ class Api extends CI_Controller {
  }
 
 
- private function call_api_for_check2() {
+ private function call_api_for_check2($apiKey, $localCd) {
     $currentTime = date('YmdHis'); // 현재 시간
     $select_date = date('Y-m-d'); 
 
@@ -98,15 +124,15 @@ class Api extends CI_Controller {
                         AND lot = d.lot), 0) AS work_cnt 
             FROM job_master AS m 
             INNER JOIN job_detail AS d ON (m.local_cd = d.local_cd AND m.job_no = d.job_no) 
-            WHERE m.local_cd = 'KR13' 
+            WHERE m.local_cd = ?
             AND m.useyn = 'Y' 
             AND m.delyn = 'N' 
             AND m.state != '001'
             AND m.job_dt = '$select_date'
             ) AS subQuery 
-        GROUP BY job_dt;";
+        GROUP BY job_dt";
 
-    $query = $this->db->query($sql);
+    $query = $this->db->query($sql, array($localCd));
     echo $this->db->last_query();
 
     if ($query) {
@@ -117,14 +143,14 @@ class Api extends CI_Controller {
         $kpiData = array(
             "KPILEVEL2" => array(
                 array(
-                    "kpiCertKey" => "3b80-96ec-f9ba-bdc2",
-                    "ocrDttm" => $currentTime,
-                    "kpiFldCd" => "P",
-                    "kpiDtlCd" => "B",
-                    "kpiDtlNm" => "불량률 감소",
-                    "systmOprYn" => "Y",
-                    "achrt"     => strval($roundedPercent),
-                    "trsDttm" => $currentTime
+                    "kpiCertKey"    => $apiKey,
+                    "ocrDttm"       => $currentTime,
+                    "kpiFldCd"      => "P",
+                    "kpiDtlCd"      => "B",
+                    "kpiDtlNm"      => "생산률 증가",
+                    "systmOprYn"    => "Y",
+                    "achrt"         => strval($roundedPercent),
+                    "trsDttm"       => $currentTime
                 )
             )
         );
@@ -143,16 +169,15 @@ class Api extends CI_Controller {
 }
 
 
-private function call_api_for_check1() {
-    $currentTime = date('YmdHis');
-
-    $kpiData = array(
+private function call_api_for_check1($apiKey) {
+    $currentTime    = date('YmdHis');
+    $kpiData        = array(
         "KPILEVEL1" => array(
             array(
-                "kpiCertKey" => "3b80-96ec-f9ba-bdc2",
-                "ocrDttm" => $currentTime,
-                "systmOprYn" => "Y",
-                "trsDttm" => $currentTime
+                "kpiCertKey"    => $apiKey,
+                "ocrDttm"       => $currentTime,
+                "systmOprYn"    => "Y",
+                "trsDttm"       => $currentTime
             )
         )
     ); // 여기에 세미콜론 추가
