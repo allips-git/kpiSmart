@@ -14,6 +14,8 @@ class Api extends CI_Controller {
         $apiKey  = '';
         $localCd = '';
 
+        $domain  =  $_SERVER['HTTP_HOST'];
+
         switch ($domain) 
         {
             case 'brceratech.allips.kr':
@@ -39,8 +41,8 @@ class Api extends CI_Controller {
         }
 
         $this->call_api_for_check1($apiKey);
-        $this->call_api_for_check2($apiKey);
-        $this->call_api_for_check3($apiKey);
+        $this->call_api_for_check2($apiKey, $localCd);
+        $this->call_api_for_check3($apiKey, $localCd);
     }
 
     private function call_api_for_check3($apiKey, $localCd)
