@@ -204,7 +204,7 @@ class Api extends CI_Controller
                         "kpiFldCd"      => "Q",
                         "kpiDtlCd"      => "A",
                         "kpiDtlNm"      => "불량 감소",
-                        "msmtVl"        => strval(0),
+                        "msmtVl"        => strval(100),
                         "unt"           => "수량",
                         "trsDttm"       => $currentTime
                     )
