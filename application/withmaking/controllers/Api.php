@@ -104,7 +104,7 @@ class Api extends CI_Controller
                         "kpiDtlCd"      => "A",
                         "kpiDtlNm"      => "불량 감소",
                         "systmOprYn"    => "Y",
-                        "achrt"         => strval(0),
+                        "achrt"         => strval(100),
                         "trsDttm"       => $currentTime
                     )
                 )
@@ -204,7 +204,7 @@ class Api extends CI_Controller
                         "kpiFldCd"      => "Q",
                         "kpiDtlCd"      => "A",
                         "kpiDtlNm"      => "불량 감소",
-                        "msmtVl"        => strval(100),
+                        "msmtVl"        => strval(0),
                         "unt"           => "수량",
                         "trsDttm"       => $currentTime
                     )
