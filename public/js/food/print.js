@@ -70,7 +70,7 @@ function get_his_list(obj, mode='') {
                             str += '<input type="hidden" class="hidden-pp_uc" data-ikey="' + list.ikey + '" value="' + list.pp_uc + '">';
                             str += '<td class="Elli">'+ list.job_dt +'</td>';
                             str += '<td class="T-left Elli">'+ list.item_nm +'</td>';
-                            str += '<td class="Elli">'+ list.pp_gb_nm +'</td>';
+                            str += '<td class="Elli">'+ list.pc_nm +'</td>';
                             str += '<td class="T-left Elli">'+ list.pp_nm +'</td>';
                             str += '<td class="Elli">'+ list.ul_nm +'</td>';
                             if (list.pp_hisyn == "Y") {

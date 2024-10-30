@@ -24,7 +24,38 @@
         get_his_list($("#frm_search").serializeObject(), "Y");
     });
 
+    // Enter 키를 눌렀을 때 데이터를 저장하는 이벤트 핸들러
+    $(document).on('keydown', 'input[name="time[]"]', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // 기본 Enter 키 동작 방지
+
+            var inputValue = $(this).val(); // 입력된 값 가져오기
+            var rowIndex = $(this).data("val"); // 해당 행의 인덱스 가져오기
+
+            // 데이터 저장 로직 (ajax 통신 등)
+            saveTimeData(inputValue, rowIndex);
+        }
+    });
 });
+
+function saveTimeData(inputValue, rowIndex) {
+    $.ajax({
+        url:'/pr/prod_list/insertData',
+        type: 'post',
+        data: {
+            'workTime': inputValue,
+            'ikey': rowIndex
+        },
+        dataType: 'json',
+        success: function(data) {
+            if (data.ResultCode === 200) {
+                get_his_list($('#frm_search').serializeObject(), 'Y');
+            }
+        }, error: function(request, status, error) {
+            console.log(request, error);
+        }
+    })
+}
 
 /**
  * @description 생산 작업 리스트 - ajax 페이지네이션
@@ -74,13 +105,17 @@ function get_his_list(obj, mode='')
                         $.each (result, function (i, list) 
                         {
                             // 총 작업 시간 계산
-                            time = work_time(list.start_dt, list.end_dt, list.plan_time);
+                            // time = work_time(list.start_dt, list.end_dt, list.plan_time);
+                            time = list.workTime;
+                            if (time == null) {
+                                time = '00:00:00';
+                            }
                             str += '<tr>';
                             // str += '<td>'+ list.rownum +'</td>';
                             str += '<td>'+ list.ikey +'</td>';
                             str += '<td class="Elli">'+ list.job_dt +'</td>';
                             str += '<td class="T-left Elli">'+ list.item_nm +'</td>';
-                            str += '<td class="Elli">'+ list.pp_gb_nm +'</td>';
+                            str += '<td class="Elli">'+ list.pc_nm +'</td>';
                             str += '<td class="T-left Elli">'+ list.pp_nm +'</td>';
                             str += '<td class="Elli">'+ list.ul_nm +'</td>';
                             if (list.pp_hisyn == "Y") // 실적 사용
@@ -126,9 +161,16 @@ function get_his_list(obj, mode='')
                                 }
                             }
 
-                            str += '<td class="Elli">'+ is_empty(list.start_dt) +'</td>';
-                            str += '<td class="Elli">'+ is_empty(list.end_dt) +'</td>';
-                            str += '<td class="Elli">'+ time +'</td>';
+                            if (list.start_dt == null) {
+                                var startDt = '';
+                                var endDt = '';
+                            } else {
+                                var startDt = list.start_dt.split(' ');
+                                var endDt = list.end_dt.split(' ');
+                            }
+                            str += '<td class="Elli">'+ is_empty(startDt[0]) +'</td>';
+                            str += '<td class="Elli">'+ is_empty(endDt[0]) +'</td>';
+                            str += '<td class="Elli"><input type="text" name="time[]" data-val="' + list.ikey + '" value="' + time + '" /></td>';
                             str += '</tr>';
                         });
                     } 

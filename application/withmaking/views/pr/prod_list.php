@@ -86,7 +86,7 @@
                             <th class="w5">작업상태</th>
                             <th class="w9">작업시작일</th>
                             <th class="w9">작업종료일</th>
-                            <th class="w8">총 작업시간(1인)</th>
+                            <th class="w8">기계가동시간</th>
                         </tr>
                     </thead>
                     <tbody id="data-container">

@@ -65,13 +65,14 @@ class Prod_list_m extends CI_Model {
         $sql = 'SELECT @rownum := @rownum+1 AS rownum, sub.* FROM (
                 SELECT m.ikey, m.local_cd, m.job_dt, m.item_cd, m.item_nm, m.state, m.job_no
                 , d.pp_nm, d.pp_hisyn, d.plan_cnt, d.plan_time, d.plan_num, d.ul_nm, d.job_st
-                , d.start_dt, d.end_dt, d.lot, d.pp_uc, m.job_qty
+                , d.start_dt, d.end_dt, d.lot, d.pp_uc, m.job_qty, m.workTime, pm.pc_nm
                 , IFNULL((SELECT SUM(qty) FROM work_history WHERE local_cd = d.local_cd AND job_no = d.job_no AND lot = d.lot), 0) AS work_cnt
                 , IFNULL((SELECT SUM(flaw_qty) FROM work_history WHERE local_cd = d.local_cd AND job_no = d.job_no AND lot = d.lot), 0) AS flaw_cnt
                 FROM job_master AS m
                 INNER JOIN (SELECT @rownum := 0) r
                 INNER JOIN job_detail AS d ON (m.local_cd = d.local_cd AND m.job_no = d.job_no)
                 INNER JOIN prod_proc AS p ON (d.local_cd = p.local_cd AND d.pp_uc = p.pp_uc)
+                INNER JOIN proc_master AS pm ON (p.local_cd = pm.local_cd AND d.pc_uc = pm.pc_uc)
                 WHERE m.local_cd = ? AND m.useyn = "Y" AND m.delyn = "N" AND m.state != "001" AND m.job_dt BETWEEN @start_dt AND @end_dt ' . $searchCondition . '
                 ORDER BY m.job_dt ASC, d.ikey ASC, d.reg_dt ASC
             ) AS sub 

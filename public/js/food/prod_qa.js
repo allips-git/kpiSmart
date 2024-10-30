@@ -123,6 +123,33 @@ function work_time(start_dt, end_dt, plan_time)
     }
 }
 
+/**
+ * @description 두 날짜 차이 계산 함수
+ * @param 시작일자, 종료일자
+ * @return 날짜 차이값
+*/
+function day_diff(start_dt, end_dt)
+{
+    const date1 = new Date(start_dt); // 시작일
+    const date2 = new Date(end_dt);   // 종료일
+    const elapsed_mSec = date2.getTime() - date1.getTime(); // 172800000
+    const elapsed_day = elapsed_mSec / 1000 / 60 / 60 / 24; // 2
+    return elapsed_day;
+}
+
+function convert_hms(value) 
+{
+    const sec = parseInt(value, 10);                        // convert value to number if it's string
+    let hours   = Math.floor(sec / 3600);                   // get hours
+    let minutes = Math.floor((sec - (hours * 3600)) / 60);  // get minutes
+    let seconds = sec - (hours * 3600) - (minutes * 60);    // get seconds
+    // add 0 if value < 10; Example: 2 => 02
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes < 10) {minutes = "0"+minutes;}
+    if (seconds < 10) {seconds = "0"+seconds;}
+    return hours+':'+minutes+':'+seconds;                   // Return is HH : MM : SS
+}
+
 $('.btn_flaw').on('click',function(){
 
     var updatedValues = [];
@@ -231,7 +258,7 @@ function get_qa_list(obj, mode='')  // 조회
                     $.each(result, function (i, list) {
                         if (list.state !== "001") {
                             dataExist = true;
-                            var time = work_time(list.start_dt, list.end_dt, list.plan_time);
+                            // var time = work_time(list.start_dt, list.end_dt, list.plan_time);
                             str += '<tr>';
                             str += '<td>'+ list.ikey +'</td>';
                             str += '<input type="hidden" class="hidden-lot" data-ikey="' + list.ikey + '" value="' + list.lot + '">';
@@ -239,7 +266,7 @@ function get_qa_list(obj, mode='')  // 조회
                             str += '<input type="hidden" class="hidden-pp_uc" data-ikey="' + list.ikey + '" value="' + list.pp_uc + '">';
                             str += '<td class="Elli">'+ list.job_dt +'</td>';
                             str += '<td class="T-left Elli">'+ list.item_nm +'</td>';
-                            str += '<td class="Elli">'+ list.pp_gb_nm +'</td>';
+                            str += '<td class="Elli">'+ list.pc_nm +'</td>';
                             str += '<td class="T-left Elli">'+ list.pp_nm +'</td>';
                             str += '<td class="Elli">'+ list.ul_nm +'</td>';
                             if (list.pp_hisyn == "Y") {
@@ -254,9 +281,29 @@ function get_qa_list(obj, mode='')  // 조회
 
                          
                             
-                            str += '<td class="Elli">'+ is_empty(list.start_dt) +'</td>';
-                            str += '<td class="Elli">'+ is_empty(list.end_dt) +'</td>';
-                            str += '<td class="Elli">'+ time +'</td>';
+                            // str += '<td class="Elli">'+ is_empty(list.start_dt) +'</td>';
+                            // str += '<td class="Elli">'+ is_empty(list.end_dt) +'</td>';
+                            if (parseInt(list.work_cnt) >= parseInt(list.job_qty)) {
+                                list.state = "004";
+                            }
+
+                            // 상태 표시
+                            if (list.state == "001") 
+                            {
+                                str += '<td><span style="font-weight: bold;">접수</span></td>';
+                            }
+                            else if (list.state == "002")
+                            {
+                                str += '<td><span style="color: blue; font-weight: bold;">대기</span></td>';
+                            }
+                            else if (list.state == "003")
+                            {
+                                str += '<td><span style="color: #FF5E00; font-weight: bold;">진행</span></td>';
+                            }
+                            else if (list.state == "004")
+                            {
+                                str += '<td><span style="color: gray;">완료</span></td>';
+                            }
                             str += '</tr>';
                         }
                     });

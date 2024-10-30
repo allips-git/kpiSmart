@@ -191,4 +191,15 @@ class Prod_list extends CI_Controller {
             echo json_encode(['ResultCode' => $this->result_success, 'ResultMessage' => "모든 실적이 성공적으로 등록되었습니다."]);
         }
     }
+
+    public function insertData() {
+        $ikey = $this->input->post("ikey");
+        $workTime = $this->input->post("workTime");
+
+        if (!$this->Common_m->update("job_master", $ikey, array("workTime" => $workTime))) {
+            echo json_encode(['ResultCode' => 500, 'ResultMessage' => "작업시간 등록에 실패했습니다."]);
+        } else {
+            echo json_encode(['ResultCode' => 200, 'ResultMessage' => "작업시간이 성공적으로 등록되었습니다."]);
+        }
+    }
 }
