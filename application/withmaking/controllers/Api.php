@@ -95,24 +95,24 @@ class Api extends CI_Controller
         /** BR세라텍만 불량 감소 처리 */
         if($apiKey === '61e7-e4c2-bf08-cdbf')
         {
-            $kpiData2       = array(
-                "KPILEVEL2" => array(
-                    array(
-                        "kpiCertKey"    => $apiKey,
-                        "ocrDttm"       => $currentTime,
-                        "kpiFldCd"      => "Q",
-                        "kpiDtlCd"      => "A",
-                        "kpiDtlNm"      => "불량 감소",
-                        "systmOprYn"    => "Y",
-                        "achrt"         => strval(100),
-                        "trsDttm"       => $currentTime
-                    )
-                )
-            );
+            // $kpiData2       = array(
+            //     "KPILEVEL2" => array(
+            //         array(
+            //             "kpiCertKey"    => $apiKey,
+            //             "ocrDttm"       => $currentTime,
+            //             "kpiFldCd"      => "Q",
+            //             "kpiDtlCd"      => "A",
+            //             "kpiDtlNm"      => "불량 감소",
+            //             "systmOprYn"    => "Y",
+            //             "achrt"         => strval(100),
+            //             "trsDttm"       => $currentTime
+            //         )
+            //     )
+            // );
     
-            $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
-            $res  = $this->send_data_to_api2($data);
-            echo "API 응답: " . $res;
+            // $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
+            // $res  = $this->send_data_to_api2($data);
+            // echo "API 응답: " . $res;
         }
 
         // $currentTime = date('YmdHis');
@@ -196,25 +196,25 @@ class Api extends CI_Controller
         /** BR세라텍만 불량 감소 처리 */
         if($apiKey === '61e7-e4c2-bf08-cdbf')
         {
-            $kpiData2 = array(
-                "KPILEVEL3" => array(
-                    array(
-                        "kpiCertKey"    => $apiKey,
-                        "ocrDttm"       => $currentTime,
-                        "kpiFldCd"      => "Q",
-                        "kpiDtlCd"      => "A",
-                        "kpiDtlNm"      => "불량 감소",
-                        "msmtVl"        => strval(0),
-                        "unt"           => "수량",
-                        "trsDttm"       => $currentTime
-                    )
-                )
-            );
+            // $kpiData2 = array(
+            //     "KPILEVEL3" => array(
+            //         array(
+            //             "kpiCertKey"    => $apiKey,
+            //             "ocrDttm"       => $currentTime,
+            //             "kpiFldCd"      => "Q",
+            //             "kpiDtlCd"      => "A",
+            //             "kpiDtlNm"      => "불량 감소",
+            //             "msmtVl"        => strval(0),
+            //             "unt"           => "수량",
+            //             "trsDttm"       => $currentTime
+            //         )
+            //     )
+            // );
     
-            $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
-            $res  = $this->send_data_to_api3($data);
+            // $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
+            // $res  = $this->send_data_to_api3($data);
     
-            echo "API 응답: " . $res;
+            // echo "API 응답: " . $res;
         }
         // $sql = "SELECT 
         //             SUM(sub.work_cnt) AS total_work_cnt 
