@@ -92,27 +92,34 @@ class Api extends CI_Controller
         $response = $this->send_data_to_api2($jsonData);
         echo "API 응답: " . $response;
 
-        /** BR세라텍만 불량 감소 처리 */
+        /** BR세라텍만 월말일 시 불량 감소 처리 2024/12/03 김원명 => 힘찬씨 요청 */
         if($apiKey === '61e7-e4c2-bf08-cdbf')
         {
-            // $kpiData2       = array(
-            //     "KPILEVEL2" => array(
-            //         array(
-            //             "kpiCertKey"    => $apiKey,
-            //             "ocrDttm"       => $currentTime,
-            //             "kpiFldCd"      => "Q",
-            //             "kpiDtlCd"      => "A",
-            //             "kpiDtlNm"      => "불량 감소",
-            //             "systmOprYn"    => "Y",
-            //             "achrt"         => strval(100),
-            //             "trsDttm"       => $currentTime
-            //         )
-            //     )
-            // );
-    
-            // $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
-            // $res  = $this->send_data_to_api2($data);
-            // echo "API 응답: " . $res;
+            $currentDate    = date('Y-m-d');
+            $lastDayOfMonth = date('Y-m-t');
+
+            /** 월말인지 체크 */
+            if($currentDate === $lastDayOfMonth)
+            {
+                $kpiData        = array(
+                    "KPILEVEL2" => array(
+                        array(
+                            "kpiCertKey"    => $apiKey,
+                            "ocrDttm"       => $currentTime,
+                            "kpiFldCd"      => "Q",
+                            "kpiDtlCd"      => "A",
+                            "kpiDtlNm"      => "불량 감소",
+                            "systmOprYn"    => "Y",
+                            "achrt"         => strval(100),
+                            "trsDttm"       => $currentTime
+                        )
+                    )
+                );
+        
+                $jsonData = json_encode($kpiData, JSON_UNESCAPED_UNICODE);
+                $response = $this->send_data_to_api2($jsonData);
+                echo "API 응답: " . $response;
+            }
         }
         else if($apiKey === '3ed2-c648-8836-cbd0') /** 코아이 불량 감소 추가 */
         {
@@ -203,7 +210,7 @@ class Api extends CI_Controller
                     "kpiDtlCd"      => "B",
                     "kpiDtlNm"      => "생산량 증가",
                     "msmtVl"        => strval($cnt),
-                    "unt"           => "수량",
+                    "unt"           => "개",
                     "trsDttm"       => $currentTime
                 )
             )
@@ -217,25 +224,31 @@ class Api extends CI_Controller
         /** BR세라텍만 불량 감소 처리 */
         if($apiKey === '61e7-e4c2-bf08-cdbf')
         {
-            // $kpiData2 = array(
-            //     "KPILEVEL3" => array(
-            //         array(
-            //             "kpiCertKey"    => $apiKey,
-            //             "ocrDttm"       => $currentTime,
-            //             "kpiFldCd"      => "Q",
-            //             "kpiDtlCd"      => "A",
-            //             "kpiDtlNm"      => "불량 감소",
-            //             "msmtVl"        => strval(0),
-            //             "unt"           => "수량",
-            //             "trsDttm"       => $currentTime
-            //         )
-            //     )
-            // );
-    
-            // $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
-            // $res  = $this->send_data_to_api3($data);
-    
-            // echo "API 응답: " . $res;
+            $currentDate    = date('Y-m-d');
+            $lastDayOfMonth = date('Y-m-t');
+            
+            if($currentDate === $lastDayOfMonth)
+            {
+                $kpiData = array(
+                    "KPILEVEL3" => array(
+                        array(
+                            "kpiCertKey"    => $apiKey,
+                            "ocrDttm"       => $currentTime,
+                            "kpiFldCd"      => "Q",
+                            "kpiDtlCd"      => "A",
+                            "kpiDtlNm"      => "불량 감소",
+                            "msmtVl"        => strval(0),
+                            "unt"           => "개",
+                            "trsDttm"       => $currentTime
+                        )
+                    )
+                );
+        
+                $jsonData = json_encode($kpiData, JSON_UNESCAPED_UNICODE);
+                $response = $this->send_data_to_api3($jsonData);
+        
+                echo "API 응답: " . $response;
+            }
         }
         else if($apiKey === '3ed2-c648-8836-cbd0') /** 코아이 불량 감소 추가 */
         {
