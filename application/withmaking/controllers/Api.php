@@ -93,7 +93,8 @@ class Api extends CI_Controller
         echo "API 응답: " . $response;
 
         /** BR세라텍만 월말일 시 불량 감소 처리 2024/12/03 김원명 => 힘찬씨 요청 */
-        if($apiKey === '61e7-e4c2-bf08-cdbf')
+        /** 코아이 월말일 시 불량 감소 처리 추가 2025/02/06 김원명 => 힘찬씨 요청 */
+        if($apiKey === '61e7-e4c2-bf08-cdbf' || $apiKey === '3ed2-c648-8836-cbd0')
         {
             $currentDate    = date('Y-m-d');
             $lastDayOfMonth = date('Y-m-t');
@@ -120,27 +121,6 @@ class Api extends CI_Controller
                 $response = $this->send_data_to_api2($jsonData);
                 echo "API 응답: " . $response;
             }
-        }
-        else if($apiKey === '3ed2-c648-8836-cbd0') /** 코아이 불량 감소 추가 */
-        {
-            // $kpiData2       = array(
-            //     "KPILEVEL2" => array(
-            //         array(
-            //             "kpiCertKey"    => $apiKey,
-            //             "ocrDttm"       => $currentTime,
-            //             "kpiFldCd"      => "Q",
-            //             "kpiDtlCd"      => "A",
-            //             "kpiDtlNm"      => "불량 감소",
-            //             "systmOprYn"    => "Y",
-            //             "achrt"         => strval(100),
-            //             "trsDttm"       => $currentTime
-            //         )
-            //     )
-            // );
-    
-            // $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
-            // $res  = $this->send_data_to_api2($data);
-            // echo "API 응답: " . $res;
         }
 
         // $currentTime = date('YmdHis');
@@ -222,7 +202,8 @@ class Api extends CI_Controller
         echo "API 응답: " . $response;
 
         /** BR세라텍만 불량 감소 처리 */
-        if($apiKey === '61e7-e4c2-bf08-cdbf')
+        /** 코아이 불량 감소 처리 추가 2025/02/06 김원명 => 힘찬씨 요청 */
+        if($apiKey === '61e7-e4c2-bf08-cdbf' || $apiKey === '3ed2-c648-8836-cbd0')
         {
             $currentDate    = date('Y-m-d');
             $lastDayOfMonth = date('Y-m-t');
@@ -249,28 +230,6 @@ class Api extends CI_Controller
         
                 echo "API 응답: " . $response;
             }
-        }
-        else if($apiKey === '3ed2-c648-8836-cbd0') /** 코아이 불량 감소 추가 */
-        {
-            // $kpiData2 = array(
-            //     "KPILEVEL3" => array(
-            //         array(
-            //             "kpiCertKey"    => $apiKey,
-            //             "ocrDttm"       => $currentTime,
-            //             "kpiFldCd"      => "Q",
-            //             "kpiDtlCd"      => "A",
-            //             "kpiDtlNm"      => "불량 감소",
-            //             "msmtVl"        => strval(0),
-            //             "unt"           => "개",
-            //             "trsDttm"       => $currentTime
-            //         )
-            //     )
-            // );
-    
-            // $data = json_encode($kpiData2, JSON_UNESCAPED_UNICODE);
-            // $res  = $this->send_data_to_api3($data);
-    
-            // echo "API 응답: " . $res;
         }
         // $sql = "SELECT 
         //             SUM(sub.work_cnt) AS total_work_cnt 
